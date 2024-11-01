@@ -1,0 +1,266 @@
+# A list of terms to ignore when linting using Vale (add terms in the alphabetical list)
+
+# A
+[Aa]nalyser
+analyser
+API
+appFont
+[Aa]pplication
+[Aa]ppsmith
+arbitrary[Nn]ode
+[Aa]sync
+[Aa]utocomplete
+[Aa]utofill
+[Aa]utoplay
+[Aa]utopopulated
+[Aa]utorouting
+az
+
+# B
+backgroundColor
+blueprintjs
+[Bb]oolean
+borderRadius
+boxShadow
+browserify
+[Bb]usbar
+
+# C
+CAD
+camel[Cc]ase
+capSide
+capType
+CDC
+callbackFunction
+[Cc]annot
+[Cc]apacitanes
+[Cc]atchable
+[Cc]entered
+chartData
+clearInterval
+[Cc]onfig
+Costa Rica
+countryCode
+Cron
+Ctrl
+currencyCode
+currentItem
+currentIndex
+currentView
+
+# D
+[Dd]atepicker
+dialCode
+dialog
+dividerColor
+doesnt
+dont
+DTC
+[Dd]atasource
+[Dd]isconnector
+Disconnectors
+downloadjs
+
+# E
+EChart
+EI Graph
+EIN
+enableTelemetry
+enum
+emptyInstance
+
+# F
+fieldState
+[Ff]ilepicker
+[Ff]iletype
+filterText
+fontFamily
+formData
+formattedDate
+frontmatter
+fullPath
+
+# G
+getUsers
+[Gg]it
+GitHub
+GPT
+gracefully
+
+# H
+hardcoded
+hasChanges
+hostname
+
+# I
+idToken
+iFrame
+isAnonymous
+isChecked
+isDirty
+isDisabled
+isEnabled
+isRequired
+isValid
+isVisible
+itemId
+itemSpacing
+[Ii]terable
+
+# J
+JSObject
+JSONata
+Jira
+[Jj]inja
+jsDelivr
+
+# K
+KBLs
+Kabelbaum
+Kommunikationsmatrix
+Kundenspezifischer
+
+# L
+listData
+[Ll]odash
+llmPost
+LLMRequest
+LLMResponse
+
+# M
+maxCount
+[Mm]echatronic
+messageMetadata
+Mixcloud
+MkDocs
+modalName
+[Mm]ultiselect
+[Mm]ultitree
+
+# N
+namespace
+navigateTo
+
+# O
+OAuth
+onBlur
+onChange
+onClick
+onClose
+onDiscard
+onEnd
+onFocus
+onPause
+onPlay
+onReady
+onSave
+onSort
+onSubmit
+onSuccess
+
+# P
+pageNo
+pageSize
+param
+partnumber
+PDF
+playState
+[Pp]ostprocessing
+Powerpoint
+Powershell
+pre
+primaryColor
+px
+
+# R
+rawbinary
+[Rr]ecaptcha
+[Rr]ecurse
+[Rr]epo
+REST API
+[Rr]eadme
+[Rr]eproduceability
+resetChildren
+resizable
+responseMeta
+[Rr]eusability
+Rhai
+
+# S
+S-GPT
+[Ss]ankey
+schemavis
+scroller
+searchText
+selectedDate
+selectedItem
+selectedMarker
+selectedRow
+selectedValues
+setColor
+setDisabled
+setImage
+setInterval
+setLabel
+setPlaying
+setRequired
+setText
+setValue
+setVisibility
+showAlert
+sourceData
+sPath
+spath_eval
+SPREAD
+src
+srcDoc
+storeValue
+[Ss]treamable
+strokeStyle
+[Ss]ubflow
+[Ss]ubmenu
+SVG
+
+# T
+tableData
+targetIframe
+targetOrigin
+[Tt]ooltip
+trackpad
+[Tt]ransformative
+triggeredItem
+triggerEvent
+triggeredRow
+
+# U
+[Uu]ndeployed
+[Uu]nformatted
+[Uu]npublish
+[Uu]npublishing
+updatedRow[s]
+updateModel
+updateUsers
+URI
+URL
+useCase
+userInput
+usersTable
+
+# V
+VIN
+Visio
+VPN
+
+# W
+[Ww]idget
+Wistia
+WMI
+
+# X
+xAxis
+xMap
+xPath
+
+# Y
+yaml-migration
+yAxis

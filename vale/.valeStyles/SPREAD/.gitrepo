@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/ingydotnet/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:errata-ai/Microsoft.git
+	branch = master
+	commit = c798f131106d77c136a3c1b5fa4916dee1de8edd
+	parent = 5e23b84429a5015a789164870ff8463ecc7c9edf
+	method = merge
+	cmdver = 0.4.9

@@ -1,0 +1,16 @@
+extends: substitution
+message: "Use '%s' over '%s'."
+level: error
+ignorecase: true
+action:
+     name: replace
+swap:
+     Engineering Intelligence Network: Engineering Intelligence Graph
+     Connectivity Analyser: Connectivity Analyzer
+     yaml: YAML
+     data model: information model
+     json: JSON
+     spath: sPath
+     xpath: xPath
+     xml: XML
+     graphQL: GraphQL
