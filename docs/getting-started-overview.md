@@ -58,6 +58,7 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
           text-align: right;
           min-width: 40vw;
           padding-left: 10vw;
+          background-image: url('{{ config.site_url  }}/getting-started/src/car-diagnosis-demo.png')
      }
 </style>
 
@@ -69,8 +70,6 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
 	<div style='color: #525252; line-height: 1.5; font-weight: 400; font-size: 0.7rem'>Learn how to use the SPREAD Platform, from importing data to creating a simple application to writing data to the Engineering Intelligence Graph.</div>
 </div>
 
-<div class='left-header-block'>
-     <img src='src/car-diagnosis-demo.png' alt='An image...' style="border: none; width:'30%'; object-fit: contain">
-</div>
+<div class='left-header-block'></div>
 
 </div>
