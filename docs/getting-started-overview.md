@@ -43,6 +43,7 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
           width: 100vw;
           background-image: linear-gradient(0deg,#d9e8f9,white);
           min-height: 45vh;
+          padding-bottom: 2em;
      }
 
      .header > .right-header-block {
