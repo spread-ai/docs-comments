@@ -20,20 +20,18 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
      .md-typeset [data-preview], .md-typeset abbr {
           border-bottom: none;
      }
+
+     .header {
+          width: 100vw;
+          background-image: linear-gradient(0deg,#d9e8f9,white)
+          height: 40vh:
+     }
 </style>
 
 
-<div class='grid' markdown>
+<div class='header'>
 
-- Something here
 
-     <div style='text-align: center; font-weight: 600;'>
-	<div style='color: #FF4715'>How to use SPREAD</div>
-	<div style='padding-top: 1rem; padding-bottom: 1rem; font-size: 2.5rem; line-height: 1.3' markdown>SPREAD makes all your mechatronic information accessible, intuitive, and actionable.</div>
-	<div style='color: #525252; line-height: 1.5; font-weight: 400; font-size: 1.125rem'>For more on use cases and how you can use SPREAD, see <a href="https://www.spread.ai/use-cases" target="_blank">Who is it for</a>.</div>
-     </div>
-
-- Something else here
 
 </div>
 
