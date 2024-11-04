@@ -21,6 +21,14 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
           border-bottom: none;
      }
 
+     .md-main__inner {
+          margin: 0 !important;
+     }
+
+     article.md-content__inner {
+          margin: 0 !important;
+     }
+
      .header {
           width: 100vw;
           background-image: linear-gradient(0deg,#d9e8f9,white);
