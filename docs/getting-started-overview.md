@@ -74,7 +74,7 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
 </div>
 
 <div class='left-header-block'>
-     <div style="background-image: url('{{ config.site_url }}/getting-started/src/car-diagnosis-demo.png')"></div>
+     <div style="background-image: url('{{ config.site_url }}getting-started/src/car-diagnosis-demo.png')"></div>
 </div>
 
 </div>
