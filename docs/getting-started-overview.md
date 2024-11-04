@@ -70,7 +70,7 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
 </div>
 
 <div class='left-header-block'>
-     <img src='src/car-diagnosis-demo.png' alt='An image...' style="width:'100%'; object-fit: contain">
+     <img src='src/car-diagnosis-demo.png' alt='An image...' style="border: none; width:'30%'; object-fit: contain">
 </div>
 
 </div>
