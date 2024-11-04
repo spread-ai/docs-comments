@@ -78,31 +78,37 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
 <br>
 <br>
 
-<div class='grid cards' style='max-width: 80vw !important' markdown>
+<div class='grid cards' style='max-width: 90vw !important; margin: auto' markdown>
 
 - :material-book-open:{ .lg .middle } __What you'll learn__
 
     ---
 
-    Understand how information is stored and used in the SPREAD Platform.
+    - What the Engineering Intelligence Graph (EI Graph) is
+    - How to import data into the EI Graph
+    - Creating a basic Studio application UI
+    - Querying data in the EI Graph from Studio
+    - Publishing a Studio application
+    - Connecting widgets for shared interactions in a Studio application
+    - Writing data to the EI Graph from Studio
 
-    [:octicons-arrow-right-24: Get started](platform/information-model/information-model-overview.md)
+    [:octicons-arrow-right-24: Get started now](#)
 
 - :material-account-school:{ .lg .middle } __Pre-requisites__
 
     ---
 
-    - [x] Part A
-    - [x] Part B
-
-    [:octicons-arrow-right-24: Get started](platform/information-model/information-model-overview.md)
+    - [x] Access to a SPREAD Studio environment.
+    - [x] A basic understanding of JavaScript.
+    - [x] A basic understanding of GraphQL.
 
 - :material-view-list:{ .lg .middle } __Lessons__
 
     ---
 
-    [:octicons-arrow-right-24: Get started](platform/information-model/information-model-overview.md)
-    [:octicons-arrow-right-24: Get started](platform/information-model/information-model-overview.md)
-    [:octicons-arrow-right-24: Get started](platform/information-model/information-model-overview.md)
+    - [:octicons-arrow-right-24: Lesson 1: Understanding the SPREAD ecosystem](#)
+    - [:octicons-arrow-right-24: Lesson 2: Creating a viewing application](#)
+    - [:octicons-arrow-right-24: Lesson 3: Creating an authoring application](#)
+    - [:octicons-arrow-right-24: Lesson 4: Connect and import datasources](#)
 
 </div>
