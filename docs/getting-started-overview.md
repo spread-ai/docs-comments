@@ -74,7 +74,11 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
 
 </div>
 
-<div class='grid cards' markdown>
+<br>
+<br>
+<br>
+
+<div class='grid cards' style='max-width: 80vw !important' markdown>
 
 - :material-book-open:{ .lg .middle } __What you'll learn__
 
