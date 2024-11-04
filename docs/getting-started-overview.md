@@ -74,7 +74,7 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
 </div>
 
 <div class='left-header-block'>
-     <img src="src/car-diagnosis-demo.png" alt="Image of a car undergoing diagnostics" width="400">
+     <img src="src/car-diagnosis-demo.png" alt="Image of a car undergoing diagnostics" width="400" style="border: none">
 </div>
 
 </div>
