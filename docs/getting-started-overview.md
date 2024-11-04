@@ -55,7 +55,7 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
 </span>
 
 <span style='text-align: right; width: 40vw; padding-left: 10vw'>
-     <img src='src/car-diagnosis-demo.png' alt='An image of a car being diagnosed using SPREAD'>
+     <img src='src/car-diagnosis-demo.png' alt='An image of a car being diagnosed using SPREAD' style='border: none'>
 </span>
 
 </div>
