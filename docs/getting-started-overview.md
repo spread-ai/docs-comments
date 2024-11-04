@@ -58,7 +58,7 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
           text-align: right;
           min-width: 40vw;
           padding-left: 10vw;
-          background-image: url('{{ config.site_url  }}/getting-started/src/car-diagnosis-demo.png')
+          background-image: url('{{ config.site_url }}/getting-started/src/car-diagnosis-demo.png')
      }
 </style>
 
@@ -71,5 +71,36 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
 </div>
 
 <div class='left-header-block'></div>
+
+</div>
+
+<div class='course-details'>
+
+<div class='grid cards' markdown>
+
+- :material-book-open:{ .lg .middle } __What you'll learn__
+
+    ---
+
+    Understand how information is stored and used in the SPREAD Platform.
+
+    [:octicons-arrow-right-24: Get started](platform/information-model/information-model-overview.md)
+
+- :material-account-school:{ .lg .middle } __Pre-requisites__
+
+    ---
+
+    - [x] Part A
+    - [ ] Part B
+
+    [:octicons-arrow-right-24: Get started](platform/information-model/information-model-overview.md)
+
+- :material-view-list:{ .lg .middle } __Lessons__
+
+    ---
+
+    [:octicons-arrow-right-24: Get started](platform/information-model/information-model-overview.md)
+    [:octicons-arrow-right-24: Get started](platform/information-model/information-model-overview.md)
+    [:octicons-arrow-right-24: Get started](platform/information-model/information-model-overview.md)
 
 </div>
