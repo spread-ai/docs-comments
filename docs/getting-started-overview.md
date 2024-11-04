@@ -74,8 +74,6 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
 
 </div>
 
-<div class='course-details'>
-
 <div class='grid cards' markdown>
 
 - :material-book-open:{ .lg .middle } __What you'll learn__
@@ -91,7 +89,7 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
     ---
 
     - [x] Part A
-    - [ ] Part B
+    - [x] Part B
 
     [:octicons-arrow-right-24: Get started](platform/information-model/information-model-overview.md)
 
