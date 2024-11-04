@@ -60,6 +60,10 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
           min-width: 40vw;
           padding-left: 10vw;
      }
+
+     li {
+          list-style-type: none !important;
+     }
 </style>
 
 <div class='header'>
@@ -90,13 +94,13 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
 
     ---
 
-    - What the Engineering Intelligence Graph (EI Graph) is
-    - How to import data into the EI Graph
-    - Creating a basic Studio application UI
-    - Querying data in the EI Graph from Studio
-    - Publishing a Studio application
-    - Connecting widgets for shared interactions in a Studio application
-    - Writing data to the EI Graph from Studio
+    - :octicons-arrow-right-24: What the Engineering Intelligence Graph (EI Graph) is
+    - :octicons-arrow-right-24: How to import data into the EI Graph
+    - :octicons-arrow-right-24: Creating a basic Studio application UI
+    - :octicons-arrow-right-24: Querying data in the EI Graph from Studio
+    - :octicons-arrow-right-24: Publishing a Studio application
+    - :octicons-arrow-right-24: Connecting widgets for shared interactions in a Studio application
+    - :octicons-arrow-right-24: Writing data to the EI Graph from Studio
 
     [:octicons-arrow-right-24: Get started now](#)
 
@@ -106,7 +110,7 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
 
     - [x] Access to a SPREAD Studio environment.
     - [x] A basic understanding of JavaScript.
-    - [x] A basic understanding of GraphQL.
+    - [x] A basic understanding of [GraphQL](https://graphql.org/learn/).
 
 - :material-view-list:{ .lg .middle } __Lessons__
 
