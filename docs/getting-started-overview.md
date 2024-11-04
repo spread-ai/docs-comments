@@ -94,6 +94,8 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
 
     ---
 
+
+
     - :octicons-arrow-right-24: What the Engineering Intelligence Graph (EI Graph) is
     - :octicons-arrow-right-24: How to import data into the EI Graph
     - :octicons-arrow-right-24: Creating a basic Studio application UI
@@ -102,11 +104,11 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
     - :octicons-arrow-right-24: Connecting widgets for shared interactions in a Studio application
     - :octicons-arrow-right-24: Writing data to the EI Graph from Studio
 
-    [:octicons-arrow-right-24: Get started now](#)
-
 - :material-account-school:{ .lg .middle } __Pre-requisites__
 
     ---
+
+
 
     - [x] Access to a SPREAD Studio environment.
     - [x] A basic understanding of JavaScript.
@@ -115,6 +117,8 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
 - :material-view-list:{ .lg .middle } __Lessons__
 
     ---
+
+
 
     - [:octicons-arrow-right-24: Lesson 1: Understanding the SPREAD ecosystem](#)
     - [:octicons-arrow-right-24: Lesson 2: Creating a viewing application](#)
