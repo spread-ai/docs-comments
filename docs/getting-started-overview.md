@@ -1,5 +1,5 @@
 ---
-title: Getting Started Overview
+title: Getting started
 description: The overview page for the Getting Started section, which has learning content for using the SPREAD Platform.
 hide:
   - navigation
@@ -42,7 +42,7 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
      .header {
           width: 100vw;
           background-image: linear-gradient(0deg,#d9e8f9,white);
-          min-height: 40vh;
+          min-height: 45vh;
      }
 
      .header > .right-header-block {
@@ -69,7 +69,7 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
 	<div style='padding-top: 1rem; padding-bottom: 1rem; font-size: 2.5rem; line-height: 1.3' markdown>Intro to the SPREAD Platform</div>
 	<div style='color: #525252; line-height: 1.5; font-weight: 400; font-size: 0.7rem'>Learn how to use the SPREAD Platform, from importing data to creating a simple application to writing data to the Engineering Intelligence Graph.</div>
      <br>
-     <div style='text-align: center'>
+     <div>
           <a href="#" class="md-button md-button--primary">Get started</a>
      </div>
 </div>
