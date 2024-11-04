@@ -48,14 +48,14 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
 
 <div class='header'>
 
-<div style='text-align: left; font-weight: 600; width: 40vw; padding-left: 10vw'>
+<span style='text-align: left; font-weight: 600; width: 40vw; padding-left: 10vw'>
 	<div style='color: #FF4715'>Course</div>
 	<div style='padding-top: 1rem; padding-bottom: 1rem; font-size: 2.5rem; line-height: 1.3' markdown>Intro to the SPREAD Platform</div>
 	<div style='color: #525252; line-height: 1.5; font-weight: 400; font-size: 0.7rem'>Learn how to use the SPREAD Platform, from importing data to creating a simple application to writing data to the Engineering Intelligence Graph.</div>
-</div>
+</span>
 
-<div style='text-align: right; width: 40vw; padding-left: 10vw'>
+<span style='text-align: right; width: 40vw; padding-left: 10vw'>
      <img src='src/car-diagnosis-demo.png' alt='An image of a car being diagnosed using SPREAD'>
-</div>
+</span>
 
 </div>
