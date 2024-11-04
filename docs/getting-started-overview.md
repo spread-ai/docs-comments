@@ -54,6 +54,6 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
 	<div style='color: #525252; line-height: 1.5; font-weight: 400; font-size: 0.7rem'>Learn how to use the SPREAD Platform, from importing data to creating a simple application to writing data to the Engineering Intelligence Graph.</div>
 </span>
 
-<span style='text-align: right; min-width: 40vw; padding-left: 10vw; background-image: url(src/car-diagnosis-demo.png)'></span>
+<span style='text-align: right; min-width: 40vw; padding-left: 10vw; background-image: url("src/car-diagnosis-demo.png")'></span>
 
 </div>
