@@ -58,7 +58,6 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
           text-align: right;
           min-width: 40vw;
           padding-left: 10vw;
-          background-image: url('{{ config.site_url }}/getting-started/src/car-diagnosis-demo.png')
      }
 </style>
 
@@ -74,7 +73,9 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
      </div>
 </div>
 
-<div class='left-header-block'></div>
+<div class='left-header-block'>
+     <div style="background-image: url('{{ config.site_url }}/getting-started/src/car-diagnosis-demo.png')"></div>
+</div>
 
 </div>
 
