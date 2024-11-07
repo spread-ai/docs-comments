@@ -36,6 +36,7 @@ We will be using resources from this [repository](), so please download the file
           answer-correct: Yes!
           answer: No!
           answer: Maybe!
+          content: <h2>Provide some additional content</h2>
      <?/quiz?>
 
 * :material-book:{ .lg .middle } **Inline definitions**
