@@ -23,3 +23,29 @@ Some of the key features of SPREAD include:
 In this course, we will learn how to ingest data into the Engineering Intelligence Graph (EI Graph), display data using SPREAD Studio, and also write data back to the EI Graph.
 
 We will be using resources from this [repository](), so please download the files that you will need from there. To ask questions about the content, leave a comment in the section below. In both cases, you will need a GitHub account. To sign up for an account, go to [GitHub](https://github.com).
+
+## Helpful tips
+
+<div class='grid cards' markdown>
+
+* :material-list-status:{ .lg .middle } **Quizzes**
+
+    ---
+    <?quiz?>
+          question: Are you ready?
+          answer-correct: Yes!
+          answer: No!
+          answer: Maybe!
+          content:
+               <p>Provide some additional content</p>
+     <?/quiz?>
+
+* :material-book:{ .lg .middle } **Inline definitions**
+
+    ---
+
+* :material-comment-question:{ .lg .middle } **Q&A**
+
+    ---
+
+</div>
