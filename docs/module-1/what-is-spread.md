@@ -22,7 +22,7 @@ Some of the key features of SPREAD include:
 * **Data analysis:** SPREAD provides a range of analysis tools, including filtering, sorting, and grouping, to help you get insights from your data.
 
 <figure markdown="span" class="noborder">
-	![The SPREAD Studio, where you can create applications that visialize data](src/spread-studio-collaboration.png)
+	![The SPREAD Studio, where you can create applications that visialize data](src/spread-studio-collaboration.png){ .skip-lightbox }
 	<figcaption>The SPREAD Studio</figcaption>
 </figure>
 
