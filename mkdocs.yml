@@ -1,9 +1,5 @@
 edit_uri: edit/main
 
-theme:
-     features:
-          - navigation.footer
-
 nav:
      - Getting Started Overview: getting-started-overview.md
      - Module 1:
