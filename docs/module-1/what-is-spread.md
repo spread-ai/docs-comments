@@ -15,7 +15,7 @@ Some of the key features of SPREAD include:
 * **Collaboration:** You can share data and visualizations with others in real-time, making it easier to work together on projects.
 * **Data analysis:** SPREAD provides a range of analysis tools, including filtering, sorting, and grouping, to help you get insights from your data.
 
-<figure markdown="span" style="border: none !important">
+<figure markdown="span" style="border-type: none !important">
 	![The SPREAD Studio, where you can create applications that visialize data](src/spread-studio-collaboration.png)
 	<figcaption>The SPREAD Studio</figcaption>
 </figure>
