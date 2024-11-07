@@ -31,13 +31,7 @@ We will be using resources from this [repository](), so please download the file
 * :material-list-status:{ .lg .middle } **Quizzes**
 
     ---
-    <?quiz?>
-     question: Are you ready?
-     answer-correct: Yes!
-     answer: No!
-     answer: Maybe!
-     content: Something
-     <?/quiz?>
+    <!-- QUIZ_ID: quiz1 -->
 
 * :material-book:{ .lg .middle } **Inline definitions**
 
