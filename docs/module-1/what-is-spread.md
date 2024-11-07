@@ -36,7 +36,7 @@ In this course, we will learn how to ingest data, display data using SPREAD Stud
 
     ---
 
-    To see the meaning of SPREAD and industry-specific terminology hover over words with dotted lines and a modal with the definition will appear. If there is an unexplained term in the content, you may use the comments section to ask for an explanation. For example, see the definition of Engineering Intelligence Graph.
+    To see the meaning of SPREAD and industry-specific terminology hover over words with dotted lines and a modal with the definition will appear. For example, see the definition of Engineering Intelligence Graph.
 
 * :material-comment-question:{ .lg .middle } **Q&A**
 
