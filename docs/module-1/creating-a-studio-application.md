@@ -15,4 +15,4 @@ To display data, we will be working in SPREAD Studio - which is a tool to create
 First, let's get familiar with the layout of the Studio application.
 
 
-{% include '../temp_dir/platform-tools/using-studio/creating-studio-applications.md#navigating-the-studio-canvas %}
+{% include '../temp_dir/platform-tools/using-studio/creating-studio-applications.md#navigating-the-studio-canvas' %}
