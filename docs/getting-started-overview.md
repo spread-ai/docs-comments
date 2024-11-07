@@ -74,7 +74,7 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
 	<div style='color: #525252; line-height: 1.5; font-weight: 400; font-size: 0.7rem'>Learn how to use the SPREAD Platform, from importing data to creating a simple application to writing data to the Engineering Intelligence Graph.</div>
      <br>
      <div>
-          <a href="introduction-spread/what-is-spread.html" class="md-button md-button--primary">Get started</a>
+          <a href="module-1/what-is-spread.html" class="md-button md-button--primary">Get started</a>
      </div>
 </div>
 
