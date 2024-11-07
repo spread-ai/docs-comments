@@ -15,14 +15,12 @@ Some of the key features of SPREAD include:
 * **Collaboration:** You can share data and visualizations with others in real-time, making it easier to work together on projects.
 * **Data analysis:** SPREAD provides a range of analysis tools, including filtering, sorting, and grouping, to help you get insights from your data.
 
-<figure markdown="span" style="border: none">
+<figure markdown="span" style="border: none !important">
 	![The SPREAD Studio, where you can create applications that visialize data](src/spread-studio-collaboration.png)
 	<figcaption>The SPREAD Studio</figcaption>
 </figure>
 
-In this course, we will learn how to ingest data into the Engineering Intelligence Graph (EI Graph), display data using SPREAD Studio, and also write data back to the EI Graph.
-
-We will be using resources from this [repository](), so please download the files that you will need from there. To ask questions about the content, leave a comment in the section below. In both cases, you will need a GitHub account. To sign up for an account, go to [GitHub](https://github.com).
+In this course, we will learn how to ingest data, display data using SPREAD Studio, and also write data. We will be using resources from this [repository](), so please download the files that you will need from there. To ask questions about the content, leave a comment in the section below. In both cases, you will need a GitHub account. To sign up for an account, go to [GitHub](https://github.com).
 
 ## Helpful tips
 
@@ -31,14 +29,19 @@ We will be using resources from this [repository](), so please download the file
 * :material-list-status:{ .lg .middle } **Quizzes**
 
     ---
+
     <!-- QUIZ_ID: quiz1 -->
 
 * :material-book:{ .lg .middle } **Inline definitions**
 
     ---
 
+    To see the meaning of SPREAD and industry-specific terminolgy hover over woprds with dotted lines and a modale with the definition will appear. If tehre is an unexplained term in the content, you may use the comments section to ask for an explanation. Fior example, see the defintion of Engineering Intelligence Graph.
+
 * :material-comment-question:{ .lg .middle } **Q&A**
 
     ---
+
+    To ask a question, leave a comment in the comments section of the relevant page. Before asking a question, we kindly ask that you search the comments to see if your questions has already been answered.
 
 </div>

@@ -10,7 +10,6 @@
              },
              "media": {
                "type": "image",
-               "src": "./static/images/paris.png",
                "alt": {
                  "en": "Paris",
                  "fr": "Paris"
