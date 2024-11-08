@@ -30,6 +30,14 @@ In this course, we will learn how to ingest data, display data using SPREAD Stud
 
 ## Helpful tips
 
+
+## Question 1
+     What is the capital of France?
+     - [ ] Berlin
+     - [ ] Madrid
+     - [x] Paris
+     - [ ] Rome
+
 <div class='grid cards' markdown>
 
 - :material-list-status:{ .lg .middle } **Quizzes**
