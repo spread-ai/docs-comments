@@ -32,19 +32,25 @@ In this course, we will learn how to ingest data, display data using SPREAD Stud
 
 <div class='grid cards' markdown>
 
-* :material-list-status:{ .lg .middle } **Quizzes**
+- :material-list-status:{ .lg .middle } **Quizzes**
 
     ---
 
-    <!-- QUIZ_ID: quiz1 -->
+  ## Question 1
 
-* :material-book:{ .lg .middle } **Inline definitions**
+     What is the capital of France?
+          - [ ] Berlin
+          - [ ] Madrid
+          - [x] Paris
+          - [ ] Rome
+
+- :material-book:{ .lg .middle } **Inline definitions**
 
     ---
 
     To see the meaning of SPREAD and industry-specific terminology hover over words with dotted lines and a modal with the definition will appear. For example, see the definition of Engineering Intelligence Graph.
 
-* :material-comment-question:{ .lg .middle } **Q&A**
+- :material-comment-question:{ .lg .middle } **Q&A**
 
     ---
 
