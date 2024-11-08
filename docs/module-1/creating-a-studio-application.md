@@ -14,6 +14,8 @@ To display data, we will be working in SPREAD Studio - which is a tool to create
 
 First, let's get familiar with the layout of the Studio application.
 
+{{ studio.navigatingStudio }}
+
 <figure markdown="span">
 	![Navigating the SPREAD Studio canvas]({{ config.site_url }}src/navigating-spread-studio-canvas.png)
 	<figcaption>Navigating the SPREAD Studio canvas</figcaption>
