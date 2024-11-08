@@ -36,7 +36,6 @@ question: Are you ready?
 answer-correct: Yes!
 answer: No!
 answer: Maybe!
-content: <h2>Provide some additional content</h2>
 <?/quiz?>
 
 <div class='grid cards' markdown>
@@ -50,7 +49,6 @@ content: <h2>Provide some additional content</h2>
     answer-correct: Yes!
     answer: No!
     answer: Maybe!
-    content: <h2>Provide some additional content</h2>
     <?/quiz?>
 
 - :material-book:{ .lg .middle } **Inline definitions**
