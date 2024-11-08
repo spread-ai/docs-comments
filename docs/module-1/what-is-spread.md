@@ -36,8 +36,7 @@ In this course, we will learn how to ingest data, display data using SPREAD Stud
 
     ---
 
-  ## Question 1
-
+     ## Question 1
      What is the capital of France?
           - [ ] Berlin
           - [ ] Madrid
