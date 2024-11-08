@@ -30,34 +30,19 @@ In this course, we will learn how to ingest data, display data using SPREAD Stud
 
 ## Helpful tips
 
-
-<?quiz?>
-question: Are you ready?
-answer-correct: Yes!
-answer: No!
-answer: Maybe!
-<?/quiz?>
-
 <div class='grid cards' markdown>
 
-- :material-list-status:{ .lg .middle } **Quizzes**
+* :material-list-status:{ .lg .middle } **Quizzes**
 
     ---
 
-    <?quiz?>
-    question: Are you ready?
-    answer-correct: Yes!
-    answer: No!
-    answer: Maybe!
-    <?/quiz?>
-
-- :material-book:{ .lg .middle } **Inline definitions**
+* :material-book:{ .lg .middle } **Inline definitions**
 
     ---
 
     To see the meaning of SPREAD and industry-specific terminology hover over words with dotted lines and a modal with the definition will appear. For example, see the definition of Engineering Intelligence Graph.
 
-- :material-comment-question:{ .lg .middle } **Q&A**
+* :material-comment-question:{ .lg .middle } **Q&A**
 
     ---
 
