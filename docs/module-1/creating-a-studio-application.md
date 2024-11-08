@@ -17,6 +17,6 @@ First, let's get familiar with the layout of the Studio application.
 {{ studio.navigatingStudio }}
 
 <figure markdown="span">
-	![Navigating the SPREAD Studio canvas]({{ config.site_url }}src/navigating-spread-studio-canvas.png)
+	![Navigating the SPREAD Studio canvas]({{ config.site_url }}platform-tools/using-studio/src/navigating-spread-studio-canvas.png)
 	<figcaption>Navigating the SPREAD Studio canvas</figcaption>
 </figure>
