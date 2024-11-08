@@ -46,7 +46,7 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
           padding-bottom: 2em;
      }
 
-     .header > .right-header-block {
+     .header > .right-header-course {
           display: inline-block !important;
           text-align: left;
           font-weight: 600;
@@ -54,7 +54,7 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
           padding-left: 10vw;
      }
 
-     .header > .left-header-block {
+     .header > .left-header-course {
           display: inline-block !important;
           text-align: right;
           min-width: 40vw;
@@ -68,7 +68,7 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
 
 <div class='header'>
 
-<div class='right-header-block'>
+<div class='right-header-course'>
 	<div style='color: #FF4715'>Course</div>
 	<div style='padding-top: 1rem; padding-bottom: 1rem; font-size: 2.5rem; line-height: 1.3' markdown>Intro to the SPREAD Platform</div>
 	<div style='color: #525252; line-height: 1.5; font-weight: 400; font-size: 0.7rem'>Learn how to use the SPREAD Platform, from importing data to creating a simple application to writing data to the Engineering Intelligence Graph.</div>
@@ -78,7 +78,7 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
      </div>
 </div>
 
-<div class='left-header-block'>
+<div class='left-header-course'>
      <img src="src/car-diagnosis-demo.png" alt="Image of a car undergoing diagnostics" width="400" class="skip-lightbox">
 </div>
 
