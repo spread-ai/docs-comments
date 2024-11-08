@@ -31,12 +31,29 @@ In this course, we will learn how to ingest data, display data using SPREAD Stud
 ## Helpful tips
 
 
+<?quiz?>
+question: Are you ready?
+answer-correct: Yes!
+answer: No!
+answer: Maybe!
+content:
+<h2>Provide some additional content</h2>
+<?/quiz?>
+
 <div class='grid cards' markdown>
 
 - :material-list-status:{ .lg .middle } **Quizzes**
 
     ---
 
+    <?quiz?>
+    question: Are you ready?
+    answer-correct: Yes!
+    answer: No!
+    answer: Maybe!
+    content:
+    <h2>Provide some additional content</h2>
+    <?/quiz?>
 
 - :material-book:{ .lg .middle } **Inline definitions**
 

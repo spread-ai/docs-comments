@@ -23,7 +23,12 @@ The cycle roughly consists of three parts:
 
 ## Example scenario
 
-An automative company
+An automotive company
 
+<div class='grid cards' markdown>
 
+* :material-list-status:{ .lg .middle } **Quiz**
 
+    ---
+
+</div>
