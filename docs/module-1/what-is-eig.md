@@ -21,7 +21,7 @@ The cycle consists of three parts:
 * **Contextualizing data**: The data is integrated into the structured SPREAD information model, which enables data insights. For example, this allows you to match PR-Nr and BoM to provide VIN-specific troubleshooting recommendations.
 * **Data insights**: From a base of structured knowledge we can create a multitude of applications for data visualization, predictive analytics, and automated insights. These applications enable you to interpret complex product data and make informed decisions.
 
-***Example**<br>
+**Example**<br>
 An automotive company looking to build a new model may have many teams involved in the development process: from Wiring Harness Engineers to Industrial Engineers to Production Managers to Process Planners to Rework Engineers. Each of these teams works in their data silo, creating data using custom methods and outputs.
 
 This creates problems when the vehicle they are working on needs to be put together. For example, Rework Engineers may have a difficult time understanding and, more importantly, finding the data produced by the Wiring Harness Engineers.
