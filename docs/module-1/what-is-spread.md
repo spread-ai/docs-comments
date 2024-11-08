@@ -38,10 +38,10 @@ In this course, we will learn how to ingest data, display data using SPREAD Stud
 
      ## Question 1
      What is the capital of France?
-          - [ ] Berlin
-          - [ ] Madrid
-          - [x] Paris
-          - [ ] Rome
+     - [ ] Berlin
+     - [ ] Madrid
+     - [x] Paris
+     - [ ] Rome
 
 - :material-book:{ .lg .middle } **Inline definitions**
 
