@@ -4,6 +4,7 @@ description: The overview page for the Getting Started section, which has learni
 hide:
   - navigation
   - toc
+  - path
 ---
 
 <!--
@@ -19,10 +20,6 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
 
      .md-typeset [data-preview], .md-typeset abbr {
           border-bottom: none;
-     }
-
-     nav.md-path {
-          display: none !important;
      }
 
      .md-main__inner {
@@ -115,7 +112,7 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
     ---
 
      - [:octicons-arrow-right-24: Module 1: Understanding the SPREAD ecosystem](module-1/what-is-spread.md)
-     - [:octicons-arrow-right-24: Module 2: Creating a viewing application](#)
+     - [:octicons-arrow-right-24: Module 2: Creating a viewing application](module-2/understanding-spread-information-architecture.md)
      - [:octicons-arrow-right-24: Module 3: Creating an authoring application](#)
      - [:octicons-arrow-right-24: Module 4: Connect and import datasources](#)
 

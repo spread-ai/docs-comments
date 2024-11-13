@@ -6,3 +6,8 @@ nav:
             - 1.1 What is SPREAD?: module-1/what-is-spread.md
             - 1.2 What is the Engineering Intelligence Graph?: module-1/what-is-eig.md
             - 1.3 Creating a Studio application: module-1/creating-a-studio-application.md
+     - Module 2:
+            - 2.1 Understanding the SPREAD information architecture: model-2/understanding-spread-information-architecture.md
+            - 2.2 Querying SPREAD in Studio: model-2/querying-spread-in-studio.md
+            - 2.3 Creating a display application: module-2/creating-a-display-application.md
+            - 2.4 Apllication permissions and sharing: module-2/application-permissions-and-sharing.md
