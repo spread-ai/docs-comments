@@ -24,6 +24,6 @@ Changesets are the versions of a dataset. Over time the data contained in a data
 
 To be able to create applications that use data from a specific dataset you need to either have `Owner` access, which allows you to read, write, and share a dataset - or have `reader` access assigned to them by the owner of the dataset. For the purposes of this we will use a demo datatet with tghe ID `EsfDatasets/b8169x23-7dc2-4319-aa23-473a687d960b`.
 
-{{ getStarted.settingup }}
+**Course setup instructions**
 
 For more assigning access rights to datasets, see [Using Data Manager]().
