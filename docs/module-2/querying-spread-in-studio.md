@@ -18,9 +18,9 @@ A GraphQL query contains
 !!! example "GraphQL query structure"
 
      ``` graphql 
-     query Battery($batteryId: ID!, $changesetId: ID) { // (1) The exclamation point in `ID!` tells us that this field is required for this query. The changeSetID is optional.
-          battery(id: $batteryId, changesetId: $changesetId) { // (2) The $ symbol is used to insert variables, such as the `batteryId` in this case. 
-               createdAt // (3) This query will return the value of the field `createdAt`.
+     query Battery($batteryId: ID!, $changesetId: ID) { # (1) The exclamation point in `ID!` tells us that this field is required for this query. The changeSetID is optional.
+          battery(id: $batteryId, changesetId: $changesetId) { # (2) The $ symbol is used to insert variables, such as the `batteryId` in this case. 
+               createdAt # (3) This query will return the value of the field `createdAt`.
           }
      }
      ```
