@@ -5,7 +5,11 @@ description: Taking our previous lessons' knowledge and creating a Studio applic
 
 Now that we know how to fetch data from the Engineering Intelligence Graph we can create an application to display it. We're going to create an application that displays the dimensions of a battery within a table.
 
+---
+
 {{ snippets.demoInstanceDetails }}
+
+---
 
 ## Creating the UI
 
@@ -25,7 +29,7 @@ To create the query we will use from within Studio go to the **Queries** tab and
      <figcaption>Creating a query in the Studio interface</figcaption>
 </figure>
 
-Select the `battery` object in the **Explorer** window and select the `height`, `length`, and `width` fields. Add `{"id": xxxxxxxxx}` as the query variable (the ID is required for the query to work). Thenn select the **Run** button to confirm that the query works as expected.
+Select the `battery` object in the **Explorer** window and select the `height`, `length`, and `width` fields. Add `{"id": xxxxxxxxx}` as the query variable (the ID is required for the query to work). Then select the **Run** button to confirm that the query works as expected.
 
 <figure markdown="span">
      ![Creating a query in the Studio interface](src/studio-ein-api.png)
@@ -44,13 +48,15 @@ Swith to the **Settings** tab and set **Run API on page load**.
 Switch back to the **UI** tab on the top-left and select the table widget that you dropped on to the canvas earlier. Select the **Table data** dropdown menu on the right-hand side and select the query you created.
 
 <figure markdown="span">
-     ![Binding the query to the table](src/table-data-dropdown.png)
+     ![Binding the query to the table](src/binding-query-to-table.png)
      <figcaption>Binding the query to the table</figcaption>
 </figure>
 
 The fields returned by the query are default mapped as columns and you can edit them in the section below **Table data**.
 
-## 
+## Syncing data across widgets
+
+TBA
 
 ## Publishing and sharing the application
 

@@ -3,7 +3,7 @@ title: Understanding GraphQL mutations
 description: Understanding how to make chjanges to a GraphQL schema.
 ---
 
-In Module 2 we covered findig data, but the reverse is also possible: we can write data to the Engineering Intelligence Graph. To write data to a GraphQL database we use _mutations_ in the similar way to a `PUT` or `PATCH` request in a REST API.
+In [Module 2](../module-2/querying-spread.md#finding-the-query) we covered finding data, but the reverse is also possible: we can write data to the Engineering Intelligence Graph. To write data to a GraphQL database we use _mutations_ in the similar way to a `PUT` or `PATCH` request in a REST API.
 
 A GraphQL mutation contains the following:
 
@@ -18,6 +18,7 @@ A GraphQL mutation contains the following:
           }
      }
      ```
+
      1. The exclamation point in `ID!` tells us that this field is required for this query. The changeSetID is optional.
      2. The $ symbol is used to insert variables, such as the `batteryId` in this case.
      3. This query will return the value of the field `createdAt`.
@@ -36,9 +37,13 @@ A GraphQL mutation contains the following:
 
 Like with [queries](../module-2/querying-spread.md) you can use the Schema Definition Language (SDL) reference to find the right mutation for your needs. For more on using the reference, see [Finding the query](../module-2/querying-spread.md#finding-the-query). To view the SDL reference select the **EIN** tile from the SPREAD Launcher.
 
+---
+
 {{ snippets.demoInstanceDetails }}
 
-!!! failure "Schema introspection failure"
+---
+
+??? failure "Schema introspection failure"
 
      If you see a "Schema introspection failure" error when opening the EIN tile, go to the **Connection Settings** in the top-left and select **Include cookies** to resolve it.
 
@@ -59,5 +64,3 @@ Like with queries, you can click through to the GraphQL Explorer to test the end
      ![Searching for mutation to update the dimensions of a battery](src/search-update-battery.png)
      <figcaption>Searching for mutation to update the dimensions of a battery</figcaption>
 </figure>
-
-
