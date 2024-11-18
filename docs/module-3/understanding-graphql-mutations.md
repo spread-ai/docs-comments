@@ -61,6 +61,6 @@ For example, if you wanted to change the dimensions of a battery you may search 
 Like with queries, you can click through to the GraphQL Explorer to test the endpoint. Unlike queries, you need to add the new field values that you would like to update or create in the **Variables** window.
 
 <figure markdown="span">
-     ![Searching for mutation to update the dimensions of a battery](src/search-update-battery.png)
-     <figcaption>Searching for mutation to update the dimensions of a battery</figcaption>
+     ![Mutation values in the Variables window](src/add-mutation-values.png)
+     <figcaption>Mutation values in the Variables window</figcaption>
 </figure>
