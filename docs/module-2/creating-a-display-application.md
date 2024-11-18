@@ -1,6 +1,8 @@
 ---
 title: Creating a display application
 description: Taking our previous lessons' knowledge and creating a Studio applicationn that displays data.
+hide:
+     - toc
 ---
 
 Now that we know how to fetch data from the Engineering Intelligence Graph we can create an application to display it. We're going to create an application that displays the dimensions of a battery within a table.
@@ -52,11 +54,30 @@ Switch back to the **UI** tab on the top-left and select the table widget that y
      <figcaption>Binding the query to the table</figcaption>
 </figure>
 
-The fields returned by the query are default mapped as columns and you can edit them in the section below **Table data**.
+The fields returned by the query are default mapped as columns and you can edit them in the section below **Table data**. For example, let's hide the **length** column from the table by selecting the **👁️** icon in the **Table** section. You can also edit each column by selecting the **⛭** icon.
+
+<figure markdown="span">
+     ![Editing columns in a table](src/column-settings.png)
+     <figcaption>Editing columns in a table</figcaption>
+</figure>
 
 ## Syncing data across widgets
 
-TBA
+Data can also be synced between widgets. We have hidden the **length** column but we can display it in another connected widget. Drag and drop the [container](../) widget on to the Studio canvas. Then drag and drop a [text]() widget on top of the container.
+
+<figure markdown="span">
+     ![The container and text widgets below the table](src/container-with-text.png)
+     <figcaption>The container and text widgets below the table</figcaption>
+</figure>
+
+Select the text widget and in the **Text** input field in the settings on the left-hand side enter: `{{Table1.selectedRow.length }}` (1). This sets the value of the text field to the selected row in `Table1` and `length` column value of that row.
+
+<figure markdown="span">
+     ![Set the value of the text field](src/set-text-value.png)
+     <figcaption>Set the value of the text field</figcaption>
+</figure>
+
+Similarly, you can set the value of fields in other widgets to sync with each other.
 
 ## Publishing and sharing the application
 
@@ -66,3 +87,5 @@ When the application is complete, select the **Publish** button in the top-right
      ![Sharing your application](src/share-application.png)
      <figcaption>Sharing your application</figcaption>
 </figure>
+
+1. We recommend that you write this out to see all the options that are available to you to use as the value of the text widget. In this case we are just syncing to the table.

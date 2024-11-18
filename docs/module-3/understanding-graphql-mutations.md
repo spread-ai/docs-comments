@@ -1,6 +1,8 @@
 ---
 title: Understanding GraphQL mutations
 description: Understanding how to make chjanges to a GraphQL schema.
+hide:
+     - toc
 ---
 
 In [Module 2](../module-2/querying-spread.md#finding-the-query) we covered finding data, but the reverse is also possible: we can write data to the Engineering Intelligence Graph. To write data to a GraphQL database we use _mutations_ in the similar way to a `PUT` or `PATCH` request in a REST API.
@@ -49,7 +51,7 @@ Like with [queries](../module-2/querying-spread.md) you can use the Schema Defin
 
      ![Schema introspection failure fix](../module-2/src/schema-introspection-fail.png)
 
-For example, if you wanted to change the dimensions of a battery you may search the reference for something like `updateBattery.dimensions` and see what the search returns. Using search terms that describe the action (`update` or `create`), the object that that action is applied to (`battery`), and the field that you want to change (`dimensions`) helps to narrow down the list of possible mutations. Remember to select the **Mutations** (as highlighted) to get results for mutations.
+For example, if you wanted to change the dimensions of a battery you may search the reference for something like `updateBattery.dimensions` and see what the search returns. Using search terms that describe the action (`update` or `create`), the object that that action is applied to (`battery`), and the field that you want to change (`dimensions`) helps to narrow down the list of possible mutations. Remember to select the **Mutations** tabs (as highlighted in the red box) to get results for mutations.
 
 <figure markdown="span">
      ![Searching for mutation to update the dimensions of a battery](src/search-update-battery.png)
