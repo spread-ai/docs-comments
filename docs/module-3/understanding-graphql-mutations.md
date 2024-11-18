@@ -5,7 +5,12 @@ hide:
      - toc
 ---
 
-In [Module 2](../module-2/querying-spread.md#finding-the-query) we covered finding data, but the reverse is also possible: we can write data to the Engineering Intelligence Graph. To write data to a GraphQL database we use _mutations_ in the similar way to a `PUT` or `PATCH` request in a REST API.
+In [Module 2](../module-2/querying-spread.md#finding-the-query) we covered finding data, but the reverse is also possible: we can write data to the Engineering Intelligence Graph (EI Graph). To write data to a GraphQL database we use _mutations_ in the similar way to a `PUT` or `PATCH` request in a REST API.
+
+<figure markdown="span">
+     ![Mutations write to the EI Graph](src/mutations-dataset-diagram.png)
+     <figcaption>Mutations write to the EI Graph</figcaption>
+</figure>
 
 A GraphQL mutation contains the following:
 
