@@ -20,10 +20,11 @@ A GraphQL query contains the following:
      ```json 
      query Battery($batteryId: ID!, $changesetId: ID) { // (1)
           battery(id: $batteryId, changesetId: $changesetId) { // (2)  
-               createdAt // (3) This query will return the value of the field `createdAt`.
+               createdAt // (3)
           }
      }
      ```
+
      1. The exclamation point in `ID!` tells us that this field is required for this query. The changeSetID is optional.
      2. The $ symbol is used to insert variables, such as the `batteryId` in this case.
      3. This query will return the value of the field `createdAt`.
@@ -42,9 +43,13 @@ A GraphQL query contains the following:
 
 Knowing how to make query leads on to knowing where to find the query that gives you the information that you want. GraphQL provides a self-documenting function that produces the Schema Definition Language (SDL) reference, which is similar to REST API references. To view the SDL reference select the **EIN** tile from the SPREAD Launcher.
 
+---
+
 {{ snippets.demoInstanceDetails }}
 
-!!! failure "Schema introspection failure"
+---
+
+??? failure "Schema introspection failure"
 
      If you see a "Schema introspection failure" error when opening the EIN tile, go to the **Connection Settings** in the top-left and select **Include cookies** to resolve it.
 
@@ -96,7 +101,7 @@ The `dimensions` contains further fields within it: `height`, `length`, and `wid
      <figcaption>Running the API call on `dimensions`</figcaption>
 </figure>
 
-The API call returns an HTTP 400 error in the response window on the right-hand:
+The API call returns an HTTP 400 error in the response window on the right-hand side:
 
 <figure markdown="span">
      ![An HTTP 400 error](src/api-call-error.png)
