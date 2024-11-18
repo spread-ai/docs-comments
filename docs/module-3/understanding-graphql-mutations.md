@@ -5,40 +5,65 @@ hide:
      - toc
 ---
 
-In [Module 2](../module-2/querying-spread.md#finding-the-query) we covered finding data, but the reverse is also possible: we can write data to the Engineering Intelligence Graph (EI Graph). To write data to a GraphQL database we use _mutations_ in the similar way to a `PUT` or `PATCH` request in a REST API.
+In [Module 2](../module-2/querying-spread.md#finding-the-query) we covered finding data, but the reverse is also possible: we can write data to the Engineering Intelligence Graph (EI Graph). To write data to a GraphQL database we use _mutations_ in the similar way to a `PUT`, `DELETE`, or `PATCH` request in a REST API.
 
 <figure markdown="span">
-     ![Mutations write to the EI Graph](src/mutations-dataset-diagram.png)
+     ![Mutations write to the EI Graph](src/mutation-dataset-diagram.png)
      <figcaption>Mutations write to the EI Graph</figcaption>
 </figure>
 
-A GraphQL mutation contains the following:
+For example, a GraphQL mutation for creating a battery looks like the following:
 
-<div class='grid' markdown>
+```json title="GraphQL mutation structure"
+mutation CreateBattery($datasetId: ID!) {
+  createBattery(datasetId: $datasetId) {
+    variants {
+      
+    }
+    id
+    externalIds {
+      
+    }
+    weight
+    supplier {
+      
+    }
+    model {
+      
+    }
+    modules {
+      
+    }
+    ratedCapacity
+    createdAt
+    updatedAt
+    dimensions {
+      
+    }
+    revision
+    previous {
+      
+    }
+    next {
+      
+    }
+    latest {
+      
+    }
+    draft {
+      
+    }
+    history {
+      
+    }
+    esfChangeset {
+      
+    }
+  }
+}
+```
 
-!!! example "GraphQL mutation structure"
-
-     ```json 
-     query Battery($batteryId: ID!, $changesetId: ID) { // (1)
-          battery(id: $batteryId, changesetId: $changesetId) { // (2)  
-               createdAt // (3)
-          }
-     }
-     ```
-
-     1. The exclamation point in `ID!` tells us that this field is required for this query. The changeSetID is optional.
-     2. The $ symbol is used to insert variables, such as the `batteryId` in this case.
-     3. This query will return the value of the field `createdAt`.
-
-!!! example "GraphQL mutation variables"
-
-     ``` graphql
-     {
-          "batteryId": null,
-          "changesetId": null
-     }
-     ```
-</div>
+The values for each of the fields is provided via the **Variables** window in EIN Explorer.
 
 ## Finding the mutation
 
@@ -56,7 +81,7 @@ Like with [queries](../module-2/querying-spread.md) you can use the Schema Defin
 
      ![Schema introspection failure fix](../module-2/src/schema-introspection-fail.png)
 
-For example, if you wanted to change the dimensions of a battery you may search the reference for something like `updateBattery.dimensions` and see what the search returns. Using search terms that describe the action (`update` or `create`), the object that that action is applied to (`battery`), and the field that you want to change (`dimensions`) helps to narrow down the list of possible mutations. Remember to select the **Mutations** tabs (as highlighted in the red box) to get results for mutations.
+If you wanted to change the dimensions of a battery you may search the reference for something like `updateBattery.dimensions` and see what the search returns. Using search terms that describe the action (`update`, `delete`, or `create`), the object that that action is applied to (`battery`), and the field that you want to change (`dimensions`) helps to narrow down the list of possible mutations. Remember to select the **Mutations** tabs (as highlighted in the red box) to get results for mutations.
 
 <figure markdown="span">
      ![Searching for mutation to update the dimensions of a battery](src/search-update-battery.png)
@@ -71,3 +96,5 @@ Like with queries, you can click through to the GraphQL Explorer to test the end
      ![Mutation values in the Variables window](src/add-mutation-values.png)
      <figcaption>Mutation values in the Variables window</figcaption>
 </figure>
+
+Remember that any fields that have an exclamation point in the SDL reference are required fields, so you need to supply a value for them when performing a mutation.
