@@ -26,6 +26,8 @@ First, let's get familiar with the layout of the Studio application.
 
 {{ studio.buildUI }}
 
+For more on styling your application, see [How to style your application](#).
+
 ??? abstract "Task 1: Create a UI"
 
      Create a simple user interface with just an [input box](#) and a [submit button](#).

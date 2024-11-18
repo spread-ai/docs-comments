@@ -71,6 +71,7 @@ Data can also be synced between widgets. We have hidden the **length** column bu
 </figure>
 
 Select the text widget and in the **Text** input field in the settings on the left-hand side enter: `{{ '{{Table1.selectedRow.length }}' }}` (1). This sets the value of the text field to the selected row in `Table1` and `length` column value of that row.
+{ .annotate }
 
 <figure markdown="span">
      ![Set the value of the text field](src/set-text-value.png)
