@@ -130,3 +130,7 @@ query Dimensions($batteryId: ID!) {
   }
 }
 ```
+
+??? abstract "Task 1: Create a UI"
+
+     Run a query in EIN Explorer to find the 

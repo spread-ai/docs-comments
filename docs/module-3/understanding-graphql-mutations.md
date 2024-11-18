@@ -102,3 +102,11 @@ Like with queries, you can click through to the GraphQL Explorer to test the end
 Remember that any fields that have an exclamation point in the SDL reference are required fields, so you need to supply a value for them when performing a mutation.
 
 For more on using the EIN Explorer, see [](../module-2/querying-spread.md#exploring-the-endpoint-field).
+
+<div class='grid cards' markdown>
+
+* :material-list-status:{ .lg .middle } **Quiz**
+
+    ---
+
+</div>
