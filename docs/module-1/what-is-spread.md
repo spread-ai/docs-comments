@@ -6,15 +6,9 @@ hide:
      - toc
 ---
 
-<style>
-     .md-content img {
-          border: none;
-     }
-</style>
-
 SPREAD is a platform that provides a suite of tools for data analysis, visualization, and collaboration. The platform you work with product data more efficiently and effectively.
 
-Some of the key features of SPREAD include:
+The key features of SPREAD include:
 
 * **Data import and integration:** You can import data from various sources, including spreadsheets, databases, and cloud storage services.
 * **Data visualization:** SPREAD provides visualization tools, including charts, tables, and maps.
@@ -26,7 +20,7 @@ Some of the key features of SPREAD include:
 	<figcaption>The SPREAD Studio</figcaption>
 </figure>
 
-In this course, we will learn how to ingest data, display data using SPREAD Studio, and also write data. We will be using resources from this [repository](), so please download the files that you will need from there. To ask questions about the content, leave a comment in the section below. In both cases, you will need a GitHub account. To sign up for an account, go to [GitHub](https://github.com).
+In this course, we will learn how to ingest data, display data using SPREAD Studio, and also write data. To ask questions about the content, leave a comment in the section below. In both cases, you will need a GitHub account. To sign up for an account, go to [GitHub](https://github.com).
 
 ## Helpful tips
 
@@ -46,6 +40,6 @@ In this course, we will learn how to ingest data, display data using SPREAD Stud
 
     ---
 
-    To ask a question, leave a comment in the comments section of the relevant page. Before asking a question, we kindly ask that you search the comments to see if your questions has already been answered.
+    To ask a question, leave a comment in the comments section of the relevant page. Before asking a question, we kindly ask that you search the comments to see if your questions is already answered.
 
 </div>
