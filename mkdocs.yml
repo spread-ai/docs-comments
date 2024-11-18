@@ -10,6 +10,6 @@ nav:
             - 2.1 Understanding the SPREAD information architecture: module-2/understanding-spread-information-architecture.md
             - 2.2 Querying SPREAD in Studio: module-2/querying-spread.md
             - 2.3 Creating a display application: module-2/creating-a-display-application.md
-     - Module 3:
-            - 3.1 Understanding GraphQL mutations: module-3/understanding-graphql-mutations.md
-            - 3.2 Creating an authoring application: module-3/creating-an-authoring-app.md
+     # - Module 3:
+     #        - 3.1 Understanding GraphQL mutations: module-3/understanding-graphql-mutations.md
+     #        - 3.2 Creating an authoring application: module-3/creating-an-authoring-app.md
