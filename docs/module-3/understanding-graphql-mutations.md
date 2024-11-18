@@ -12,7 +12,7 @@ In [Module 2](../module-2/querying-spread.md#finding-the-query) we covered findi
      <figcaption>Mutations write to the EI Graph</figcaption>
 </figure>
 
-The important thing to note with muatations is that changes that are not published only apply to changesets, cahnages that are published apply to datasets as a whole. Published changes can be fetched with queries to the dataset, but unpublished changes need a query that reads chabngesets to fetch. In a more advanced course, we will cover the difference - but in this course we will only apply changes to changesets.
+The important thing to note with mutations is that changes that aren't published only apply to changesets, changes that are published apply to datasets as a whole. Published changes can be fetched with queries to the dataset, but unpublished changes need a query that reads changesets to fetch. In a more advanced course, we will cover the difference - but in this course we will only apply changes to changesets.
 
 For example, a GraphQL mutation for creating a battery looks like the following:
 
