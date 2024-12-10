@@ -25,3 +25,11 @@ Changesets are the versions of a dataset. Over time the data contained in a data
 To be able to create applications that use data from a specific dataset you need to either have `Owner` access - which allows you to read, write, and share a dataset - or have `reader` access assigned to you by the owner of the dataset.
 
 For more assigning access rights to datasets, see [Using Data Manager](#).
+
+<div class='grid cards' markdown>
+
+* :material-list-status:{ .lg .middle } **Quiz**
+
+    ---
+
+</div>

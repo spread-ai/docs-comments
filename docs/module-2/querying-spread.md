@@ -62,7 +62,7 @@ Knowing how to make query leads on to knowing where to find the query that gives
 
 Then select the **Schema** icon on the left-hand side to open the SDL reference.
 
-<figure markdown="span">
+<figure markdown="span" class="img-medium">
      ![The button to access the SDL reference](src/access-ein-sdl.png)
      <figcaption>The button to access the SDL reference</figcaption>
 </figure>
@@ -89,7 +89,7 @@ Selecting the object gives a deeper overview of the fields of the object, which 
 
 To further explore the `dimensions` field select the play icon on the right to open the GraphQL Explorer.
 
-<figure markdown="span">
+<figure markdown="span" class="img-medium">
      ![Explore the `dimensions` field](src/explore-dimensions.png)
      <figcaption>Explore the `dimensions` field</figcaption>
 </figure>
@@ -133,4 +133,4 @@ query Dimensions($batteryId: ID!) {
 
 ??? abstract "Task 1: Create a UI"
 
-     Run a query in EIN Explorer to find the 
+     Run a query in EIN Explorer to find the model of a battery and its supplier. 
