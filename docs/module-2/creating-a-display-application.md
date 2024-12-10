@@ -40,8 +40,8 @@ Select the `battery` object in the **Explorer** window and select the `height`, 
 
 Swith to the **Settings** tab and set **Run API on page load**.
 
-<figure markdown="span" class="img-medium">
-     ![Run API on page load](src/api-page-load.png)
+<figure markdown="span">
+     ![Run API on page load](src/api-page-load.png){ .img-medium }
      <figcaption>Run API on page load</figcaption>
 </figure>
 
@@ -56,8 +56,8 @@ Switch back to the **UI** tab on the top-left and select the table widget that y
 
 The fields returned by the query are default mapped as columns and you can edit them in the section below **Table data**. For example, let's hide the **length** column from the table by selecting the **👁️** icon in the **Table** section. You can also edit each column by selecting the **⛭** icon.
 
-<figure markdown="span" class="img-medium">
-     ![Editing columns in a table](src/column-settings.png)
+<figure markdown="span">
+     ![Editing columns in a table](src/column-settings.png){ .img-medium }
      <figcaption>Editing columns in a table</figcaption>
 </figure>
 
@@ -73,8 +73,8 @@ Data can also be synced between widgets. We have hidden the **length** column bu
 Select the text widget and in the **Text** input field in the settings on the left-hand side enter: `{{ '{{Table1.selectedRow.length }}' }}` (1). This sets the value of the text field to the selected row in `Table1` and `length` column value of that row.
 { .annotate }
 
-<figure markdown="span" class="img-medium">
-     ![Set the value of the text field](src/set-text-value.png)
+<figure markdown="span">
+     ![Set the value of the text field](src/set-text-value.png){ .img-medium }
      <figcaption>Set the value of the text field</figcaption>
 </figure>
 
@@ -84,8 +84,8 @@ Similarly, you can set the value of fields in other widgets to sync with each ot
 
 When the application is complete, select the **Publish** button in the top-right corner to make it available from the SPREAD Platform launcher page. To share the application with other users select the **Share** button (next to the **Publish** button) and add users who can either have **Developer** rights to edit the application or **Viewer** rights to just view it.
 
-<figure markdown="span" class="img-medium">
-     ![Sharing your application](src/share-application.png)
+<figure markdown="span">
+     ![Sharing your application](src/share-application.png){ .img-medium }
      <figcaption>Sharing your application</figcaption>
 </figure>
 

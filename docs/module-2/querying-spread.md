@@ -62,8 +62,8 @@ Knowing how to make query leads on to knowing where to find the query that gives
 
 Then select the **Schema** icon on the left-hand side to open the SDL reference.
 
-<figure markdown="span" class="img-medium">
-     ![The button to access the SDL reference](src/access-ein-sdl.png)
+<figure markdown="span">
+     ![The button to access the SDL reference](src/access-ein-sdl.png){ .img-medium }
      <figcaption>The button to access the SDL reference</figcaption>
 </figure>
 
@@ -89,8 +89,8 @@ Selecting the object gives a deeper overview of the fields of the object, which 
 
 To further explore the `dimensions` field select the play icon on the right to open the GraphQL Explorer.
 
-<figure markdown="span" class="img-medium">
-     ![Explore the `dimensions` field](src/explore-dimensions.png)
+<figure markdown="span">
+     ![Explore the `dimensions` field](src/explore-dimensions.png){ .img-medium }
      <figcaption>Explore the `dimensions` field</figcaption>
 </figure>
 
