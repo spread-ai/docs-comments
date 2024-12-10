@@ -14,17 +14,17 @@ To display data, we will be working in SPREAD Studio - which is a tool to create
 
 First, let's get familiar with the layout of the Studio application.
 
-{{ studio.navigatingStudio }}
+{{ snippets.navigatingStudio }}
 
 <figure markdown="span">
 	![Navigating the SPREAD Studio canvas]({{ config.site_url }}platform-tools/using-studio/src/navigating-spread-studio-canvas.png)
 	<figcaption>Navigating the SPREAD Studio canvas</figcaption>
 </figure>
-{{ studio.creatingApplications }}
+{{ snippets.creatingApplications }}
 
 ## Create a user interface
 
-{{ studio.buildUI }}
+{{ snippets.buildUI }}
 
 For more on styling your application, see [How to style your application](#).
 
@@ -34,14 +34,14 @@ For more on styling your application, see [How to style your application](#).
 
 ## Configure the settings
 
-{{ studio.configureAppSettings }}
+{{ snippets.configureAppSettings }}
 
 <figure markdown="span">
 	![Styling your Studio application]({{ config.site_url }}platform-tools/using-studio/src/styling-studio-applications.png)
 	<figcaption>Styling your Studio application</figcaption>
 </figure>
 
-{{ studio.configureAppTheme }}
+{{ snippets.configureAppTheme }}
 
 ??? abstract "Task 2: Configure your application"
 
@@ -51,7 +51,7 @@ For more on styling your application, see [How to style your application](#).
 
 ## Publish the application
 
-{{ studio.publishApp }}
+{{ snippets.publishApp }}
 
 ??? abstract "Task 3: Publish your application"
 
