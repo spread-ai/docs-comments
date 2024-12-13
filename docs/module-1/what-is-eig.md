@@ -32,6 +32,13 @@ With the EI Graph all of the information from all parts of the process are maint
 
 * :material-list-status:{ .lg .middle } **Quiz**
 
-    ---
+    <?quiz?>
+     question: Are you ready?
+     answer-correct: Yes!
+     answer: No!
+     answer: Maybe!
+     content:
+     <p>Provide some additional content</p>
+     <?/quiz?>
 
 </div>
