@@ -28,17 +28,15 @@ This creates problems when the vehicle they're working on needs to be put togeth
 
 With the EI Graph all of the information from all parts of the process are maintained in a structured way so that every team and engineer in the development process is working on same data source. Each team can then create applications to present the data in a way that's most useful for their area of work.
 
-<div class='grid cards' markdown>
+<div class='grid cards' >
 
-* :material-list-status:{ .lg .middle } **Quiz**
-
-    <?quiz?>
-     question: Are you ready?
-     answer-correct: Yes!
-     answer: No!
-     answer: Maybe!
-     content:
-     <p>Provide some additional content</p>
-     <?/quiz?>
+<?quiz?>
+question: Are you ready?
+answer-correct: Yes!
+answer: No!
+answer: Maybe!
+content:
+<p>Provide some additional content</p>
+ <?/quiz?>
 
 </div>
