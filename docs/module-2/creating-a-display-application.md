@@ -1,6 +1,6 @@
 ---
 title: Creating a display application
-description: Taking our previous lessons' knowledge and creating a Studio applicationn that displays data.
+description: Taking our previous lessons' knowledge and creating a Studio application that displays data.
 hide:
      - toc
 ---

@@ -20,6 +20,7 @@ First, let's get familiar with the layout of the Studio application.
 	![Navigating the SPREAD Studio canvas]({{ config.site_url }}platform-tools/using-studio/src/navigating-spread-studio-canvas.png)
 	<figcaption>Navigating the SPREAD Studio canvas</figcaption>
 </figure>
+
 {{ snippets.creatingApplications }}
 
 ## Create a user interface
