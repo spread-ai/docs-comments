@@ -26,14 +26,14 @@ In this course, we will learn how to ingest data, display data using SPREAD Stud
 
 === "Quizzes"
 
-     <?quiz?>
-     question: Are you ready?
-     answer-correct: Yes!
-     answer: No!
-     answer: Maybe!
-     content:
-     <p>Provide some additional content</p>
-     <?/quiz?>
+<?quiz?>
+question: Are you ready?
+answer-correct: Yes!
+answer: No!
+answer: Maybe!
+content:
+<p>Provide some additional content</p>
+<?/quiz?>
 
 === "Inline definitions"
 
