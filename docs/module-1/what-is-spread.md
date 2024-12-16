@@ -30,6 +30,8 @@ In this course, we will learn how to ingest data, display data using SPREAD Stud
 
     ---
 
+    <div class="quiz"><h3>Are you ready?</h3><form><fieldset><div><input type="radio" name="answer" value="0" id="quiz-0-0" correct=""><label for="quiz-0-0">Yes!</label></div><div><input type="radio" name="answer" value="1" id="quiz-0-1"><label for="quiz-0-1">No!</label></div><div><input type="radio" name="answer" value="2" id="quiz-0-2"><label for="quiz-0-2">Maybe!</label></div></fieldset><button type="submit" class="quiz-button">Submit</button></form><section class="content hidden"><p>Provide some additional content</p></section></div>
+
 * :material-book:{ .lg .middle } **Inline definitions**
 
     ---
