@@ -43,14 +43,7 @@ content:
 </li>
 
 <li>
-<?quiz?>
-question: Are you ready?
-answer-correct: Yes!
-answer: No!
-answer: Maybe!
-content:
-<p>Provide some additional content</p>
-<?/quiz?>
+
 </li>
 </ul>
 <div>

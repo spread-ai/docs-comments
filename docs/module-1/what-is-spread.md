@@ -24,24 +24,21 @@ In this course, we will learn how to ingest data, display data using SPREAD Stud
 
 ## Helpful tips
 
-<div class='grid cards' markdown>
+=== "Quizzes"
 
-* :material-list-status:{ .lg .middle } **Quizzes**
+     <?quiz?>
+     question: Are you ready?
+     answer-correct: Yes!
+     answer: No!
+     answer: Maybe!
+     content:
+     <p>Provide some additional content</p>
+     <?/quiz?>
 
-    ---
-
-    <div class="quiz"><h3>Are you ready?</h3><form><fieldset><div><input type="radio" name="answer" value="0" id="quiz-0-0" correct=""><label for="quiz-0-0">Yes!</label></div><div><input type="radio" name="answer" value="1" id="quiz-0-1"><label for="quiz-0-1">No!</label></div><div><input type="radio" name="answer" value="2" id="quiz-0-2"><label for="quiz-0-2">Maybe!</label></div></fieldset><button type="submit" class="quiz-button">Submit</button></form><section class="content hidden"><p>Provide some additional content</p></section></div>
-
-* :material-book:{ .lg .middle } **Inline definitions**
-
-    ---
+=== "Inline definitions"
 
     To see the meaning of SPREAD and industry-specific terminology hover over words with dotted lines and a modal with the definition will appear. For example, see the definition of Engineering Intelligence Graph.
 
-* :material-comment-question:{ .lg .middle } **Q&A**
-
-    ---
+=== "Q&A"
 
     To ask a question, leave a comment in the comments section of the relevant page. Before asking a question, we kindly ask that you search the comments to see if your questions is already answered.
-
-</div>
