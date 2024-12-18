@@ -31,7 +31,7 @@ question: What is the difference between changesets and datasets?
 answer: Changesets are collections of data and datasets and the data that you import in the EI Graph
 answer: Changesets are immutable and datasets change with every addition to the data
 answer: Datasets are created every time you add or remove data, changesets need to be defined as a save point 
-answer-correct: Datasets are versions of changesets
+answer-correct: Changesets are versions of datasets
 content:
 <p></p>
 <?/quiz?>
