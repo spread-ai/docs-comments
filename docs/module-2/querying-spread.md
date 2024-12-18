@@ -5,11 +5,11 @@ hide:
      - toc
 ---
 
-To get data from the Engineering Intelligence Graph we need to query the GraphQL database. GraphQL is a graph-based database that allows us to fetch only the data we need, unlike with REST APIs. In this lesson we will learn how to make a query from within SPREAD Studio and use the results in a [table](#) widget.
+To get data from the Engineering Intelligence Graph (EI Graph) we need to query the GraphQL database. GraphQL is a graph-based database that allows us to fetch only the data we need, unlike with REST APIs. In this lesson we will learn how to make a query from within SPREAD Studio and use the results in a [table](#) widget.
 
 ## GraphQL queries
 
-To fetch data from a GraphQL database we use _queries_ in the similar way to a `GET` request in a REST API. The key difference being that the response can be defined, so that we get only the data need. A REST API request might return a JSON object that needs to be parsed afterwards to get the required data.
+To fetch data from a GraphQL database we use _queries_ in the similar way to a `GET` request in a REST API. The key difference being that the response can be defined, so that we get only the data we need. A REST API request might return a JSON object that needs to be parsed afterwards to get the required data.
 
 A GraphQL query contains the following:
 
@@ -17,24 +17,75 @@ A GraphQL query contains the following:
 
 !!! example "GraphQL query structure"
 
+     This request fetches the names (in English) of the feature variants.
+
      ```json 
-     query Battery($batteryId: ID!, $changesetId: ID) { // (1)
-          battery(id: $batteryId, changesetId: $changesetId) { // (2)  
-               createdAt // (3)
+     query {
+          featureVariants(datasetId: "EsfDatasets/de892a79-efab-4176-a282-e2c117cd1e23") { // (1)
+               name {
+                    en
+               }
           }
      }
      ```
 
-     1. The exclamation point in `ID!` tells us that this field is required for this query. The changeSetID is optional.
-     2. The $ symbol is used to insert variables, such as the `batteryId` in this case.
-     3. This query will return the value of the field `createdAt`.
+     1. The `dataSetId` defines the dataset that this data is pulled from.
+     
+!!!success "GraphQL output"
 
-!!! example "GraphQL query variables"
+     The output returned by the GraphQL.
 
-     ``` graphql
+     ```json
      {
-          "batteryId": xxxxxxxxxx,
-          "changesetId": xxxxxxxxxxxx
+          "data": {
+               "featureVariants": [
+                         {
+                              "name": {
+                                   "en": "Adaptive Cruise Control"
+                              }
+                         },
+                         {
+                              "name": {
+                                   "en": "Rear Parking Sensors"
+                              }
+                         },
+                         {
+                              "name": {
+                                   "en": "Air Conditioning"
+                              }
+                         },
+                         {
+                              "name": {
+                                   "en": "Airbags"
+                              }
+                         },
+                         {
+                              "name": {
+                                   "en": "Infotainment System"
+                              }
+                         },
+                         {
+                              "name": {
+                                   "en": "Lane Keeping Assistance"
+                              }
+                         },
+                         {
+                              "name": {
+                                   "en": "Electronic Stability Control"
+                              }
+                         },
+                         {
+                              "name": {
+                                   "en": "Automatic Emergency Braking"
+                              }
+                         },
+                              {
+                              "name": {
+                                   "en": "Blind Spot Monitoring"
+                              }
+                         }
+                    ]
+               }
      }
      ```
 </div>
@@ -43,11 +94,7 @@ A GraphQL query contains the following:
 
 Knowing how to make query leads on to knowing where to find the query that gives you the information that you want. GraphQL provides a self-documenting function that produces the Schema Definition Language (SDL) reference, which is similar to REST API references. To view the SDL reference select the **EIN** tile from the SPREAD Launcher.
 
----
-
 {{ snippets.demoInstanceDetails }}
-
----
 
 ??? failure "Schema introspection failure"
 
@@ -59,7 +106,6 @@ Knowing how to make query leads on to knowing where to find the query that gives
      ![The EIN tile in the SPREAD Platform launcher](src/ein-tile-spread.png)
      <figcaption>The EIN tile in the SPREAD Platform launcher</figcaption>
 </figure>
-
 Then select the **Schema** icon on the left-hand side to open the SDL reference.
 
 <figure markdown="span">
@@ -67,69 +113,141 @@ Then select the **Schema** icon on the left-hand side to open the SDL reference.
      <figcaption>The button to access the SDL reference</figcaption>
 </figure>
 
-For example, to search for an endpoint that returns the dimensions of a battery, we would first bring up the search interface by pressing the **⌘ / CTRL** and **K** keys at the same time or by clicking the button at the bottom of the reference sidebar. Then enter the search term: in this case `battery`.
+For example, to search for an endpoint that returns the when feature variants were created and a description, we would first bring up the search interface by pressing the **⌘** (for macOS) or **CTRL** (for Linux and Windows) and **K** keys at the same time or by clicking the button at the bottom of the reference sidebar.
 
 <figure markdown="span">
      ![The search button in the SDL reference is highlighted in the red box](src/reference-search.png)
      <figcaption>The search button in the SDL reference is highlighted in the red box</figcaption>
 </figure>
 
-The results list returns an object named `Battery` as the first result, with the description:
-
-     _Represents a high voltage battery, contains generic information about the battery model._
-
-Selecting the object gives a deeper overview of the fields of the object, which include the field `dimensions`.
+<?quiz?>
+question: Which search term will return the right results for what we're looking for?
+answer-correct: `query.featureVariants`
+answer: `featureVariant`
+answer: `featureVariants query`
+answer: `queryfeatureVriants`
+content:
+<p>The <code>feattureVariants</code> query object contains an array list of <code>featureVariant</code> objects.</p>
+<?/quiz?>
 
 <figure markdown="span">
-     ![Documentation about the `battery` endpoint](src/battery-endpoint.png)
-     <figcaption>Documentation about the `battery` endpoint</figcaption>
+     ![Documentation about the `featureVariants` endpoint](src/featurevariants-endpoint.png)
+     <figcaption>Documentation about the `featureVariants` endpoint</figcaption>
+</figure>
+
+The GraphQL syntax - `[featureVariant]!` - tells us that the `featureVariants` object contains an array list of `featureVariant` objects. Furthermore, the `featureVariant` objects is has the following description:
+
+_Feature variant describes a specific realization of a feature. It's one of possible many ways of implementing a feature, considering different capabilities of the hardware components, market requirements, etc._
+
+Selecting the `featureVariant` object gives more detail on the fields of the object.
+
+<figure markdown="span">
+     ![Documentation about the `featureVariant` endpoint](src/featurevariant-endpoint.png)
+     <figcaption>Documentation about the `featureVariant` endpoint</figcaption>
 </figure>
 
 ## Exploring the endpoint field
 
-To further explore the `dimensions` field select the play icon on the right to open the GraphQL Explorer.
+To further explore the `createdAt` field select the play icon on the right to open the GraphQL Explorer.
 
 <figure markdown="span">
-     ![Explore the `dimensions` field](src/explore-dimensions.png){ .img-medium }
-     <figcaption>Explore the `dimensions` field</figcaption>
+     ![Explore the `createdAt` field](src/explore-createdat.png){ .img-medium }
+     <figcaption>Explore the `createdAt` field</figcaption>
 </figure>
 
-The `dimensions` contains further fields within it: `height`, `length`, and `width`. Each returning float numbers. To run a test call on the endpoint add each of the fields to the query by selecting the **+** icon next to each of them and selecting the **▶️ Dimensions** button at the top of the **Operation** window.
+To run a test call select the **▶️ Run** button at the top of the **Operation** window.
 
 <figure markdown="span">
-     ![Running the API call on `dimensions`](src/dimensions-run.png)
-     <figcaption>Running the API call on `dimensions`</figcaption>
+     ![Running the API call](src/createdat-run.png)
+     <figcaption>Running the API call</figcaption>
 </figure>
 
-The API call returns an HTTP 400 error in the response window on the right-hand side:
+<br>
+[Open the GraphQL request](https://app.spread.ai/ein?explorerURLState=N4IgJg9gxgrgtgUwHYBcQC4QEcYIE4CeAFACQBmCAhijHggGqV4CWlqAkmOgATsAiAQgCU3YAB0k3KdJkVqtBk1aoAzkTDVKKhCk48xIAKIqyfTdpQqA9GAQAOAJwAmSgHYHAWgRlKAIw8ALACMrgBsHpROdk5eTlBBIVBgQQhOAMwGIuKSMrm5SJSIohJ5paXIJWV5AL6VZVB01AhgAIIodaW1OV1dIAA0IABuSn4ANggqGCDZUgZyNHSMLGy6YAY8SDCjoxLV-SAADhAqKGSjzADmABYoAPIH%2BNTMEEgAyg3MB2iYINVAA){ .md-button .md-button--primary }
 
-<figure markdown="span">
-     ![An HTTP 400 error](src/api-call-error.png)
-     <figcaption>An HTTP 400 error</figcaption>
-</figure>
-
-This is because we've not provided a `batteryId` value for the call. This value is a required field, as shown by the `!` in the **OPeration** window. Enter the following JSON into the **Variable** window at the bottom:
+The API call returns the output as displayed below:
 
 ```json
 {
-  "batteryId": xxxxxxxx
+  "data": {
+    "featureVariants": [
+      {
+        "name": {
+          "en": "Adaptive Cruise Control"
+        },
+        "createdAt": "2024-12-13T16:06:58.926Z"
+      },
+      {
+        "name": {
+          "en": "Rear Parking Sensors"
+        },
+        "createdAt": "2024-12-13T16:06:58.926Z"
+      },
+      {
+        "name": {
+          "en": "Air Conditioning"
+        },
+        "createdAt": "2024-12-13T16:06:58.926Z"
+      },
+      {
+        "name": {
+          "en": "Airbags"
+        },
+        "createdAt": "2024-12-13T16:06:58.926Z"
+      },
+      {
+        "name": {
+          "en": "Infotainment System"
+        },
+        "createdAt": "2024-12-13T16:06:58.926Z"
+      },
+      {
+        "name": {
+          "en": "Lane Keeping Assistance"
+        },
+        "createdAt": "2024-12-13T16:06:58.926Z"
+      },
+      {
+        "name": {
+          "en": "Electronic Stability Control"
+        },
+        "createdAt": "2024-12-13T16:06:58.926Z"
+      },
+      {
+        "name": {
+          "en": "Automatic Emergency Braking"
+        },
+        "createdAt": "2024-12-13T16:06:58.926Z"
+      },
+      {
+        "name": {
+          "en": "Blind Spot Monitoring"
+        },
+        "createdAt": "2024-12-13T16:06:58.926Z"
+      }
+    ]
+  }
 }
+
 ```
 
-Running the call again should return a successful response and the data we want. Note that changing the response is defined by what we ask for in the **Operations** window. If we added the `createdAt` field to the query the reponse would have an additional field with that data.
+Running the call should return a successful response and the data we want. Note that changing the response is defined by what we ask for in the **Operations** window. If we added the `description` field to the query the reponse would have an additional field with that data. Note that the description has an `en` field within it to define the language of the response.
 
-```json title="Adding the createdAt field to the query"
-query Dimensions($batteryId: ID!) {
-  battery(id: $batteryId) {
-    dimensions {
-      height
-      length
-      width
-    }
-    createdAt 
+```json title="Adding the description field to the query"
+query($featureVariantId: ID!) {
+          featureVariants(datasetId: "EsfDatasets/de892a79-efab-4176-a282-e2c117cd1e23") {
+               name {
+                    en
+               }
+          createdAt
+          description {
+               en
+          }
+     }
   }
 }
 ```
+
 
 ??? abstract "Task 1: Create a UI"
 

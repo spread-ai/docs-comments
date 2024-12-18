@@ -22,23 +22,13 @@ The key features of SPREAD include:
 
 In this course, we will learn how to ingest data, display data using SPREAD Studio, and also write data. To ask questions about the content, leave a comment in the section below. In both cases, you will need a GitHub account. To sign up for an account, go to [GitHub](https://github.com).
 
-## Helpful tips
-
-=== "Quizzes"
-
 <?quiz?>
 question: Are you ready?
 answer-correct: Yes!
 answer: No!
 answer: Maybe!
-content:
-<p>Provide some additional content</p>
 <?/quiz?>
 
-=== "Inline definitions"
-
-    To see the meaning of SPREAD and industry-specific terminology hover over words with dotted lines and a modal with the definition will appear. For example, see the definition of Engineering Intelligence Graph.
-
-=== "Q&A"
+!!! question "Q&A"
 
     To ask a question, leave a comment in the comments section of the relevant page. Before asking a question, we kindly ask that you search the comments to see if your questions is already answered.
