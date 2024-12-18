@@ -103,7 +103,7 @@ content:
      <figcaption>Documentation about the `featureVariants` endpoint</figcaption>
 </figure>
 
-The GraphQL syntax - `[featureVariant]!` - tells us that the `featureVariants` object contains an array list of `featureVariant` objects. Furthermore, the `featureVariant` objects is has the following description:
+The GraphQL syntax - `[featureVariant]!` - tells us that the `featureVariants` object contains an array list of `featureVariant` objects. For more on reading the Schema Definition Language, see [Schema GraphQL basics](https://www.apollographql.com/docs/apollo-server/schema/schema). Furthermore, the `featureVariant` objects has the following description:
 
 _Feature variant describes a specific realization of a feature. It's one of possible many ways of implementing a feature, considering different capabilities of the hardware components, market requirements, etc._
 
@@ -130,9 +130,9 @@ To run a test call select the **▶️ Run** button at the top of the **Operatio
      <figcaption>Running the API call</figcaption>
 </figure>
 
+[Open the demo GraphQL request](https://app.spread.ai/ein?explorerURLState=N4IgJg9gxgrgtgUwHYBcQC4QEcYIE4CeAFACQBmCAhijHggGqV4CWlqAkmOgATsAiAQgCU3YAB0k3KdJkVqtBk1aoAzkTDVKKhCk48xIAKIqyfTdpQqA9GAQAOAJwAmSgHYHAWgRlKAIw8ALACMrgBsHpROdk5eTlBBIVBgQQhOAMwGIuKSMrm5SJSIohJ5paXIJWV5AL6VZVB01AhgAIIodaW1OV1dIAA0IABuSn4ANggqGCDZUgZyNHSMLGy6YAY8SDCjoxLV-SAADhAqKGSjzADmABYoAPIH%2BNTMEEgAyg3MB2iYINVAA){ .md-button .md-button--primary }
 <br>
-[Open the GraphQL request](https://app.spread.ai/ein?explorerURLState=N4IgJg9gxgrgtgUwHYBcQC4QEcYIE4CeAFACQBmCAhijHggGqV4CWlqAkmOgATsAiAQgCU3YAB0k3KdJkVqtBk1aoAzkTDVKKhCk48xIAKIqyfTdpQqA9GAQAOAJwAmSgHYHAWgRlKAIw8ALACMrgBsHpROdk5eTlBBIVBgQQhOAMwGIuKSMrm5SJSIohJ5paXIJWV5AL6VZVB01AhgAIIodaW1OV1dIAA0IABuSn4ANggqGCDZUgZyNHSMLGy6YAY8SDCjoxLV-SAADhAqKGSjzADmABYoAPIH%2BNTMEEgAyg3MB2iYINVAA){ .md-button .md-button--primary }
-
+<hr>
 The API call returns the output as displayed below:
 
 ```json
@@ -217,6 +217,6 @@ query($featureVariantId: ID!) {
 ```
 
 
-??? abstract "Task 1: Create a UI"
+!!! abstract "Task 1: Find a query"
 
      Run a query in EIN Explorer to find the model of a battery and its supplier. 

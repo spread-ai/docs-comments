@@ -31,9 +31,8 @@ With the EI Graph all of the information from all parts of the process are maint
 
 <?quiz?>
 question: What is the schema that structures and contextualizes data called?
-answer-correct: Engineering Intelligence Graph
 answer: Engineering Cloud
-answer: Engineering Intelligence Graph
+answer-correct: Engineering Intelligence Graph
 answer: Engineering Intelligence Network
 answer: Connectivity Analyzer
 answer: SPREAD Technical Network

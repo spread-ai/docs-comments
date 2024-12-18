@@ -29,7 +29,7 @@ First, let's get familiar with the layout of the Studio application.
 
 For more on styling your application, see [How to style your application](#).
 
-??? abstract "Task 1: Create a UI"
+!!! abstract "Task 1: Create a UI"
 
      Create a simple user interface with just an [input box](#) and a [submit button](#).
 
@@ -44,7 +44,7 @@ For more on styling your application, see [How to style your application](#).
 
 {{ snippets.configureAppTheme }}
 
-??? abstract "Task 2: Configure your application"
+!!! abstract "Task 2: Configure your application"
 
      1. Set the name of your application to "Acme Inc widgerator"
      2. Set the app logo to this image
@@ -54,6 +54,6 @@ For more on styling your application, see [How to style your application](#).
 
 {{ snippets.publishApp }}
 
-??? abstract "Task 3: Publish your application"
+!!! abstract "Task 3: Publish your application"
 
      Publish the application that you have created and then go to the SPREAD Launcher to open it.
