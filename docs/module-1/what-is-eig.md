@@ -29,23 +29,15 @@ This creates problems when the vehicle they're working on needs to be put togeth
 
 With the EI Graph all of the information from all parts of the process are maintained in a structured way so that every team and engineer in the development process is working on same data source. Each team can then create applications to present the data in a way that's most useful for their area of work.
 
-<div class="grid cards">
-<ul>
-<li>
 <?quiz?>
-question: Are you ready?
-answer-correct: Yes!
-answer: No!
-answer: Maybe!
+question: What is the schema that structures data within Spread called?
+answer-correct: Engineering Intelligence Network
+answer: Engineering Cloud
+answer: Engineering Intelligence Graph
+answer: Engineering Intelligence Network
+answer: Connectivity Analyzer
+answer: SPREAD Technical Network
+answer: Product Analyzer
 content:
-<p>Provide some additional content</p>
+<p></p>
 <?/quiz?>
-</li>
-
-<li>
-
-</li>
-</ul>
-<div>
-
-
