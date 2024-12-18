@@ -70,6 +70,8 @@ Knowing how to make query leads on to knowing where to find the query that gives
      ![The EIN tile in the SPREAD Platform launcher](src/ein-tile-spread.png)
      <figcaption>The EIN tile in the SPREAD Platform launcher</figcaption>
 </figure>
+
+
 Then select the **Schema** icon on the left-hand side to open the SDL reference.
 
 <figure markdown="span">
@@ -79,20 +81,22 @@ Then select the **Schema** icon on the left-hand side to open the SDL reference.
 
 For example, to search for an endpoint that returns the when feature variants were created and a description, we would first bring up the search interface by pressing the **⌘** (for macOS) or **CTRL** (for Linux and Windows) and **K** keys at the same time or by clicking the button at the bottom of the reference sidebar.
 
+<figure markdown="span">
+     ![The search button in the SDL reference is highlighted in the red box](src/reference-search.png){ .img-medium }
+     <figcaption>The search button in the SDL reference is highlighted in the red box</figcaption>
+</figure>
+
 <?quiz?>
 question: Which search term will return documentation for a query on featureVariants?
 answer-correct: query.featureVariants
 answer: featureVariant
 answer: featureVariants query
-answer: query.featureVariants
+answer: query.featureVariant
 content:
-<p>The <code>featuureVariants</code> query object contains an array list of <code>featureVariant</code> objects.</p>
+<p>The <code>featureVariants</code> query object contains an array list of <code>featureVariant</code> objects.</p>
 <?/quiz?>
 
-<figure markdown="span">
-     ![The search button in the SDL reference is highlighted in the red box](src/reference-search.png)
-     <figcaption>The search button in the SDL reference is highlighted in the red box</figcaption>
-</figure>
+### Reading the SDL
 
 <figure markdown="span">
      ![Documentation about the `featureVariants` endpoint](src/featurevariants-endpoint.png){ .img-medium }
