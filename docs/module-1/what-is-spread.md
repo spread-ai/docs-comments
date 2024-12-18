@@ -27,6 +27,8 @@ question: Are you ready?
 answer-correct: Yes!
 answer: No!
 answer: Maybe!
+content:
+<p></p>
 <?/quiz?>
 
 !!! question "Q&A"
