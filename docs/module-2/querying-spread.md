@@ -79,20 +79,20 @@ Then select the **Schema** icon on the left-hand side to open the SDL reference.
 
 For example, to search for an endpoint that returns the when feature variants were created and a description, we would first bring up the search interface by pressing the **⌘** (for macOS) or **CTRL** (for Linux and Windows) and **K** keys at the same time or by clicking the button at the bottom of the reference sidebar.
 
+<?quiz?>
+question: Which search term will return documentation for a query on featureVariants?
+answer-correct: query.featureVariants
+answer: featureVariant
+answer: featureVariants query
+answer: query.featureVariants
+content:
+<p>The <code>featuureVariants</code> query object contains an array list of <code>featureVariant</code> objects.</p>
+<?/quiz?>
+
 <figure markdown="span">
      ![The search button in the SDL reference is highlighted in the red box](src/reference-search.png)
      <figcaption>The search button in the SDL reference is highlighted in the red box</figcaption>
 </figure>
-
-<?quiz?>
-question: Which search term will return the right results for what we're looking for?
-answer-correct: `query.featureVariants`
-answer: `featureVariant`
-answer: `featureVariants query`
-answer: `queryfeatureVriants`
-content:
-<p>The <code>feattureVariants</code> query object contains an array list of <code>featureVariant</code> objects.</p>
-<?/quiz?>
 
 <figure markdown="span">
      ![Documentation about the `featureVariants` endpoint](src/featurevariants-endpoint.png){ .img-medium }
