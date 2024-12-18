@@ -49,43 +49,7 @@ A GraphQL query contains the following:
                                    "en": "Rear Parking Sensors"
                               }
                          },
-                         {
-                              "name": {
-                                   "en": "Air Conditioning"
-                              }
-                         },
-                         {
-                              "name": {
-                                   "en": "Airbags"
-                              }
-                         },
-                         {
-                              "name": {
-                                   "en": "Infotainment System"
-                              }
-                         },
-                         {
-                              "name": {
-                                   "en": "Lane Keeping Assistance"
-                              }
-                         },
-                         {
-                              "name": {
-                                   "en": "Electronic Stability Control"
-                              }
-                         },
-                         {
-                              "name": {
-                                   "en": "Automatic Emergency Braking"
-                              }
-                         },
-                              {
-                              "name": {
-                                   "en": "Blind Spot Monitoring"
-                              }
-                         }
-                    ]
-               }
+                         ...
      }
      ```
 </div>
@@ -131,7 +95,7 @@ content:
 <?/quiz?>
 
 <figure markdown="span">
-     ![Documentation about the `featureVariants` endpoint](src/featurevariants-endpoint.png)
+     ![Documentation about the `featureVariants` endpoint](src/featurevariants-endpoint.png){ .img-medium }
      <figcaption>Documentation about the `featureVariants` endpoint</figcaption>
 </figure>
 
@@ -142,7 +106,7 @@ _Feature variant describes a specific realization of a feature. It's one of poss
 Selecting the `featureVariant` object gives more detail on the fields of the object.
 
 <figure markdown="span">
-     ![Documentation about the `featureVariant` endpoint](src/featurevariant-endpoint.png)
+     ![Documentation about the `featureVariant` endpoint](src/featurevariant-endpoint.png){ .img-medium }
      <figcaption>Documentation about the `featureVariant` endpoint</figcaption>
 </figure>
 

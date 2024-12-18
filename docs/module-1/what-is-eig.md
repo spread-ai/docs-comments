@@ -30,8 +30,8 @@ This creates problems when the vehicle they're working on needs to be put togeth
 With the EI Graph all of the information from all parts of the process are maintained in a structured way so that every team and engineer in the development process is working on same data source. Each team can then create applications to present the data in a way that's most useful for their area of work.
 
 <?quiz?>
-question: What is the schema that structures data within Spread called?
-answer-correct: Engineering Intelligence Network
+question: What is the schema that structures and contextualizes data called?
+answer-correct: Engineering Intelligence Graph
 answer: Engineering Cloud
 answer: Engineering Intelligence Graph
 answer: Engineering Intelligence Network
@@ -39,5 +39,5 @@ answer: Connectivity Analyzer
 answer: SPREAD Technical Network
 answer: Product Analyzer
 content:
-<p></p>
+<p>The Engineering Intelligence Graph was previously referred to as the Engineering Intelligence Network. This terminology has changed, but you need to be aware that in some places you will see the term Engineering Intelligence Network.</p>
 <?/quiz?>
