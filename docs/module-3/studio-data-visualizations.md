@@ -7,7 +7,7 @@ hide:
 
 <style>
      img {
-          max-width: 250px;
+          max-height: 300px;
      }
 </style>
 
@@ -21,9 +21,9 @@ One of the benefits of structured data is that it can be rearranged, changed, an
 
      The Wiring Harness widget displays a 2D view of the wiring harness.
 
-     ![An image of the Wiring Harness widget]({{ config.site_url }}/platform-tools/using-studio/src/wiring-harness-widget-on-spread-studio.png)
+     ![An image of the Wiring Harness widget]({{ config.site_url }}platform-tools/using-studio/src/wiring-harness-widget-on-spread-studio.png)
 
-     [:octicons-arrow-right-24: More info]({{ config.site_url }}/platform-tools/using-studio/reference/widgets/spread-widgets.md#wiring-harness)
+     [:octicons-arrow-right-24: More info]({{ config.site_url }}platform-tools/using-studio/reference/widgets/spread-widgets.md#wiring-harness)
 
 - __Renderer widget__
 
@@ -31,9 +31,9 @@ One of the benefits of structured data is that it can be rearranged, changed, an
 
      The Renderer widget is a visual element that renders 3D objects.
 
-     ![An image of the Renderer widget]({{ config.site_url }}/platform-tools/using-studio/src/renderer-widget-on-spread-studio.png)
+     ![An image of the Renderer widget]({{ config.site_url }}platform-tools/using-studio/src/renderer-widget-on-spread-studio.png)
 
-     [:octicons-arrow-right-24: More info]({{ config.site_url }}/platform-tools/using-studio/reference/widgets/spread-widgets.md#renderer)
+     [:octicons-arrow-right-24: More info]({{ config.site_url }}platform-tools/using-studio/reference/widgets/spread-widgets.md#renderer)
 
 - __Chart widget__
 
@@ -43,7 +43,7 @@ One of the benefits of structured data is that it can be rearranged, changed, an
 
      ![An image of the Chart widget](src/chart-widget.png)
 
-     [:octicons-arrow-right-24: More info]({{ config.site_url }}/platform-tools/using-studio/reference/widgets/chart)
+     [:octicons-arrow-right-24: More info]({{ config.site_url }}platform-tools/using-studio/reference/widgets/chart)
 
 </div>
 
@@ -55,9 +55,9 @@ One of the benefits of structured data is that it can be rearranged, changed, an
 
      The Guided Event Chain widget displays the flow of guided events.
 
-     ![An image of the Guided Event Chain widget]({{ config.site_url }}/platform-tools/using-studio/src/guided-event-chain-widget-on-spread-studio.png)
+     ![An image of the Guided Event Chain widget]({{ config.site_url }}platform-tools/using-studio/src/guided-event-chain-widget-on-spread-studio.png)
 
-     [:octicons-arrow-right-24: More info]({{ config.site_url }}/platform-tools/using-studio/reference/widgets/spread-widgets.md#guided-event-chain)
+     [:octicons-arrow-right-24: More info]({{ config.site_url }}platform-tools/using-studio/reference/widgets/spread-widgets.md#guided-event-chain)
 
 - __Precedence Graph widget__
 
@@ -65,9 +65,9 @@ One of the benefits of structured data is that it can be rearranged, changed, an
 
      The Precedence Graph widget represents the precedence of items in a concurrent system.
 
-     ![An image of the Precedence Graph widget]({{ config.site_url }}/platform-tools/using-studio/src/precedence-graph-on-spread-studio.png)
+     ![An image of the Precedence Graph widget]({{ config.site_url }}platform-tools/using-studio/src/precedence-graph-on-spread-studio.png)
 
-     [:octicons-arrow-right-24: More info]({{ config.site_url }}/platform-tools/using-studio/reference/widgets/spread-widgets.md#precedence-graph)
+     [:octicons-arrow-right-24: More info]({{ config.site_url }}platform-tools/using-studio/reference/widgets/spread-widgets.md#precedence-graph)
 
 - __Topology viewer widget__
 
@@ -75,8 +75,8 @@ One of the benefits of structured data is that it can be rearranged, changed, an
 
      The Topology Viewer widget displays the graph with nodes and edges oriented as a tree. 
 
-     ![An image of the Topology viewer widget]({{ config.site_url }}/platform-tools/using-studio/src/topology-viewer-widget-on-spread-studio.png)
+     ![An image of the Topology viewer widget]({{ config.site_url }}platform-tools/using-studio/src/topology-viewer-widget-on-spread-studio.png)
 
-     [:octicons-arrow-right-24: More info]({{ config.site_url }}/platform-tools/using-studio/reference/widgets/spread-widgets.md#topology-viewer)
+     [:octicons-arrow-right-24: More info]({{ config.site_url }}platform-tools/using-studio/reference/widgets/spread-widgets.md#topology-viewer)
 
 </div>
