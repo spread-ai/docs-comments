@@ -9,6 +9,8 @@ Now that we know how to fetch data from the Engineering Intelligence Graph we ca
 
 {{ snippets.demoInstanceDetails }}
 
+To open Studio, select the **Studio** tile in the SPREAD Platform Launcher.
+
 ## Creating the UI
 
 Drag and drop a table widget onto the Studio canvas from the **UI** tab on the left-hand side. The highlighted options on the right-hand side is where we will add data from the query that we will bind to the table.
