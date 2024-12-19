@@ -24,7 +24,7 @@ One of the benefits of structured data is that it can be rearranged, changed, an
 
      ![An image of the Wiring Harness widget]({{ config.site_url }}platform-tools/using-studio/src/wiring-harness-widget-on-spread-studio.png)
 
-     [:octicons-arrow-right-24: More info]({{ config.site_url }}platform-tools/using-studio/reference/widgets/spread-widgets.md#wiring-harness)
+     [:octicons-arrow-right-24: More info]({{ config.site_url }}platform-tools/using-studio/reference/widgets/spread-widgets#wiring-harness)
 
 - __Renderer widget__
 
@@ -34,7 +34,7 @@ One of the benefits of structured data is that it can be rearranged, changed, an
 
      ![An image of the Renderer widget]({{ config.site_url }}platform-tools/using-studio/src/renderer-widget-on-spread-studio.png)
 
-     [:octicons-arrow-right-24: More info]({{ config.site_url }}platform-tools/using-studio/reference/widgets/spread-widgets.md#renderer)
+     [:octicons-arrow-right-24: More info]({{ config.site_url }}platform-tools/using-studio/reference/widgets/spread-widgets#renderer)
 
 - __Chart widget__
 
@@ -58,7 +58,7 @@ One of the benefits of structured data is that it can be rearranged, changed, an
 
      ![An image of the Guided Event Chain widget]({{ config.site_url }}platform-tools/using-studio/src/guided-event-chain-widget-on-spread-studio.png)
 
-     [:octicons-arrow-right-24: More info]({{ config.site_url }}platform-tools/using-studio/reference/widgets/spread-widgets.md#guided-event-chain)
+     [:octicons-arrow-right-24: More info]({{ config.site_url }}platform-tools/using-studio/reference/widgets/spread-widgets#guided-event-chain)
 
 - __Precedence Graph widget__
 
@@ -68,7 +68,7 @@ One of the benefits of structured data is that it can be rearranged, changed, an
 
      ![An image of the Precedence Graph widget]({{ config.site_url }}platform-tools/using-studio/src/precedence-graph-on-spread-studio.png)
 
-     [:octicons-arrow-right-24: More info]({{ config.site_url }}platform-tools/using-studio/reference/widgets/spread-widgets.md#precedence-graph)
+     [:octicons-arrow-right-24: More info]({{ config.site_url }}platform-tools/using-studio/reference/widgets/spread-widgets#precedence-graph)
 
 - __Topology viewer widget__
 
@@ -78,6 +78,6 @@ One of the benefits of structured data is that it can be rearranged, changed, an
 
      ![An image of the Topology viewer widget]({{ config.site_url }}platform-tools/using-studio/src/topology-viewer-widget-on-spread-studio.png)
 
-     [:octicons-arrow-right-24: More info]({{ config.site_url }}platform-tools/using-studio/reference/widgets/spread-widgets.md#topology-viewer)
+     [:octicons-arrow-right-24: More info]({{ config.site_url }}platform-tools/using-studio/reference/widgets/spread-widgets#topology-viewer)
 
 </div>
