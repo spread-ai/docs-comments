@@ -65,7 +65,7 @@ Go back to the Studio canvas by selecting the **UI** tab and select the **Select
 
 Then change the following settings in the properties window on the right-hand side:
 
-- **Source Data:** `{{get_feature_variants.data.data.getAllFeatureVariant}}`
+- **Source Data:** `{{ "{{get_feature_variants.data.data.getAllFeatureVariant}}" }}`
 - **Label key:** `label`
 - **Value key:** `value`
 
@@ -84,7 +84,6 @@ Go to the **Queries** tab of the **Editor** view on the left-hand side and selec
 
 ```json
 query getFeatureVariant($findBy: FetchEntityInput) {
- 
   entity(findBy: $findBy) {
     ... on FeatureVariant {
       id
@@ -130,10 +129,17 @@ In the variable window, insert these variables that are provided to the query as
 {
   "findBy": {
     "type": "FeatureVariant",
-    "id": {{FeatureVariantSelect.selectedOptionValue}}
+    "id": {{ "{{FeatureVariantSelect.selectedOptionValue}}" }}
   }
 }
 ```
+
+Name the query `get_feature_variant` at the top.
+
+<figure markdown="span">
+	![Widgets for the data visualization application](src/widgets-data-viz-application.png)
+	<figcaption>Widgets for the data visualization application</figcaption>
+</figure>
 
 
 
