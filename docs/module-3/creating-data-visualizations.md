@@ -35,7 +35,7 @@ This GraphQL query accepts whatever is inputted into the Select widget as parame
 
 Go to the **Queries** tab of the **Editor** view on the left-hand side and select **New query/API**. Under **Quick actions** select **EIN API**. In the middle **Query** window enter this GraphQL query.
 
-```json "Query to find the feature variant"
+```
 query GetAllFeatureVariants {
   getAllFeatureVariant {
     value: id // (1)
