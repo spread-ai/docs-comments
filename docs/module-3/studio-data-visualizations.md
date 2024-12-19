@@ -55,9 +55,9 @@ One of the benefits of structured data is that it can be rearranged, changed, an
 
      The Guided Event Chain widget displays the flow of guided events.
 
-     ![An image of the Guided Event Chain widget](/platform-tools/using-studio/src/guided-event-chain-widget-on-spread-studio.png)
+     ![An image of the Guided Event Chain widget]({{ config.siteURL }}/platform-tools/using-studio/src/guided-event-chain-widget-on-spread-studio.png)
 
-     [:octicons-arrow-right-24: More info](/platform-tools/using-studio/reference/widgets/spread-widgets.md#guided-event-chain)
+     [:octicons-arrow-right-24: More info]({{ config.siteURL }}/platform-tools/using-studio/reference/widgets/spread-widgets.md#guided-event-chain)
 
 - __Precedence Graph widget__
 
