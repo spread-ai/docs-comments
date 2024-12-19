@@ -13,7 +13,7 @@ hide:
 
 One of the benefits of structured data is that it can be rearranged, changed, and presented in different ways. For many use cases a visual representation of product data can cut down the time it takes to analyze and understand your product. SPREAD Studio offers a number of ways to visualize data in the custom applications that you can create. The more popular visualizations widgets (and their accessories) are introduced below.
 
-<br><br>
+<br>
 <div class='grid cards' style='max-width: 90vw !important; margin: auto' markdown>
 
 - __Wiring Harness widget__
