@@ -23,7 +23,7 @@ Drag and drop the following widgets onto the Studio canvas:
 Remember that widgets can be found in the **UI** tab of the **Editor** view on the left-hand side.
 
 <figure markdown="span">
-	![Widgets for the data visualization application](src/widgets-data-viz-application.png)
+	![Widgets for the data visualization application](src/widgets-data-viz-application.png){ .img-medium }
 	<figcaption>Widgets for the data visualization application</figcaption>
 </figure>
 
@@ -59,7 +59,7 @@ Name the query `get_feature_variants` at the top.
 Go back to the Studio canvas by selecting the **UI** tab and select the **Select** widget. To pass data to the query and back we need to bind it to this widget. Rename the widget `FeatureVariantSelect` by double-clicking on it in the **UI** window or by using the three-dot menu.
 
 <figure markdown="span">
-	![Renaming the Select widget](src/rename-select-widget.png)
+	![Renaming the Select widget](src/rename-select-widget.png){ .img-medium }
 	<figcaption>Renaming the Select widget</figcaption>
 </figure>
 
@@ -72,7 +72,7 @@ Then change the following settings in the properties window on the right-hand si
 You may also change the **Default selected value** and the 
 
 <figure markdown="span">
-	![Renaming the Select widget](src/rename-select-widget.png)
+	![Renaming the Select widget](src/rename-select-widget.png){ .img-medium }
 	<figcaption>Renaming the Select widget</figcaption>
 </figure>
 
@@ -137,7 +137,7 @@ In the variable window, insert these variables that are provided to the query as
 Name the query `get_feature_variant` at the top.
 
 <figure markdown="span">
-	![Widgets for the data visualization application](src/widgets-data-viz-application.png)
+	![Widgets for the data visualization application](src/widgets-data-viz-application.png){ .img-medium }
 	<figcaption>Widgets for the data visualization application</figcaption>
 </figure>
 
