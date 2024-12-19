@@ -31,7 +31,7 @@ A GraphQL query contains the following:
 
      1. The `dataSetId` defines the dataset that this data is pulled from.
      
-!!!success "GraphQL output"
+!!! success "GraphQL output"
 
      The output returned by the GraphQL.
 

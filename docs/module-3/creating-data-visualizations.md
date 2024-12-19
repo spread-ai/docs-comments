@@ -35,22 +35,24 @@ This GraphQL query accepts whatever is inputted into the Select widget as parame
 
 Go to the **Queries** tab of the **Editor** view on the left-hand side and select **New query/API**. Under **Quick actions** select **EIN API**. In the middle **Query** window enter this GraphQL query.
 
-```
-query GetAllFeatureVariants {
-  getAllFeatureVariant {
-    value: id // (1)
-    label: name // (2)
-  }
-}
-```
+!!! example "Filter feature variants query
 
-1. xxxxx
-2. xxxxx
+     ```json
+     query GetAllFeatureVariants {
+          getAllFeatureVariant {
+               value: id // (1)
+               label: name // (2)
+          }
+     }
+     ```
+
+     1. Test here
+     2. Test here
 
 Name the query `get_feature_variants` at the top.
 
 <figure markdown="span">
-	![Creating a query to get feature variants](src/get-feature-variants-query.png)
+	![Creating a query to get feature variants](src/get-feature-variants-query.png){ .img-medium }
 	<figcaption>Creating a query to get feature variants</figcaption>
 </figure>
 
@@ -69,7 +71,7 @@ Then change the following settings in the properties window on the right-hand si
 - **Label key:** `label`
 - **Value key:** `value`
 
-You may also change the **Default selected value** and the 
+You may also change the **Default selected value** and the label text.
 
 <figure markdown="span">
 	![Renaming the Select widget](src/rename-select-widget.png){ .img-medium }
@@ -78,7 +80,7 @@ You may also change the **Default selected value** and the
 
 ## Create the feature variant query
 
-One a feature variant has been identified, this query fetches data about it to populate the Graph widget.
+Once a feature variant has been identified, this query fetches data about it to populate the Graph widget.
 
 Go to the **Queries** tab of the **Editor** view on the left-hand side and select **New query/API**. Under **Quick actions** select **EIN API**. In the middle **Query** window enter this GraphQL query.
 
