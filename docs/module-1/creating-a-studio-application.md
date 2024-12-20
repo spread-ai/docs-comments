@@ -54,6 +54,6 @@ For more on styling your application, see [How to style your application](#).
 
 {{ snippets.publishApp }}
 
-!!! abstract "Task 3: Publish your application"
+!!! abstract "Task 3: View your application"
 
      Publish the application that you have created and then go to the SPREAD Launcher to open it.
