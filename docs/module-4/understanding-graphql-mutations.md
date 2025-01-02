@@ -12,58 +12,30 @@ In [Module 2](../module-2/querying-spread.md#finding-the-query) we covered findi
      <figcaption>Mutations write to the EI Graph</figcaption>
 </figure>
 
-The important thing to note with mutations is that changes that aren't published only apply to changesets, changes that are published apply to datasets as a whole. Published changes can be fetched with queries to the dataset, but unpublished changes need a query that reads changesets to fetch. In a more advanced course, we will cover the difference - but in this course we will only apply changes to changesets.
+As a reminder: Changesets are the versions of a dataset. Over time the data contained in a dataset may change and each iteration of the dataset is know as a changeset. In the diagram there are four changesets: Changeset A1 and Changeset A2 for Dataset A, and Changeset B1 and Changeset B2 for Dataset B.
 
-For example, a GraphQL mutation for creating a battery looks like the following:
+
+!!! info "Publishing changes"
+
+     With mutations changes that aren't published only apply to changesets, changes that are published apply to datasets as a whole.
+
+Published changes can be fetched with queries to the dataset, but unpublished changes need a query that reads changesets to fetch. In a more advanced course, we will cover the difference - but in this course we will only apply changes to changesets.
+
+For example, a GraphQL mutation for updating a feature variant looks like the following:
 
 ```json title="GraphQL mutation structure"
-mutation CreateBattery($datasetId: ID!) {
-  createBattery(datasetId: $datasetId) {
-    variants {
-      
-    }
-    id
-    externalIds {
-      
-    }
-    weight
-    supplier {
-      
-    }
-    model {
-      
-    }
-    modules {
-      
-    }
-    ratedCapacity
-    createdAt
-    updatedAt
-    dimensions {
-      
-    }
-    revision
-    previous {
-      
-    }
-    next {
-      
-    }
-    latest {
-      
-    }
-    draft {
-      
-    }
-    history {
-      
-    }
-    esfChangeset {
-      
-    }
-  }
+mutation UpdateFeatureVariant($datasetId: ID!) {
+     updateFeatureVariant {
+          description {
+               en
+          }
+     }
 }
 ```
+
+!!! info "What is a Feature Variant?"
+
+     Feature variant describes a specific realization of a feature. It's one of possible many ways of implementing a feature - for example, a feature with different capabilities of or a feature for different market requirements. A more concrete example for a feature variant could be "SoftwareUpdate via USB" versus "SoftwareUpdate via OverTheAir". It describes the realization of a feature in a specific context.
 
 The values for each of the fields is provided via the **Variables** window in EIN Explorer.
 
@@ -103,10 +75,19 @@ Remember that any fields that have an exclamation point in the SDL reference are
 
 For more on using the EIN Explorer, see [](../module-2/querying-spread.md#exploring-the-endpoint-field).
 
-<div class='grid cards' markdown>
+## Dataset permissions
 
-* :material-list-status:{ .lg .middle } **Quiz**
+To be able to create applications that use data from a specific dataset you need to either have `Owner` access - which allows you to read, write, and share a dataset - or have `reader` access assigned to you by the owner of the dataset.
 
-    ---
+For more assigning access rights to datasets, see [Using Data Manager]().
 
-</div>
+<?quiz?>
+question: What is the command to make changes to a GraphQL database?
+answer: put
+answer: patch
+answer-correct: mutation
+answer: edit
+answer-correct: change
+content:
+<p></p>
+<?/quiz?>
