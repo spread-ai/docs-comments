@@ -114,6 +114,6 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
      - [:octicons-arrow-right-24: Module 1: Understanding the SPREAD ecosystem](module-1/what-is-spread.md)
      - [:octicons-arrow-right-24: Module 2: Creating a viewing application](module-2/understanding-spread-information-architecture.md)
      - [:octicons-arrow-right-24: Module 3: Creating data visualizations](module-3/studio-data-visualizations.md)
-     - [:octicons-arrow-right-24: Module 4: Creating an authoring application]()
+     - [:octicons-arrow-right-24: Module 4: Creating an authoring application](module-4/understanding-graphql-mutations.md)
 
 </div>
