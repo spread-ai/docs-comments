@@ -38,5 +38,5 @@ answer: Connectivity Analyzer
 answer: SPREAD Technical Network
 answer: Product Analyzer
 content:
-<p>The Engineering Intelligence Graph was previously referred to as the Engineering Intelligence Network. This terminology has changed, but you need to be aware that in some places you will see the term Engineering Intelligence Network.</p>
+<p></p>
 <?/quiz?>
