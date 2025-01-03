@@ -1,5 +1,5 @@
 ---
-title: Findind and querying data in SPREAD
+title: Finding and querying data in SPREAD
 description: How to find and query data in the EI Graph.
 hide:
      - toc

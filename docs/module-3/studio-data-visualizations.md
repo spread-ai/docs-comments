@@ -11,7 +11,9 @@ hide:
      }
 </style>
 
-One of the benefits of structured data is that it can be rearranged, changed, and presented in different ways. For many use cases a visual representation of product data can cut down the time it takes to analyze and understand your product. SPREAD Studio offers a number of ways to visualize data in the custom applications that you can create. The more popular visualizations widgets (and their accessories) are introduced below.
+One of the benefits of structured data is that it can be re-arranged, changed, and presented in different ways. For many use cases a visual representation of product data can cut down the time it takes to analyze and understand your product. SPREAD Studio offers a number of ways to visualize data in the custom applications that you can create. In the [next lesson](creating-data-visualizations.md), we will create a graph using feature variants data.
+
+The more popular visualizations widgets (and their accessories) are listed below, along with links to documentation about their properties.
 
 <br>
 <div class='grid cards' style='max-width: 90vw !important; margin: auto' markdown>
@@ -74,7 +76,7 @@ One of the benefits of structured data is that it can be rearranged, changed, an
 
      ---
 
-     The Topology Viewer widget displays the graph with nodes and edges oriented as a tree. 
+     The Topology Viewer widget displays the graph with nodes and edges oriented as a tree.
 
      ![An image of the Topology viewer widget]({{ config.site_url }}platform-tools/using-studio/src/topology-viewer-widget-on-spread-studio.png)
 

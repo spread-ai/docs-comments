@@ -87,7 +87,7 @@ answer: put
 answer: patch
 answer-correct: mutation
 answer: edit
-answer-correct: change
+answer: change
 content:
 <p></p>
 <?/quiz?>
