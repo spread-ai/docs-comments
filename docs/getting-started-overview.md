@@ -116,8 +116,18 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
     ---
 
      - [:octicons-arrow-right-24: Module 1: Understanding the SPREAD ecosystem](module-1/what-is-spread.md)
+          - [What is SPREAD?](module-1/what-is-spread.md)
+          - [What is the Engineering Intelligence Graph?](module-1/what-is-eig.md)
+          - [Creating a Studio application](module-1/creating-a-studio-application.md)
      - [:octicons-arrow-right-24: Module 2: Creating a viewing application](module-2/understanding-spread-information-architecture.md)
+          - [Understanding the SPREAD information architecture](module-2/understanding-spread-information-architecture.md)
+          - [Querying SPREAD](module-2/querying-spread.md)
+          - [Creating a display application](module-2/creating-a-display-application.md)
      - [:octicons-arrow-right-24: Module 3: Creating data visualizations](module-3/studio-data-visualizations.md)
+          - [Studio data visualizations](module-3/studio-data-visualizations.md)
+          - [Creating data visualizations](module-3/creating-data-visualizations.md)
      - [:octicons-arrow-right-24: Module 4: Creating an authoring application](module-4/understanding-graphql-mutations.md)
+          - [Understanding GraphQL mutations](module-4/understanding-graphql-mutations.md)
+          - [Creating an authoring application](module-4/creating-an-authoring-app.md)
 
 </div>
