@@ -54,7 +54,7 @@ Switch to the **Settings** tab and set **Run API on page load**.
 Switch back to the **UI** tab on the top-left and select the table widget that you dropped on to the canvas earlier. Select the **Table data** dropdown menu on the right-hand side and select the query you created.
 
 <figure markdown="span">
-     ![Binding the query to the table](src/binding-query-to-table.png) { .img-medium }
+     ![Binding the query to the table](src/binding-query-to-table.png){ .img-medium }
      <figcaption>Binding the query to the table</figcaption>
 </figure>
 
@@ -70,7 +70,7 @@ The fields returned by the query are mapped as columns and you can edit them in 
 Data can also be synced between widgets. We have hidden the **description** column but we can display it in another connected widget. Drag-and-drop the [container](../) widget on to the Studio canvas. Then drag and drop a [text]() widget on top of the container.
 
 <figure markdown="span">
-     ![The container and text widgets below the table](src/container-with-text.png) { .img-medium }
+     ![The container and text widgets below the table](src/container-with-text.png){ .img-medium }
      <figcaption>The container and text widgets below the table</figcaption>
 </figure>
 

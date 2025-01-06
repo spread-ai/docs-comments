@@ -61,6 +61,10 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
      li {
           list-style-type: none !important;
      }
+
+     nav.md-footer__inner {
+          display: none !important;
+     }
 </style>
 
 <div class='header'>

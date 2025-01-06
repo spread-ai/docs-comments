@@ -109,7 +109,7 @@ content:
 
 The GraphQL syntax - `[featureVariant]!` - tells us that the `featureVariants` object contains an array list of `featureVariant` objects. For more on reading the Schema Definition Language, see [Schema GraphQL basics](https://www.apollographql.com/docs/apollo-server/schema/schema). Furthermore, the `featureVariant` objects has the following description:
 
-_Feature variant describes a specific realization of a feature. It's one of possible many ways of implementing a feature, considering different capabilities of the hardware components, market requirements, etc._
+> Feature variant describes a specific realization of a feature. It's one of possible many ways of implementing a feature, considering different capabilities of the hardware components, market requirements, etc.
 
 Selecting the `featureVariant` object gives more detail on the fields of the object.
 
@@ -130,13 +130,14 @@ To further explore the `createdAt` field select the play icon on the right to op
 To run a test call select the **▶️ Run** button at the top of the **Operation** window.
 
 <figure markdown="span">
-     ![Running the API call](src/createdat-run.png)
+     ![Running the API call](src/createdat-run.png) { .img-medium }
      <figcaption>Running the API call</figcaption>
 </figure>
 
 [Open the demo GraphQL request](https://app.spread.ai/ein?explorerURLState=N4IgJg9gxgrgtgUwHYBcQC4QEcYIE4CeAFACQBmCAhijHggGqV4CWlqAkmOgATsAiAQgCU3YAB0k3KdJkVqtBk1aoAzkTDVKKhCk48xIAKIqyfTdpQqA9GAQAOAJwAmSgHYHAWgRlKAIw8ALACMrgBsHpROdk5eTlBBIVBgQQhOAMwGIuKSMrm5SJSIohJ5paXIJWV5AL6VZVB01AhgAIIodaW1OV1dIAA0IABuSn4ANggqGCDZUgZyNHSMLGy6YAY8SDCjoxLV-SAADhAqKGSjzADmABYoAPIH%2BNTMEEgAyg3MB2iYINVAA){ .md-button .md-button--primary }
 <br>
-<hr>
+<br>
+
 The API call returns the output as displayed below:
 
 ```json
