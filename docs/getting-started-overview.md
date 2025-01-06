@@ -120,7 +120,7 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
           - [What is the Engineering Intelligence Graph?](module-1/what-is-eig.md)
           - [Creating a Studio application](module-1/creating-a-studio-application.md)
      - [:octicons-arrow-right-24: Module 2: Creating a viewing application](module-2/understanding-spread-information-architecture.md)
-          - [Understanding the SPREAD information architecture](module-2/understanding-spread-information-architecture.md)
+          - [SPREAD information architecture](module-2/understanding-spread-information-architecture.md)
           - [Querying SPREAD](module-2/querying-spread.md)
           - [Creating a display application](module-2/creating-a-display-application.md)
      - [:octicons-arrow-right-24: Module 3: Creating data visualizations](module-3/studio-data-visualizations.md)
