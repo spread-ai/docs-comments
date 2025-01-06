@@ -14,5 +14,5 @@ nav:
             - 3.1 Studio data visualizations: module-3/studio-data-visualizations.md
             - 3.2 Creating data visualizations: module-3/creating-data-visualizations.md
      - Module 4:
-            - 4.1 Understanding GraphQl mutations: module-4/understanding-graphql-mutations.md
+            - 4.1 Understanding GraphQL mutations: module-4/understanding-graphql-mutations.md
             - 4.2 Creating an authoring application: module-4/creating-an-authoring-app.md

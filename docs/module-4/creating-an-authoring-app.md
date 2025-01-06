@@ -13,14 +13,12 @@ To write data to the Engineering Intelligence Graph (EI Graph) we need a user in
 
 Drag and drop a text input widget onto the Studio canvas from the **UI** tab on the left-hand side. The highlighted options on the right-hand side are where we will get the data to use for the mutation query.
 
-
-
 <figure markdown="span">
      ![Creating the display app UI](src/creating-display-ui.png)
      <figcaption>Creating the display app UI</figcaption>
 </figure>
 
-## Creating the mutation
+<!-- ## Creating the mutation
 
 To create the query we will use from within Studio go to the **Queries** tab and select **New Query/API**.Select **EIN API** in the **Quick actions** section. Here you can see all the same objects that are in the Schema Definition Language (SDL) reference from the [previous lesson](querying-spread.md).
 
@@ -65,7 +63,6 @@ The fields returned by the query are mapped as columns and you can edit them in 
      <figcaption>Editing columns in a table</figcaption>
 </figure>
 
-
 ## Publishing and sharing the application
 
 When the application is complete, select the **Publish** button in the top-right corner to make it available from the SPREAD Platform launcher page. To share the application with other users select the **Share** button (next to the **Publish** button) and add users who can either have **Developer** rights to edit the application or **Viewer** rights to just view it.
@@ -75,4 +72,4 @@ When the application is complete, select the **Publish** button in the top-right
      <figcaption>Sharing your application</figcaption>
 </figure>
 
-1. We recommend that you write this out to see all the options that are available to you to use as the value of the text widget. In this case we're just syncing to the table.
+1. We recommend that you write this out to see all the options that are available to you to use as the value of the text widget. In this case we're just syncing to the table. -->
