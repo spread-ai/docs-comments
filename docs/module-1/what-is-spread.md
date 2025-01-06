@@ -35,7 +35,7 @@ The types of data that can be imported into SPREAD include:
 | Connector housing pictures | 2D pictures of connector housing showing terminal positions within the connector housing (usually black-and-white pictures), mapped via connector housing part numbers. | svg |
 | Diagnosis specification | Specification of diagnosis behavior for diagnosis-relevant components - mostly ECUs - including diagnostic trouble codes (DTCs), error messages, repair messages, error triggering conditions. | pdx, odx |
 | DTC Mapping | Mapping of DTCs to either their start terminal or end component for error cause predictions. | xlsx or similar |
-| ECUs | A decsription of the Electronic Control Units (ECUs). | arxml |
+| ECUs | A description of the Electronic Control Units (ECUs). | arxml |
 | Functions | Customer or Vehicle functions that descibe a behavior of a feature. | xml, csx, xlsx |
 | Harness data documentation | Documentation for client-specific logic for wiring harness development and documentation, for example, for distinguishing component types by their Reference ID. | pdf |
 | Issue tickets | Raised tickets for issues with electric components, functions and/or software modules. | |
