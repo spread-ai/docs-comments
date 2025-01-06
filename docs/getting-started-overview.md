@@ -131,3 +131,7 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
           - [Creating an authoring application](module-4/creating-an-authoring-app.md)
 
 </div>
+
+<br>
+<br>
+<br>
