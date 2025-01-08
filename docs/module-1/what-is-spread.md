@@ -6,6 +6,16 @@ hide:
      - toc
 ---
 
+<style>
+h3 {
+     color: var(--primary);
+}
+.button-icon {
+     border: none !important;
+     max-width: 24px;
+}
+</style>
+
 The SPREAD product is a platform that provides a suite of tools for data analysis, visualization, and collaboration. The platform allows you to work with product data more efficiently and effectively.
 
 !!! info "More about SPREAD"
@@ -55,9 +65,10 @@ In this course, we will learn how to ingest data, display data using SPREAD Stud
 
 <div class='grid cards' style='max-width: 90vw !important; margin: auto' markdown>
 
-- ![An icon of a vehicle](src/automotive-icon.svg){ .button-icon.skip-lightbox }
+- ![An icon of a vehicle](src/automotive-icon.svg){ .button-icon }
 
-     ### Automotive OEMs
+     <h3>Automotive OEMs</h3>
+     <p>Powering the next wave of software-defined vehicles</p>
 
      ![A 3D model of a vehicle](src/automotive-industry.png){ .skip-lightbox }
 
