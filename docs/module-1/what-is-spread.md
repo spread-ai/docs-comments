@@ -10,8 +10,8 @@ hide:
 .grid-heading {
      color: var(--primary);
      font-weight: bold;
-     font-size: 2em;
-
+     font-size: 1.8em;
+     display: block
 }
 
 .grid-blurb {
@@ -19,13 +19,8 @@ hide:
      font-size: 0.8em;
 }
 
-.button-icon {
-     border: none !important;
-     width: 12px;
-}
-
 .md-button--primary {
-     padding: 1.2em 0;
+     margin-top: 1.5em;
 }
 </style>
 
@@ -80,7 +75,7 @@ In this course, we will learn how to ingest data, display data using SPREAD Stud
 
 - :white_small_square:
 
-     <img alt="An icon of a vehicle" class="button-icon" src="src/automotive-icon.svg"><span class="grid-heading">Automotive OEMs</span>
+     <span class="grid-heading">Automotive OEMs</span>
      <p class="grid-blurb">Powering the next wave of software-defined vehicles</p>
 
      ![A 3D model of a vehicle](src/automotive-industry.png){ .skip-lightbox }
