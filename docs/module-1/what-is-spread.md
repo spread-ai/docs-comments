@@ -8,7 +8,7 @@ hide:
 
 The SPREAD product is a platform that provides a suite of tools for data analysis, visualization, and collaboration. The platform allows you to work with product data more efficiently and effectively.
 
-!!! info "More about SPREAD
+!!! info "More about SPREAD"
 
      SPREAD was founded to make pduct data accessible and easy to use. The company was established in 2019 in Berlin and now has over 100 employees. For more on the company, see [About us](https://www.spread.ai/about).
 
@@ -55,11 +55,11 @@ In this course, we will learn how to ingest data, display data using SPREAD Stud
 
 <div class='grid cards' style='max-width: 90vw !important; margin: auto' markdown>
 
-- :fontawesome-solid-car:{ .lg .middle } **Automotive**
+- ![An icon of a vehicle](src/automotive-icon.svg){ .button-icon }__Automotive__
 
      Powering the next wave of software-defined vehicles.
 
-     ![A 3D model of a vehicle](src/automotive-industry.png)
+     ![A 3D model of a vehicle](src/automotive-industry.png){ .skip-lightbox }
 
      [Explore the use cases](https://www.spread.ai/solutions/automotive#section_category_preview){ .md-button .md-button--primary }
 
@@ -67,7 +67,7 @@ In this course, we will learn how to ingest data, display data using SPREAD Stud
 
 - Aerospace
 
-<div>
+</div>
 
 <?quiz?>
 question: Are you ready?

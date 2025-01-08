@@ -130,7 +130,7 @@ To further explore the `createdAt` field select the play icon on the right to op
 To run a test call select the **▶️ Run** button at the top of the **Operation** window.
 
 <figure markdown="span">
-     ![Running the API call](src/createdat-run.png) { .img-medium }
+     ![Running the API call](src/createdat-run.png){ .img-medium }
      <figcaption>Running the API call</figcaption>
 </figure>
 
