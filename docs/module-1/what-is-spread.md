@@ -82,9 +82,23 @@ In this course, we will learn how to ingest data, display data using SPREAD Stud
 
      [Explore the use cases](https://www.spread.ai/solutions/automotive#section_category_preview){ .md-button .md-button--primary }
 
-- Machinery
+- :white_small_square:
 
-- Aerospace
+     <span class="grid-heading">Commercial vehicles</span>
+     <p class="grid-blurb">Driving the future of intelligent, connected commercial vehicles</p>
+
+     ![A 3D model of a vehicle](src/commercial-vehicles.png){ .skip-lightbox }
+
+     [Explore the use cases](https://www.spread.ai/solutions/commercial-vehicle-oems#section_category_preview){ .md-button .md-button--primary }
+
+- :white_small_square:
+
+     <span class="grid-heading">Defence</span>
+     <p class="grid-blurb">Enabling the future of connected, high-precision defense systems</p>
+
+     ![A 3D model of a vehicle](src/defence.png){ .skip-lightbox }
+
+     [Explore the use cases](https://www.spread.ai/solutions/defense#section_category_preview){ .md-button .md-button--primary }
 
 </div>
 
