@@ -55,9 +55,9 @@ In this course, we will learn how to ingest data, display data using SPREAD Stud
 
 <div class='grid cards' style='max-width: 90vw !important; margin: auto' markdown>
 
-- ![An icon of a vehicle](src/automotive-icon.svg){ .button-icon }__Automotive__
+- ![An icon of a vehicle](src/automotive-icon.svg){ .button-icon.skip-lightbox }
 
-     Powering the next wave of software-defined vehicles.
+     ### Automotive OEMs
 
      ![A 3D model of a vehicle](src/automotive-industry.png){ .skip-lightbox }
 
