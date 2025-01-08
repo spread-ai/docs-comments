@@ -9,7 +9,8 @@ hide:
 <style>
 h3 {
      color: var(--primary);
-     font-weight: bold;
+     font-weight: bold !important;
+     display: inline-block !important;
 }
 .button-icon {
      border: none !important;
@@ -69,10 +70,10 @@ In this course, we will learn how to ingest data, display data using SPREAD Stud
 - :white_small_square:
 
      <img alt="An icon of a vehicle" class="button-icon" src="src/automotive-icon.svg"><h3>Automotive OEMs</h3>
-     <p>Powering the next wave of software-defined vehicles</p>
+     <div>Powering the next wave of software-defined vehicles</div>
 
      ![A 3D model of a vehicle](src/automotive-industry.png){ .skip-lightbox }
-     <br>
+     <br><br>
      [Explore the use cases](https://www.spread.ai/solutions/automotive#section_category_preview){ .md-button .md-button--primary }
 
 - Machinery
