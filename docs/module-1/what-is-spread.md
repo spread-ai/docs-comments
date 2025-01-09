@@ -28,7 +28,7 @@ The SPREAD product is a platform that provides a suite of tools for data analysi
 
 !!! info "More about SPREAD"
 
-     SPREAD was founded to make pduct data accessible and easy to use. The company was established in 2019 in Berlin and now has over 100 employees. For more on the company, see [About us](https://www.spread.ai/about).
+     SPREAD was founded to make product data accessible and easy to use. The company was established in 2019 in Berlin and now has over 100 employees. For more on the company, see [About us](https://www.spread.ai/about).
 
 The key features of SPREAD include:
 
@@ -46,7 +46,7 @@ In this course, we will learn how to ingest data, display data using SPREAD Stud
 
 | Data type | Description | Data format |
 | --- | --- | --- |
-| 2D wiring harness | Technical documentation of wiring harness data: connections between electric components from terminal to terminal including module part numbers, connectors, terminals, wires, and auxiliary information. Contains only 2D co-ordinates of the harness supplier's layout board. | kbl, vec |
+| 2D wiring harness | Technical documentation of wiring harness data: connections between electric components from terminal to terminal including module part numbers, connectors, terminals, wires, and auxiliary information. Contains co-ordinates of the flattened wiring harness 2D drawing | kbl, vec |
 | 3D model | The 3D CAD model of a product, assembly, or part. | jt, step, x3d, and more |
 | 3D wiring harness | Technical documentation of wiring harness data: connections between electric components from terminal to terminal including module part numbers, connectors, terminals, wires, and auxiliary information. May also contain 3D co-ordinates for connectors and [B-splines](https://en.wikipedia.org/wiki/B-spline) and control points for 3D positioning of single wires. | kbl, vec |
 | Bill of Materials (BoM) | A list with part numbers, quantities, descriptions, configuration codes (code rules) for a product and its parts or assemblies. Usually, there are different BoMs per department with different detail levels and structures. For example: one for engineering, one for manufacturing, retail, and so on. | xls, xml |
@@ -102,15 +102,10 @@ In this course, we will learn how to ingest data, display data using SPREAD Stud
 
 </div>
 
-<?quiz?>
-question: Are you ready?
-answer-correct: Yes!
-answer: No!
-answer: Maybe!
-content:
-<p></p>
-<?/quiz?>
+!!! question "Helpful hints"
 
-!!! question "Q&A"
+    To ask a question, leave a comment in the comments section of the relevant page. Before asking a question, we kindly ask that you search the comments to see if your questions is already answered. Sign up for an account at [gitHub.com](https://github.com). 
 
-    To ask a question, leave a comment in the comments section of the relevant page. Before asking a question, we kindly ask that you search the comments to see if your questions is already answered. To sign up for an account, go to [GitHub](https://github.com).
+     To get the definition of any terminology, such as Engineering Intelligence Graph, hover over the word for a few seconds and a definition box will appear that explains the term.
+
+
