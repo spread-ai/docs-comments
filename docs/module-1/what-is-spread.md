@@ -108,6 +108,6 @@ In this course, we will learn how to ingest data, display data using SPREAD Stud
 
 !!! question "Helpful hints"
 
-    To ask a question, leave a comment in the comments section of the relevant page. Before asking a question, we kindly ask that you search the comments to see if your questions is already answered. Sign up for an account at [gitHub.com](https://github.com). 
+    To ask a question, leave a comment in the comments section of the relevant page. Before asking a question, we kindly ask that you search the comments to see if your questions is already answered. Sign up for an account at [github.com](https://github.com). 
 
      To get the definition of any terminology, such as Engineering Intelligence Graph, hover over the word for a few seconds and a definition box will appear that explains the term.
