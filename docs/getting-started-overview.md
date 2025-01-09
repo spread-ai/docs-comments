@@ -18,8 +18,13 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
           display: none;
      }
 
-     .md-typeset [data-preview], .md-typeset abbr {
-          border-bottom: none;
+     /* Disable the definition tooltip on this page */
+     abbr {
+          pointer-events: none;
+          text-decoration: none;
+          color: inherit;
+          background: none;
+          border-bottom: none !important;
      }
 
      .md-main__inner {
@@ -107,7 +112,7 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
 
     ---
 
-     - [x] Access to a SPREAD Studio environment.
+     - [x] Access to a SPREAD Platform instance with Studio.
      - [x] A basic understanding of JavaScript.
      - [x] A basic understanding of [GraphQL](https://graphql.org/learn/).
 
