@@ -26,6 +26,10 @@ hide:
 .md-button--primary {
      margin-top: 1.5em;
 }
+
+.giscus a.btn {
+     background-color: blue !important;
+}
 </style>
 
 The SPREAD product is a platform that provides a suite of tools for data analysis, visualization, and collaboration. The platform allows you to work with product data more efficiently and effectively.
