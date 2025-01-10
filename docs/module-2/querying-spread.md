@@ -18,7 +18,7 @@ A GraphQL query contains the following:
 
 !!! example "GraphQL query structure"
 
-     This request fetches the names (in English) of the feature variants:
+     This request fetches the names (in English) of the feature variants
      ---
 
      ```json 
@@ -35,7 +35,7 @@ A GraphQL query contains the following:
      
 !!! success "GraphQL output"
 
-     The output returned by the GraphQL:
+     The output returned by the GraphQL
      ---
 
      ```json
@@ -63,7 +63,7 @@ In the query  we include the `datasetId` as an inline variable, but it is also p
 
 !!! example "GraphQL query structure" hl_lines="6"
 
-     This request fetches the names (in English) of the feature variants:
+     This request uses `$variableID` as the `datasetID`
      ---
 
      ```json hl_lines="2"
@@ -80,7 +80,7 @@ In the query  we include the `datasetId` as an inline variable, but it is also p
      
 !!! example "GraphQL variables"
 
-     The variables :
+     This objcet sets the `variableID` for use in the query
      ---
 
      ```json
