@@ -10,6 +10,11 @@ To display data, we will be working in SPREAD Studio - which is a tool to create
 
 {{ snippets.demoInstanceDetails }}
 
+<figure markdown="span">
+	![The EIN tile in the SPREAD Platform Launcher](src/ein-tile.png)
+	<figcaption>The EIN tile in the SPREAD Platform Launcher</figcaption>
+</figure>
+
 ## Navigating Studio
 
 First, let's get familiar with the layout of the Studio application.
