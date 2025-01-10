@@ -57,18 +57,18 @@ A GraphQL query contains the following:
      ```
 </div>
 
-In this version of the query we include the `datasetId` as an inline variable. It is also possible to provide variables in a seperate object to the query.
+In the query  we include the `datasetId` as an inline variable, but it is also possible to provide variables in a separate object and then call the variable using the `$`.
 
 <div class='grid' markdown>
 
-!!! example "GraphQL query structure"
+!!! example "GraphQL query structure" hl_lines="6"
 
      This request fetches the names (in English) of the feature variants:
      ---
 
      ```json 
      query {
-          featureVariants(datasetId: $variableID) { // (1)
+          featureVariants(datasetId: $variableID) {
                name {
                     en
                }
