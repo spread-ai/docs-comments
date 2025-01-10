@@ -41,4 +41,4 @@ content:
 <p></p>
 <?/quiz?>
 
-<blockquote class="next-lesson">In the <a href="creating-a-studio-application.html">next lesson</a> we will create a simple application that introduces the STudio.</blockquote>
+<blockquote class="next-lesson">In the <a href="creating-a-studio-application.html">next lesson</a> we will create a simple application that introduces the Studio.</blockquote>
