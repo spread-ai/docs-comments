@@ -1,6 +1,7 @@
 ---
 title: Finding and querying data in SPREAD
 description: How to find and query data in the EI Graph.
+comments: true
 hide:
      - toc
 ---
@@ -17,7 +18,8 @@ A GraphQL query contains the following:
 
 !!! example "GraphQL query structure"
 
-     This request fetches the names (in English) of the feature variants.
+     This request fetches the names (in English) of the feature variants:
+     ---
 
      ```json 
      query {
@@ -33,7 +35,8 @@ A GraphQL query contains the following:
      
 !!! success "GraphQL output"
 
-     The output returned by the GraphQL.
+     The output returned by the GraphQL:
+     ---
 
      ```json
      {
@@ -51,6 +54,37 @@ A GraphQL query contains the following:
                          },
                          ...
      }
+     ```
+</div>
+
+In this version of the query we include the `datasetId` as an inline variable. It is also possible to provide variables in a seperate object to the query.
+
+<div class='grid' markdown>
+
+!!! example "GraphQL query structure"
+
+     This request fetches the names (in English) of the feature variants:
+     ---
+
+     ```json 
+     query {
+          featureVariants(datasetId: $variableID) { // (1)
+               name {
+                    en
+               }
+          }
+     }
+     ```
+
+     1. The `dataSetId` defines the dataset that this data is pulled from.
+     
+!!! example "GraphQL variables"
+
+     The variables :
+     ---
+
+     ```json
+     {"variableID": "EsfDatasets/de892a79-efab-4176-a282-e2c117cd1e23"}
      ```
 </div>
 
