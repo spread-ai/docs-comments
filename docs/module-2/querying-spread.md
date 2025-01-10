@@ -66,7 +66,7 @@ In the query  we include the `datasetId` as an inline variable, but it is also p
      This request fetches the names (in English) of the feature variants:
      ---
 
-     ```json 
+     ```json hl_lines="2"
      query {
           featureVariants(datasetId: $variableID) {
                name {
