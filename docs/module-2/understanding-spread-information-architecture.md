@@ -1,6 +1,7 @@
 ---
 title: Understanding the SPREAD information architecture
 description: An overview of how data flows through the SPREAD information model.
+comments: true
 hide:
      - toc
 ---
@@ -30,8 +31,10 @@ For more assigning access rights to datasets, see [Using Data Manager]().
 question: What is the difference between changesets and datasets?
 answer: Changesets are collections of data and datasets and the data that you import in the EI Graph
 answer: Changesets are immutable and datasets change with every addition to the data
-answer: Datasets are created every time you add or remove data, changesets need to be defined as a save point 
+answer: Datasets are created every time you add or remove data, changesets need to be defined as a save point
 answer-correct: Changesets are versions of datasets
 content:
 <p></p>
 <?/quiz?>
+
+<blockquote class="next-lesson">In the <a href="querying-spread.html">next lesson</a> we will go into the EI Graph and start learning how to find the right queries to get the data we want.</blockquote>

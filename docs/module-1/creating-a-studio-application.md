@@ -32,7 +32,7 @@ First, let's get familiar with the layout of the Studio application.
 
 {{ snippets.buildUI }}
 
-For more on styling your application, see [How to style your application](#).
+For more on styling your application, see [How to style your application]().
 
 !!! abstract "Task 1: Create a UI"
 
