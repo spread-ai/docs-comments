@@ -21,7 +21,7 @@ The cycle consists of three parts:
 * **Contextualizing data**: The data is integrated into the structured SPREAD information model, which enables data insights. For example, this allows you to match PR-Nr and BoM to provide VIN-specific troubleshooting recommendations.
 * **Data insights**: From a base of structured knowledge we can create a multitude of applications for data visualization, predictive analytics, and automated insights. These applications enable you to interpret complex product data and make informed decisions.
 
-<div class="example">Example</div>
+{{ snippets.exampleHeading }}
 
 An automotive company looking to build a new model may have many teams involved in the development process: from Wiring Harness Engineers to Industrial Engineers to Production Managers to Process Planners to Rework Engineers. Each of these teams works in their data silo, creating data using custom methods and outputs.
 
@@ -41,4 +41,4 @@ content:
 <p></p>
 <?/quiz?>
 
-<blockquote class="next-lesson">In the <a href="getting-started/module-1/what-is-eig.html">next lesson</a> we will learn more about the Engineering Intelligence Graph and how data cycles through the SPREAD ecosystem.</blockquote>
+<blockquote class="next-lesson">In the <a href="creating-a-studio-application.html">next lesson</a> we will create a simple application that introduces the STudio.</blockquote>
