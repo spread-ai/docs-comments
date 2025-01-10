@@ -40,3 +40,5 @@ answer: Product Analyzer
 content:
 <p></p>
 <?/quiz?>
+
+<blockquote class="next-lesson">In the <a href="getting-started/module-1/what-is-eig.html">next lesson</a> we will learn more about the Engineering Intelligence Graph and how data cycles through the SPREAD ecosystem.</blockquote>

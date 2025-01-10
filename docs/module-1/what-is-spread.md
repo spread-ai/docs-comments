@@ -81,7 +81,7 @@ In this course, we will learn how to ingest data, display data using SPREAD Stud
 
 <div class='grid cards' style='max-width: 90vw !important; margin: auto' markdown>
 
-- :white_small_square:
+* :white_small_square:
 
      <span class="grid-heading">Automotive OEMs</span>
      <p class="grid-blurb">Powering the next wave of software-defined vehicles</p>
@@ -90,7 +90,7 @@ In this course, we will learn how to ingest data, display data using SPREAD Stud
 
      [Explore the use cases](https://www.spread.ai/solutions/automotive#section_category_preview){ .md-button .md-button--primary }
 
-- :white_small_square:
+* :white_small_square:
 
      <span class="grid-heading">Commercial vehicles</span>
      <p class="grid-blurb">Driving the future of intelligent, connected commercial vehicles</p>
@@ -99,7 +99,7 @@ In this course, we will learn how to ingest data, display data using SPREAD Stud
 
      [Explore the use cases](https://www.spread.ai/solutions/commercial-vehicle-oems#section_category_preview){ .md-button .md-button--primary }
 
-- :white_small_square:
+* :white_small_square:
 
      <span class="grid-heading">Defence</span>
      <p class="grid-blurb">Enabling the future of connected, high-precision defense systems</p>
@@ -116,5 +116,4 @@ In this course, we will learn how to ingest data, display data using SPREAD Stud
 
      To get the definition of any terminology, such as Engineering Intelligence Graph, hover over the word for a few seconds and a definition box will appear that explains the term.
 
-
-<blockquote class="next-lesson">In the <a href="getting-started/module-1/what-is-eig.html">next lesson</a> we will learn more about the Engineering Intelligence Graph and how data cycles through the SPREAD ecosystem.</blockquote>
+<blockquote class="next-lesson">In the <a href="what-is-eig.html">next lesson</a> we will learn more about the Engineering Intelligence Graph and how data cycles through the SPREAD ecosystem.</blockquote>
