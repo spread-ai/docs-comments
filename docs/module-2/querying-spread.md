@@ -12,6 +12,10 @@ To get data from the Engineering Intelligence Graph (EI Graph) we need to query 
 
 To fetch data from a GraphQL database we use _queries_ in the similar way to a `GET` request in a REST API. The key difference being that the response can be defined, so that we get only the data we need. A REST API request might return a JSON object that needs to be parsed afterwards to get the required data.
 
+!!! info "What is a Feature Variant?"
+
+     Feature variant describes a specific realization of a feature. It's one of possible many ways of implementing a feature - for example, a feature with different capabilities of or a feature for different market requirements. A more concrete example for a feature variant could be "SoftwareUpdate via USB" versus "SoftwareUpdate via OverTheAir" in different vehicle models. It describes the realization of a feature in a specific context.
+
 A GraphQL query contains the following:
 
 <div class='grid' markdown>
@@ -57,11 +61,11 @@ A GraphQL query contains the following:
      ```
 </div>
 
-In the query  we include the `datasetId` as an inline variable, but it is also possible to provide variables in a separate object and then call the variable using the `$`.
+In the query above we include the `datasetId` as an inline variable, but it's also possible to provide variables in a separate object and then call the variable using the `$`.
 
 <div class='grid' markdown>
 
-!!! example "GraphQL query structure" hl_lines="6"
+!!! example "GraphQL query structure"
 
      This request uses `$variableID` as the `datasetID`
      ---
@@ -75,12 +79,10 @@ In the query  we include the `datasetId` as an inline variable, but it is also p
           }
      }
      ```
-
-     1. The `dataSetId` defines the dataset that this data is pulled from.
      
 !!! example "GraphQL variables"
 
-     This objcet sets the `variableID` for use in the query
+     This object sets the `variableID` for use in the query
      ---
 
      ```json
@@ -88,9 +90,9 @@ In the query  we include the `datasetId` as an inline variable, but it is also p
      ```
 </div>
 
-!!! info "What is a Feature Variant?"
+!!! abstract "Task 1: Run the example query"
 
-     Feature variant describes a specific realization of a feature. It's one of possible many ways of implementing a feature - for example, a feature with different capabilities of or a feature for different market requirements. A more concrete example for a feature variant could be "SoftwareUpdate via USB" versus "SoftwareUpdate via OverTheAir". It describes the realization of a feature in a specific context.
+     Run the GraphQL query example above at the URL: {{ snippets.demoInstanceEinURL }}, using either inline variables or variables defined in an object.
 
 ## Finding the query
 
@@ -256,6 +258,4 @@ query($featureVariantId: ID!) {
 ```
 
 
-!!! abstract "Task 1: Find a query"
 
-     Run a query in EIN Explorer to find the model of a battery and its supplier. 
