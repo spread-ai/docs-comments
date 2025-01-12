@@ -33,7 +33,7 @@ Select the `featureVariants` object in the **Explorer** window and select the `n
 
 !!! info "Example dataset ID"
 
-     For the demonstration we have set up a dataset with the ID: `"EsfDatasets/de892a79-efab-4176-a282-e2c117cd1e23"`. Use that as the `datasetId` in the query.
+     For the demonstration we have set up a dataset with the ID: `"EsfDatasets/de892a79-efab-4176-a282-e2c117cd1e23"`. Use this as the `datasetId` in the query.
 
 <figure markdown="span">
      ![Creating a query in the Studio interface](src/create-query-in-studio.png)

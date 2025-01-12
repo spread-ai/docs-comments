@@ -92,11 +92,16 @@ In the query above we include the `datasetId` as an inline variable, but it's al
 
 !!! abstract "Task 1: Run the example query"
 
-     Run the GraphQL query example above at the URL: {{ snippets.demoInstanceEinURL }}, using either inline variables or variables defined in an object.
+     Run the GraphQL query example above at this [URL]({{ snippets.demoInstanceEinURL }}), using either inline variables or variables defined in an object. The title windows will tell you where to paste each code snippet.
 
 ## Finding the query
 
 Knowing how to make query leads on to knowing where to find the query that gives you the information that you want. GraphQL provides a self-documenting function that produces the Schema Definition Language (SDL) reference, which is similar to REST API references. To view the SDL reference select the **EIN** tile from the SPREAD Launcher.
+
+<figure markdown="span">
+     ![The EIN tile in the SPREAD Platform launcher](src/ein-tile-spread.png)
+     <figcaption>The EIN tile in the SPREAD Platform launcher</figcaption>
+</figure>
 
 {{ snippets.demoInstanceDetails }}
 
@@ -105,12 +110,6 @@ Knowing how to make query leads on to knowing where to find the query that gives
      If you see a "Schema introspection failure" error when opening the EIN tile, go to the **Connection Settings** in the top-left and select **Include cookies** to resolve it.
 
      ![Schema introspection failure fix](src/schema-introspection-fail.png)
-
-<figure markdown="span">
-     ![The EIN tile in the SPREAD Platform launcher](src/ein-tile-spread.png)
-     <figcaption>The EIN tile in the SPREAD Platform launcher</figcaption>
-</figure>
-
 
 Then select the **Schema** icon on the left-hand side to open the SDL reference.
 
@@ -128,12 +127,13 @@ For example, to search for an endpoint that returns the when feature variants we
 
 <?quiz?>
 question: Which search term will return documentation for a query on featureVariants?
-answer-correct: query.featureVariants
-answer: featureVariant
-answer: featureVariants query
-answer: query.featureVariant
+answer-correct: "query.featureVariants"
+answer: "featureVariant"
+answer: "featureVariants query"
+answer: "query.featureVariant"
+answer: "find featureVariant"
 content:
-<p>The <code>featureVariants</code> query object contains an array list of <code>featureVariant</code> objects.</p>
+<p></p>
 <?/quiz?>
 
 ### Reading the SDL
@@ -143,7 +143,7 @@ content:
      <figcaption>Documentation about the `featureVariants` endpoint</figcaption>
 </figure>
 
-The GraphQL syntax - `[featureVariant]!` - tells us that the `featureVariants` object contains an array list of `featureVariant` objects. For more on reading the Schema Definition Language, see [Schema GraphQL basics](https://www.apollographql.com/docs/apollo-server/schema/schema). Furthermore, the `featureVariant` objects has the following description:
+The GraphQL syntax - `[featureVariant]!` - tells us that the `featureVariants` object contains an array list of `featureVariant` objects. The `[]` signifies an array list. For more on reading the Schema Definition Language, see [Schema GraphQL basics](https://www.apollographql.com/docs/apollo-server/schema/schema). Furthermore, the `featureVariant` objects has the following description:
 
 > Feature variant describes a specific realization of a feature. It's one of possible many ways of implementing a feature, considering different capabilities of the hardware components, market requirements, etc.
 
@@ -163,7 +163,11 @@ To further explore the `createdAt` field select the play icon on the right to op
      <figcaption>Explore the `createdAt` field</figcaption>
 </figure>
 
-To run a test call select the **▶️ Run** button at the top of the **Operation** window.
+To run a test call select the **▶️ Run** button at the top of the **Operation** window. Remeber that we have to provide the `datasetId` to get the data from the right data set. 
+
+!!! info "Example dataset ID"
+
+     For the demonstration we have set up a dataset with the ID: `"EsfDatasets/de892a79-efab-4176-a282-e2c117cd1e23"`. Use this as the `datasetId` in the query.
 
 <figure markdown="span">
      ![Running the API call](src/createdat-run.png){ .img-medium }
@@ -180,11 +184,11 @@ The API call returns the output as displayed below:
 {
   "data": {
     "featureVariants": [
-      {
+      { // (2)
         "name": {
-          "en": "Adaptive Cruise Control"
+          "en": "Adaptive Cruise Control" // (3) 
         },
-        "createdAt": "2024-12-13T16:06:58.926Z"
+        "createdAt": "2024-12-13T16:06:58.926Z" // (1)
       },
       {
         "name": {
@@ -237,10 +241,13 @@ The API call returns the output as displayed below:
     ]
   }
 }
-
 ```
 
-Running the call should return a successful response and the data we want. Note that changing the response is defined by what we ask for in the **Operations** window. If we added the `description` field to the query the reponse would have an additional field with that data. Note that the description has an `en` field within it to define the language of the response.
+1. This tells us that the 'Adaptive Cruise Control' feature variant was created on this date.
+2. Each object (inside the curly braces) in this list contains a different feature variant.
+3. The feature variant's name in English (`en`).
+
+Running the call should return a successful response and the data we want. Note that the response is defined by what we ask for in the **Operations** window. If we added the `description` field to the query the reponse would have an additional field with that data. The description has an `en` field within it to define the language of the response.
 
 ```json title="Adding the description field to the query"
 query($featureVariantId: ID!) {
@@ -257,5 +264,6 @@ query($featureVariantId: ID!) {
 }
 ```
 
+!!! abstract "Task 2: Run the query with the description field"
 
-
+     Run the GraphQL query example above at this [URL]({{ snippets.demoInstanceEinURL }}), using variables defined in an object. The title windows will tell you where to paste each code snippet.
