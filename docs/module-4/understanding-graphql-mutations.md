@@ -21,7 +21,7 @@ As a reminder: Changesets are the versions of a dataset. Over time the data cont
 
 Published changes can be fetched with queries to the dataset, but unpublished changes need a query that reads changesets to fetch. In a more advanced course, we will cover the difference - but in this course we will only apply changes to changesets.
 
-For example, a GraphQL mutation for creating asoftware module with the name `LIDAR` looks like the following:
+For example, a GraphQL mutation for creating a software module with the name `LIDAR` looks like the following:
 
 <div class='grid' markdown>
 
