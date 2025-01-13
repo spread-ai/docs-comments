@@ -1,6 +1,7 @@
 ---
 title: Understanding GraphQL mutations
 description: Understanding how to make chjanges to a GraphQL schema.
+comments: true
 hide:
      - toc
 ---
@@ -14,7 +15,6 @@ In [Module 2](../module-2/querying-spread.md#finding-the-query) we covered findi
 
 As a reminder: Changesets are the versions of a dataset. Over time the data contained in a dataset may change and each iteration of the dataset is know as a changeset. In the diagram there are four changesets: Changeset A1 and Changeset A2 for Dataset A, and Changeset B1 and Changeset B2 for Dataset B.
 
-
 !!! info "Publishing changes"
 
      With mutations changes that aren't published only apply to changesets, changes that are published apply to datasets as a whole.
@@ -23,31 +23,46 @@ Published changes can be fetched with queries to the dataset, but unpublished ch
 
 For example, a GraphQL mutation for updating a feature variant looks like the following:
 
-```json title="GraphQL mutation structure"
-mutation UpdateFeatureVariant($datasetId: ID!) {
-     updateFeatureVariant {
-          description {
-               en
+
+
+<div class='grid' markdown>
+
+!!! example "GraphQL mutation structure"
+
+     This request uses `$variableID` as the `datasetID`
+     ---
+
+     ```json title="GraphQL mutation structure"
+     mutation UpdateFeatureVariant($datasetId: "EsfDatasets/de892a79-efab-4176-a282-e2c117cd1e23") {
+          updateFeatureVariant {
+               name {
+                    en
+               }
           }
      }
-}
 ```
+     
+!!! example "GraphQL variables"
+
+     The values for the fields to change is provided via the **Variables** window in EIN Explorer.
+     ---
+
+     ```json
+     {"name": "Lidar"}
+     ```
+</div>
+
 
 !!! info "What is a Feature Variant?"
 
      Feature variant describes a specific realization of a feature. It's one of possible many ways of implementing a feature - for example, a feature with different capabilities of or a feature for different market requirements. A more concrete example for a feature variant could be "SoftwareUpdate via USB" versus "SoftwareUpdate via OverTheAir". It describes the realization of a feature in a specific context.
 
-The values for each of the fields is provided via the **Variables** window in EIN Explorer.
 
 ## Finding the mutation
 
 Like with [queries](../module-2/querying-spread.md) you can use the Schema Definition Language (SDL) reference to find the right mutation for your needs. For more on using the reference, see [Finding the query](../module-2/querying-spread.md#finding-the-query). To view the SDL reference select the **EIN** tile from the SPREAD Launcher.
 
----
-
 {{ snippets.demoInstanceDetails }}
-
----
 
 ??? failure "Schema introspection failure"
 
@@ -55,7 +70,7 @@ Like with [queries](../module-2/querying-spread.md) you can use the Schema Defin
 
      ![Schema introspection failure fix](../module-2/src/schema-introspection-fail.png)
 
-If you wanted to change the dimensions of a battery you may search the reference for something like `updateBattery.dimensions` and see what the search returns. Using search terms that describe the action (`update`, `delete`, or `create`), the object that that action is applied to (`battery`), and the field that you want to change (`dimensions`) helps to narrow down the list of possible mutations. Remember to select the **Mutations** tabs (as highlighted in the red box) to get results for mutations.
+If you wanted to change the name of a featureVariant you may search the reference for something like `updatefeatureVariant.name` and see what the search returns. Using search terms that describe the action (`update`, `delete`, or `create`), the object that that action is applied to (`featureVariant`), and the field that you want to change (`name`) helps to narrow down the list of possible mutations. Remember to select the **Mutations** tabs (as highlighted in the red box) to get results for mutations.
 
 <figure markdown="span">
      ![Searching for mutation to update the dimensions of a battery](src/search-update-battery.png)
@@ -91,3 +106,5 @@ answer: change
 content:
 <p></p>
 <?/quiz?>
+
+<blockquote class="next-lesson">In the <a href="creating-an-authoring-app.html">next lesson</a> we will write data back to the Engineering Intelligence Graph from our application.</blockquote>

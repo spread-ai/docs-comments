@@ -1,6 +1,7 @@
 ---
 title:  Creating data visulaizations
 description: Creating data visualtions in Studio.
+comments: true
 hide:
      - toc
 ---
@@ -22,6 +23,10 @@ For example, in this graph the nodes are `body`, `steel`, and `rim` and the edge
 </figure>
 
 To create a visualization of the relationships between feature variants, components, and software we need to parse the data we received from the query into data to create nodes and edges in a graph.
+
+!!! info "What is a Feature Variant?"
+
+     Feature variant describes a specific realization of a feature. It's one of possible many ways of implementing a feature - for example, a feature with different capabilities of or a feature for different market requirements. A more concrete example for a feature variant could be "SoftwareUpdate via USB" versus "SoftwareUpdate via OverTheAir". It describes the realization of a feature in a specific context.
 
 ## Adding to the UI
 
@@ -128,4 +133,4 @@ In the style configuration tab, use the following settings to style the widget:
 
 {{ snippets.publishApp }}
 
-<blockquote class="next-lesson">In the <a href="creating-data-visualizations.html">next module</a> we will write data back to the Engineering Intelligence Graph from our application.</blockquote>
+<blockquote class="next-lesson">In the <a href="creating-data-visualizations.html">next module</a> we'll learn about writing data data to the Engineering Intelligence Graph.</blockquote>
