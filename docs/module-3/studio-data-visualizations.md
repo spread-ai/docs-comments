@@ -12,9 +12,9 @@ hide:
      }
 </style>
 
-One of the benefits of structured data is that it can be re-arranged, changed, and presented in different ways. For many use cases a visual representation of product data can cut down the time it takes to analyze and understand your product. SPREAD Studio offers a number of ways to visualize data in the custom applications that you can create. In the [next lesson](creating-data-visualizations.md), we will create a graph using feature variants data.
+One of the benefits of structured data is that it can be re-arranged, changed, and presented in different ways. For many use cases a visual representation of product data can cut down the time it takes to analyze and understand your product. SPREAD Studio offers a number of ways to visualize data in the custom applications that you can create.
 
-The more popular visualizations widgets (and their accessories) are listed below, along with links to documentation about their properties.
+The more popular visualizations widgets are listed below, along with links to documentation about their properties.
 
 <br>
 <div class='grid cards' style='max-width: 90vw !important; margin: auto' markdown>
