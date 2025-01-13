@@ -1,6 +1,7 @@
 ---
 title: Creating a display application
 description: Taking our previous lessons' knowledge and creating a Studio application that displays data.
+comments: true
 hide:
      - toc
 ---
@@ -41,11 +42,11 @@ Just as we did in the [previous lesson](querying-spread.html), we will enter a q
 
      Given what we know [about finding queries](querying-spread.html#finding-the-query), go to this [URL]({{ snippets.demoInstanceEinURL }}) and investigate what query will return all the data that we are looking. As a reminder:
 
-          - [x] We have set up a dataset with the ID: `"EsfDatasets/de892a79-efab-4176-a282-e2c117cd1e23"`. Use this as the `datasetId` in the query.
-          - [x] We are looking for data in `featureVariants`:
-               - [x] We are looking for the names of all the `featureVariants`. Remember that we need to supply the language that the names are returned in.
-               - [x] We are looking for the names and IDs of the components that make up the feature variant. **Clue:** The name of the object that contains this data is `realizedInComponentVariant`.
-               - [x] We are looking for the software modules that these components use.
+          * We have set up a dataset with the ID: `"EsfDatasets/de892a79-efab-4176-a282-e2c117cd1e23"`. Use this as the `datasetId` in the query.
+          * We are looking for data in `featureVariants`:
+               * We are looking for the names of all the `featureVariants`. Remember that we need to supply the language that the names are returned in.
+               * We are looking for the names and IDs of the components that make up the feature variant. **Clue:** The name of the object that contains this data is `realizedInComponentVariant`.
+               * We are looking for the software modules that these components use.
      
      Before revealing the answer, take a moment to try find the query on your own. Once you are done, check your answer against the snippet below.
 
