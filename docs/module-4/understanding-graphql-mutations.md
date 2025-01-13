@@ -1,5 +1,5 @@
 ---
-title: Understanding GraphQL mutations
+title: Understanding GraphQL mutationshe feature 
 description: Understanding how to make chjanges to a GraphQL schema.
 comments: true
 hide:
@@ -21,42 +21,51 @@ As a reminder: Changesets are the versions of a dataset. Over time the data cont
 
 Published changes can be fetched with queries to the dataset, but unpublished changes need a query that reads changesets to fetch. In a more advanced course, we will cover the difference - but in this course we will only apply changes to changesets.
 
-For example, a GraphQL mutation for updating a feature variant looks like the following:
+!!! info "Example dataset ID"
 
+     For the demonstration we have set up a dataset with the ID: `"EsfDatasets/de892a79-efab-4176-a282-e2c117cd1e23"`. Use this as the `datasetId` in the query.
 
+For example, a GraphQL mutation for creating a feature variant with the name `LIDAR` looks like the following:
 
 <div class='grid' markdown>
 
 !!! example "GraphQL mutation structure"
 
-     This request uses `$variableID` as the `datasetID`
+     This muatation uses `$datasetID` as the `$datasetID` and and data of the feature variant to create is provided by $data variable.
      ---
 
      ```json title="GraphQL mutation structure"
-     mutation UpdateFeatureVariant($datasetId: "EsfDatasets/de892a79-efab-4176-a282-e2c117cd1e23") {
-          updateFeatureVariant {
+     mutation CreateFeatureVariants($datasetId: ID!, $data: [CreateFeatureVariantInput]) {
+          createFeatureVariants(datasetId: $datasetId, data: $data) {
                name {
                     en
                }
           }
      }
-```
+     ```
      
 !!! example "GraphQL variables"
 
-     The values for the fields to change is provided via the **Variables** window in EIN Explorer.
+     The values for the fields to create are provided in the **Variables** window in EIN Explorer.
      ---
 
      ```json
-     {"name": "Lidar"}
+     {
+          "datasetId": "EsfDatasets/de892a79-efab-4176-a282-e2c117cd1e23",
+          "data": [
+               {
+                    "name": {
+                         "en": "LIDAR"
+                    }
+               }
+          ]
+     }
      ```
 </div>
-
 
 !!! info "What is a Feature Variant?"
 
      Feature variant describes a specific realization of a feature. It's one of possible many ways of implementing a feature - for example, a feature with different capabilities of or a feature for different market requirements. A more concrete example for a feature variant could be "SoftwareUpdate via USB" versus "SoftwareUpdate via OverTheAir". It describes the realization of a feature in a specific context.
-
 
 ## Finding the mutation
 
@@ -70,11 +79,11 @@ Like with [queries](../module-2/querying-spread.md) you can use the Schema Defin
 
      ![Schema introspection failure fix](../module-2/src/schema-introspection-fail.png)
 
-If you wanted to change the name of a featureVariant you may search the reference for something like `updatefeatureVariant.name` and see what the search returns. Using search terms that describe the action (`update`, `delete`, or `create`), the object that that action is applied to (`featureVariant`), and the field that you want to change (`name`) helps to narrow down the list of possible mutations. Remember to select the **Mutations** tabs (as highlighted in the red box) to get results for mutations.
+If you wanted to create a new featureVariant you may search the reference for something like `createFeatureVariants.name` and see what the search returns. Using search terms that describe the action (`update`, `delete`, or `create`), the object that that action is applied to (`featureVariants`), and the field that you want to create (`name`) helps to narrow down the list of possible mutations. Remember to select the **Mutations** tabs (as highlighted in the red box) to get results for mutations.
 
 <figure markdown="span">
-     ![Searching for mutation to update the dimensions of a battery](src/search-update-battery.png)
-     <figcaption>Searching for mutation to update the dimensions of a battery</figcaption>
+     ![Searching for mutation to create a new feature variant](src/search-create-featurevariants.png){ .img-medium }
+     <figcaption>Searching for mutation to ucreate a new feature variant</figcaption>
 </figure>
 
 ## Exploring the mutation
@@ -88,7 +97,7 @@ Like with queries, you can click through to the GraphQL Explorer to test the end
 
 Remember that any fields that have an exclamation point in the SDL reference are required fields, so you need to supply a value for them when performing a mutation.
 
-For more on using the EIN Explorer, see [](../module-2/querying-spread.md#exploring-the-endpoint-field).
+For more on using the EIN Explorer, see [Querying spread](module-2/querying-spread.html#exploring-the-endpoint-field).
 
 ## Dataset permissions
 
