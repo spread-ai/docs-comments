@@ -31,7 +31,7 @@ For example, a GraphQL mutation for creating a feature variant with the name `LI
 
 !!! example "GraphQL mutation structure"
 
-     This muatation uses `$datasetID` as the `$datasetID` and and data of the feature variant to create is provided by $data variable.
+     This muatation uses `$datasetID` as the `$datasetID` and and data of the feature variant to create is provided by `$data` variable.
      ---
 
      ```json title="GraphQL mutation structure"
@@ -66,6 +66,10 @@ For example, a GraphQL mutation for creating a feature variant with the name `LI
 !!! info "What is a Feature Variant?"
 
      Feature variant describes a specific realization of a feature. It's one of possible many ways of implementing a feature - for example, a feature with different capabilities of or a feature for different market requirements. A more concrete example for a feature variant could be "SoftwareUpdate via USB" versus "SoftwareUpdate via OverTheAir". It describes the realization of a feature in a specific context.
+
+[Open the demo GraphQL request](https://app.spread.ai/ein?explorerURLState=N4IgJg9gxgrgtgUwHYBcQC4RxighigSwiQAIBhAJwXwQDFqUYqA1XCg3VAZwAoASMPlxcEKAJJh0JMQBEAhABoSAoVIDalBnQZMErdp3FIADjgC6AShLAAOqRJQqNevl36O3HoLwjxk5d7CohJKgVIqeFa29iQkSLiI1naxKSTIySkAvhnZSLkgCiAAbmwcAEYANghcGCDRqQ0kNuBCvhLNUs0AolwAZjKtolwA9GAIABwAnABMuADskwC0CL24ZYsALACMcwBsi7jT49PL01BbO1BgWwjTAMzNChmNsc2BHSRqzy8N9T--rxA8UQHz%2BAPBgPSGCaIAAMrIAIIAJWa3whqVy6NimP%2BZjRmRAmSAA){ .md-button .md-button--primary }
+<br>
+<br>
 
 ## Finding the mutation
 
