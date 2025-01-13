@@ -24,9 +24,7 @@ For example, in this graph the nodes are `body`, `steel`, and `rim` and the edge
 
 To create a visualization of the relationships between feature variants, components, and software we need to parse the data we received from the query into data to create nodes and edges in a graph.
 
-!!! info "What is a Feature Variant?"
-
-     Feature variant describes a specific realization of a feature. It's one of possible many ways of implementing a feature - for example, a feature with different capabilities of or a feature for different market requirements. A more concrete example for a feature variant could be "SoftwareUpdate via USB" versus "SoftwareUpdate via OverTheAir". It describes the realization of a feature in a specific context.
+{{ snippets.whatIsAFeatureVariant }}
 
 ## Adding to the UI
 
@@ -43,7 +41,7 @@ The response returned by the GraphQL query needs to be parsed before it can be u
 
 Copy the code below, select the **JS** tab in the **Editor** view and paste it into the window. To learn more about what the code does, select the annotation popups.
 
-```js 
+```js
 export default {
      graph: {},
      onFeatureSelected() { // (1)

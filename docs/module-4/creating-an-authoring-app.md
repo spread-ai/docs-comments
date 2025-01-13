@@ -12,7 +12,7 @@ To write data to the Engineering Intelligence Graph (EI Graph) we need a user in
 
 ## Creating the UI
 
-Drag and drop a text input widget onto the Studio canvas from the **UI** tab on the left-hand side. The highlighted options on the right-hand side are where we will get the data to use for the mutation query.
+Drag and drop a text input widget and a submit button onto the Studio canvas from the **UI** tab on the left-hand side. The highlighted options on the right-hand side are where we will get the data to use for the mutation query.
 
 <figure markdown="span">
      ![Creating the display app UI](src/creating-display-ui.png)

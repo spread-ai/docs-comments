@@ -12,9 +12,7 @@ To get data from the Engineering Intelligence Graph (EI Graph) we need to query 
 
 To fetch data from a GraphQL database we use _queries_ in the similar way to a `GET` request in a REST API. The key difference being that the response can be defined, so that we get only the data we need. A REST API request might return a JSON object that needs to be parsed afterwards to get the required data.
 
-!!! info "What is a Feature Variant?"
-
-     Feature variant describes a specific realization of a feature. It's one of possible many ways of implementing a feature - for example, a feature with different capabilities of or a feature for different market requirements. A more concrete example for a feature variant could be "SoftwareUpdate via USB" versus "SoftwareUpdate via OverTheAir" in different vehicle models. It describes the realization of a feature in a specific context.
+{{ snippets.whatIsAFeatureVariant }}
 
 A GraphQL query contains the following:
 
@@ -163,11 +161,7 @@ To further explore the `createdAt` field select the play icon on the right to op
      <figcaption>Explore the `createdAt` field</figcaption>
 </figure>
 
-To run a test call select the **▶️ Run** button at the top of the **Operation** window. Remeber that we have to provide the `datasetId` to get the data from the right data set. 
-
-!!! info "Example dataset ID"
-
-     For the demonstration we have set up a dataset with the ID: `"EsfDatasets/de892a79-efab-4176-a282-e2c117cd1e23"`. Use this as the `datasetId` in the query.
+To run a test call select the **▶️ Run** button at the top of the **Operation** window. Remember that we have to provide the `datasetId` to get the data from the right dataset. 
 
 <figure markdown="span">
      ![Running the API call](src/createdat-run.png){ .img-medium }
