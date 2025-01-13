@@ -61,7 +61,7 @@ A GraphQL query contains the following:
      ```
 </div>
 
-In the query above we include the `datasetId` as an inline variable, but it's also possible to provide variables in a separate object and then call the variable using the `$`.
+In the query above we include the `datasetId` as an inline variable, but it's also possible to provide variables in a separate object and then call the variable using the `$` symbol.
 
 <div class='grid' markdown>
 
@@ -267,3 +267,5 @@ query($featureVariantId: ID!) {
 !!! abstract "Task 2: Run the query with the description field"
 
      Run the GraphQL query example above at this [URL]({{ snippets.demoInstanceEinURL }}), using variables defined in an object. The title windows will tell you where to paste each code snippet.
+
+<blockquote class="next-lesson">In the <a href="creating-a-display-application.html">next lesson</a> we'll be creating a Studio application that fetches data from EI Graph and then displays it inside the application.</blockquote>

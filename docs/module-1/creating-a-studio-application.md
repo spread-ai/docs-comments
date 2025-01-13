@@ -63,4 +63,4 @@ For more on styling your application, see [How to style your application]().
 
      Publish the application that you have created and then go to the SPREAD Launcher to open it.
 
-<blockquote class="next-lesson">In the <a href="/docs/getting-started/module-2/understanding-spread-information-architecture.html">next lesson</a> we will delve into SPREAD's information architecture.</blockquote>
+<blockquote class="next-lesson">In the <a href="/docs/getting-started/module-2/understanding-spread-information-architecture.html">next module</a> we will delve into SPREAD's information architecture.</blockquote>

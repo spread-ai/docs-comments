@@ -5,7 +5,13 @@ hide:
      - toc
 ---
 
-Now that we know how to fetch data from the Engineering Intelligence Graph we can create an application to display it. We're going to create an application that displays the date when a feature variant was created within a table.
+Now that we know how to fetch data from the Engineering Intelligence Graph we can create an application to display it. We're going to create an application that displays:
+
+- The name of the feature variant. For example: `Airbags` in a vehicle.
+- What components make up the feature variant. For example: airbags might consist of a component that senses when a crash has happened and a component that deploys the airbag.
+- Which software modules the components use to complete tasks. For example: the crash detection component might use software that determines when an impact has happened.
+
+We will display these details in a table.
 
 {{ snippets.demoInstanceDetails }}
 
@@ -22,18 +28,57 @@ Drag and drop a table widget onto the Studio canvas from the **UI** tab on the l
 
 ## Creating the query
 
-To create the query we will use from within Studio go to the **Queries** tab and select **New Query/API**.Select **EIN API** in the **Quick actions** section. Here you can see all the same objects that are in the Schema Definition Language (SDL) reference from the [previous lesson](querying-spread.md).
+To create the query we will use from within Studio go to the **Queries** tab and select **New Query/API**. Select **EIN API** in the **Quick actions** section. Here you can see all the same objects that are in the Schema Definition Language (SDL) reference from the [previous lesson](querying-spread.md).
 
 <figure markdown="span">
      ![Creating a query in the Studio interface](src/studio-ein-api.png)
      <figcaption>Creating a query in the Studio interface</figcaption>
 </figure>
 
-Select the `featureVariants` object in the **Explorer** window and select the `name`, `description`, and `createdAt` fields underneath. Then select the **Run** button to confirm that the query works as expected.
+Just as we did in the [previous lesson](querying-spread.html), we will enter a query in the **Query** window to fetch the data we need.
 
-!!! info "Example dataset ID"
+!!! abstract "Task 1: Find the right query"
 
-     For the demonstration we have set up a dataset with the ID: `"EsfDatasets/de892a79-efab-4176-a282-e2c117cd1e23"`. Use this as the `datasetId` in the query.
+     Given what we know [about finding queries](querying-spread.html#finding-the-query), go to this [URL]({{ snippets.demoInstanceEinURL }}) and investigate what query will return all the data that we are looking. As a reminder:
+
+          - [x] We have set up a dataset with the ID: `"EsfDatasets/de892a79-efab-4176-a282-e2c117cd1e23"`. Use this as the `datasetId` in the query.
+          - [x] We are looking for data in `featureVariants`:
+               - [x] We are looking for the names of all the `featureVariants`. Remember that we need to supply the language that the names are returned in.
+               - [x] We are looking for the names and IDs of the components that make up the feature variant. **Clue:** The name of the object that contains this data is `realizedInComponentVariant`.
+               - [x] We are looking for the software modules that these components use.
+     
+     Before revealing the answer, take a moment to try find the query on your own. Once you are done, check your answer against the snippet below.
+
+??? info "Query to get feature variant's name, components, and software"
+
+     ```json 
+     {
+          featureVariants(datasetId: "EsfDatasets/de892a79-efab-4176-a282-e2c117cd1e23") { // (1)
+               id // (2)
+               name {
+                    en // (3)
+               }
+               realizedInComponentVariant { // (4)
+                    id 
+                    name {
+                         en 
+                    }
+                    usesSoftwareModules { // (5)
+                         id 
+                         name {
+                              en
+                         }
+                    }
+               }
+          }
+     }
+     ```
+
+     1. Remember to add the `datasetId` of our demo dataset: "EsfDatasets/de892a79-efab-4176-a282-e2c117cd1e23" to get the right data.
+     2. This returns the ID of the feature variant. This ID will become necessary when we create data visualizations.
+     3. The name of the feature variant in English. For German you would use `de`.
+     4. This object returns the components of the feature variant.
+     5. This object returns the software used in the components of the feature variant.
 
 <figure markdown="span">
      ![Creating a query in the Studio interface](src/create-query-in-studio.png)
@@ -42,23 +87,32 @@ Select the `featureVariants` object in the **Explorer** window and select the `n
 
 The results will appear in the bottom window under the heading **Response** > **JSON**.
 
-Switch to the **Settings** tab and set **Run API on page load**.
+Switch to the **Settings** tab and enable **Run API on page load**, **Encode query params**, and **Smart JSON substitution**.
 
 <figure markdown="span">
-     ![Run API on page load](src/api-page-load.png){ .img-medium }
+     ![Run API on page load](src/api-settings.png){ .img-medium }
      <figcaption>Run API on page load</figcaption>
 </figure>
 
+!!! abstract "Task 2: Name the query"
+
+     The query needs a unique name so that it can be called from the UI. Name the query `featureVariants` so that we can use it in the next steps.
+
 ## Binding the query
 
-Switch back to the **UI** tab on the top-left and select the table widget that you dropped on to the canvas earlier. Select the **Table data** dropdown menu on the right-hand side and select the query you created.
+Switch back to the **UI** tab on the top-left and select the table widget that you dropped on to the canvas earlier. Select  **Table data** and enter the following: `{{ featureVariants.data.data.featureVariants }}`.
+
+Let's look at what this means:
+
+- `featureVariants.data` is the full object returned by the query named `featureVariants`. This is the same output we saw in the previous step, which begins: `{"data": {"featureVariants": [ ...all the listed featureVariants and their components... ]}}`
+- In order to extract the list of featureVariants we need to add `data.featureVariants` to complete the binding.
 
 <figure markdown="span">
      ![Binding the query to the table](src/binding-query-to-table.png){ .img-medium }
      <figcaption>Binding the query to the table</figcaption>
 </figure>
 
-The fields returned by the query are mapped as columns and you can edit them in the section below **Table data**. For example, let's hide the **description** column from the table by selecting the **👁️** icon in the **Table** section. You can also edit each column by selecting the **⛭** icon.
+The fields returned by the query are mapped as columns and you can edit them in the section below **Table data**. For example, let's hide the **id** column from the table by selecting the **👁️** icon in the **Table** section. You can also edit each column by selecting the **⛭** icon.
 
 <figure markdown="span">
      ![Editing columns in a table](src/column-settings.png){ .img-medium }
@@ -74,7 +128,7 @@ Data can also be synced between widgets. We have hidden the **description** colu
      <figcaption>The container and text widgets below the table</figcaption>
 </figure>
 
-Select the text widget and in the **Text** input field in the settings on the left-hand side enter: `{{ '{{Table1.selectedRow.description }}' }}` (1). This sets the value of the text field to the selected row in `Table1` and `description` column value of that row.
+Select the text widget and in the **Text** input field in the settings on the left-hand side enter: `{{ '{{ Table1.selectedRow.name }}' }}`. This sets the value of the text field to the selected row in `Table1` and `name` column value of that row.
 { .annotate }
 
 <figure markdown="span">
@@ -83,6 +137,12 @@ Select the text widget and in the **Text** input field in the settings on the le
 </figure>
 
 Similarly, you can set the value of fields in other widgets to sync with each other.
+
+!!! error "'Table name' is not defined"
+
+     If you get the error "'Table name' is not defined", check that that table you are syncing from has the same name as the one used in when binding the table to the text box. 
+
+     ![Incorrect table name](src/incorrect-table-name.png){ .img-medium }
 
 ## Publishing and sharing the application
 
@@ -93,4 +153,4 @@ When the application is complete, select the **Publish** button in the top-right
      <figcaption>Sharing your application</figcaption>
 </figure>
 
-1. We recommend that you write this out to see all the options that are available to you to use as the value of the text widget. In this case we're just syncing to the table.
+<blockquote class="next-lesson">In the <a href="module-3/studio-data-visualizations.html">next module</a> we will be looking at how to visualize data in Studio.</blockquote>
