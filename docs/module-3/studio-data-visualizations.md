@@ -1,6 +1,7 @@
 ---
 title: Studio visualizations
 description: Studio visualizations
+comments: true
 hide:
      - toc
 ---
@@ -83,3 +84,5 @@ The more popular visualizations widgets (and their accessories) are listed below
      [:octicons-arrow-right-24: More info]({{ config.site_url }}platform-tools/using-studio/reference/widgets/spread-widgets.html#topology-viewer)
 
 </div>
+
+<blockquote class="next-lesson">In the <a href="creating-data-visualizations.html">next lesson</a> we will create a graph data visualization using the application we created in the <a href="module-2/creating-a-display-application.html">last module</a>.</blockquote>
