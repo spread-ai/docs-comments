@@ -100,7 +100,7 @@ Switch to the **Settings** tab and enable **Run API on page load**, **Encode que
 
 ## Binding the query
 
-Switch back to the **UI** tab on the top-left and select the table widget that you dropped on to the canvas earlier. Select  **Table data** and enter the following: `{{ featureVariants.data.data.featureVariants }}`.
+Switch back to the **UI** tab on the top-left and select the table widget that you dropped on to the canvas earlier. Select  **Table data** and enter the following: `{{ "{{ featureVariants.data.data.featureVariants }}" }}`.
 
 Let's look at what this means:
 
