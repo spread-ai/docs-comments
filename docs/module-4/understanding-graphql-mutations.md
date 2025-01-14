@@ -30,7 +30,7 @@ For example, a GraphQL mutation for creating a software module with the name `LI
      This muatation uses `$datasetID` as the `$datasetID` and and data of the feature variant to create is provided by `$data` variable.
      ---
 
-     ```json title="GraphQL mutation structure"
+     ```json
      mutation CreateSoftwareModule($name: String, $desc: String) {
           createSoftwareModule(datasetId: "EsfDatasets/de892a79-efab-4176-a282-e2c117cd1e23", data: {
                name: {
@@ -98,7 +98,7 @@ If you wanted to create a new software module you may search the reference for s
 
 ## Exploring the mutation
 
-Like with queries, you can click through to the GraphQL Explorer to test the endpoint. Unlike queries, you need to add the new field values that you would like to update or create in the **Variables** window.
+Like with queries, you can click through to the GraphQL Explorer to test the endpoint. For usability, we recommend that you add the new field values that you would like to update or create in the **Variables** window.
 
 <figure markdown="span">
      ![Mutation values in the Variables window](src/add-mutation-values.png)
@@ -109,7 +109,7 @@ Remember that any fields that have an exclamation point in the SDL reference are
 
 !!! abstract "Task 1: Check that the software module has been created"
 
-     Check that the software module has been created by making a query to final all software modules.
+     Check that the software module has been created by making a query to find all software modules.
 
 <?quiz?>
 question: What is the command to make changes to a GraphQL database?

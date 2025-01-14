@@ -6,63 +6,79 @@ hide:
      - toc
 ---
 
-To write data to the Engineering Intelligence Graph (EI Graph) we need a user interface that accepts input from the user before writing it to the database. As we learned in the [previous lesson](understanding-graphql-mutations.md), _mutations_ allow us to edit, update, and create data in the Engineering Intelligence Graph (EI Graph).
+To write data to the Engineering Intelligence Graph (EI Graph) we need a user interface that accepts input from the user before writing it to the database. As we learned in the [previous lesson](understanding-graphql-mutations.md), _mutations_ allow us to edit, update, and create data in the Engineering Intelligence Graph (EI Graph).In this lesson we will use the example mutation from the last lesson to create a new software module. To create a new software module we need:
+
+* An input accepting the new software module's `name`
+* An input accepting a `description` of the new software module
+* The `id` if the feature variant that the software module is atteched to
 
 {{ snippets.demoInstanceDetails }}
 
 ## Creating the UI
 
-Drag and drop a text input widget and a submit button onto the Studio canvas from the **UI** tab on the left-hand side. The highlighted options on the right-hand side are where we will get the data to use for the mutation query.
+Drag and drop three text input widgets and a submit button onto the Studio canvas of the appluications we created in the last module. Reminder: you can find widgets in the **UI** tab on the left-hand side.
 
 <figure markdown="span">
      ![Creating the display app UI](src/creating-display-ui.png)
      <figcaption>Creating the display app UI</figcaption>
 </figure>
 
-<!-- ## Creating the mutation
+Add labels for each text input. To add a label ...
 
-To create the query we will use from within Studio go to the **Queries** tab and select **New Query/API**.Select **EIN API** in the **Quick actions** section. Here you can see all the same objects that are in the Schema Definition Language (SDL) reference from the [previous lesson](querying-spread.md).
+## Creating the mutation
 
-<figure markdown="span">
-     ![Creating a query in the Studio interface](src/studio-ein-api.png)
-     <figcaption>Creating a query in the Studio interface</figcaption>
-</figure>
+To create the mutation we will use from within Studio go to the **Queries** tab and select **New Query/API**. Select **EIN API** in the **Quick actions** section. Use the mutation we created in the last lesson:
 
-Select the `featureVariants` object in the **Explorer** window and select the `name`, `description`, and `createdAt` fields underneath. Then select the **Run** button to confirm that the query works as expected.
+<div class='grid' markdown>
 
-!!! info "Example dataset ID"
+!!! example "Query"
 
-     For the demonstration we have set up a dataset with the ID: `"EsfDatasets/de892a79-efab-4176-a282-e2c117cd1e23"`. Use that as the `datasetId` in the query.
+     ```json
+     mutation CreateSoftwareModule($name: String, $desc: String) {
+          createSoftwareModule(datasetId: "EsfDatasets/de892a79-efab-4176-a282-e2c117cd1e23", data: {
+               name: {
+                    en: $name
+               }
+               description: {
+                    en: $desc
+               }
+          }) {
+               id
+          }
+     }
+     ```
+     
+!!! example "Query variables"
 
-<figure markdown="span">
-     ![Creating a query in the Studio interface](src/create-query-in-studio.png)
-     <figcaption>Creating a query in the Studio interface</figcaption>
-</figure>
-
-The results will appear in the bottom window under the heading **Response** > **JSON**.
-
-Switch to the **Settings** tab and set **Run API on page load**.
+     ```json
+     {
+          "data": [
+               {
+                    "name": {
+                         "en": "LIDAR"
+                    }
+               },
+               {
+                    "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. "
+               }, 
+               {
+                    "id": "FeatureVariants/08992c5e-522c-44a0-965f-72f83622c496"
+               }
+          ]
+     }
+     ```
+</div>
 
 <figure markdown="span">
      ![Run API on page load](src/api-page-load.png){ .img-medium }
      <figcaption>Run API on page load</figcaption>
 </figure>
 
+To get the values from the text input boxes we need to bind the output of the widgets to the Query variables.
+
 ## Binding the mutation
 
-Switch back to the **UI** tab on the top-left and select the table widget that you dropped on to the canvas earlier. Select the **Table data** dropdown menu on the right-hand side and select the query you created.
-
-<figure markdown="span">
-     ![Binding the query to the table](src/binding-query-to-table.png)
-     <figcaption>Binding the query to the table</figcaption>
-</figure>
-
-The fields returned by the query are mapped as columns and you can edit them in the section below **Table data**. For example, let's hide the **description** column from the table by selecting the **👁️** icon in the **Table** section. You can also edit each column by selecting the **⛭** icon.
-
-<figure markdown="span">
-     ![Editing columns in a table](src/column-settings.png){ .img-medium }
-     <figcaption>Editing columns in a table</figcaption>
-</figure>
+Switch back to the **UI** tab on the top-left and ...
 
 ## Publishing and sharing the application
 
