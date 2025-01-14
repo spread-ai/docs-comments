@@ -105,14 +105,14 @@ If you have not changed the names, they should be `Input1`, `Input2`, and `Input
      "data": [
           {
                "name": {
-                    "en": "{{ Input1.text }}"
+                    "en": {{ "{{ Input1.text }}" }}
                }
           },
           {
-               "desc": "{{ Input2.text }}"
+               "desc": {{ "{{ Input2.text }}" }}
           }, 
           {
-               "id": "{{ Input3.text }}"
+               "id": {{ "{{ Input3.text }}" }}
           }
      ]
 }
