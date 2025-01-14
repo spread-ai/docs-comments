@@ -100,23 +100,25 @@ You can also change the name of the widget by selecting it and editing the name 
 
 If you have not changed the names, they should be `Input1`, `Input2`, and `Input3`. Go back to the **Queries** tab and edit the **Queries variables** to get the text from the input fields:
 
-```json title="Query variables" hl_lines="5 9 12"
-{
-     "data": [
-          {
-               "name": {
-                    "en": {{ "{{ Input1.text }}" }}
+!!! example "Query variables"
+
+     ```json hl_lines="5 9 12"
+     {
+          "data": [
+               {
+                    "name": {
+                         "en": {{ "{{ Input1.text }}" }}
+                    }
+               },
+               {
+                    "desc": {{ "{{ Input2.text }}" }}
+               }, 
+               {
+                    "id": {{ "{{ Input3.text }}" }}
                }
-          },
-          {
-               "desc": {{ "{{ Input2.text }}" }}
-          }, 
-          {
-               "id": {{ "{{ Input3.text }}" }}
-          }
-     ]
-}
-```
+          ]
+     }
+     ```
 
 ## Set the submit button
 
