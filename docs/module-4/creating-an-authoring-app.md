@@ -134,7 +134,7 @@ Now we need to set the **Submit** button to start the query when it is clicked. 
 When the application is complete, select the **Publish** button in the top-right corner to make it available from the SPREAD Platform launcher page. To share the application with other users select the **Share** button (next to the **Publish** button) and add users who can either have **Developer** rights to edit the application or **Viewer** rights to just view it.
 
 <figure markdown="span">
-     ![Sharing your application](/getting-started/module-2/src/share-application.png){ .img-medium }
+     ![Sharing your application]({{ config.site_url }}/getting-started/module-2/src/share-application.png){ .img-medium }
      <figcaption>Sharing your application</figcaption>
 </figure>
 
