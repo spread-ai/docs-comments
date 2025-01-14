@@ -100,7 +100,7 @@ You can also change the name of the widget by selecting it and editing the name 
 
 If you have not changed the names, they should be `Input1`, `Input2`, and `Input3`. Go back to the **Queries** tab and edit the **Queries variables** to get the text from the input fields:
 
-```json title="Query variables" hl_lines="5, 9, 12"
+```json title="Query variables" hl_lines="5 9 12"
 {
      "data": [
           {
@@ -120,7 +120,7 @@ If you have not changed the names, they should be `Input1`, `Input2`, and `Input
 
 ## Set the submit button
 
-Now we need to set the **Submit** buton to start the query when it is clicked. Go to the **Submit** widget and select **onClick (JS)** > **Execute a query** and then select the query we created earlier (if you haven't renamed it, it will be `Api1`).
+Now we need to set the **Submit** button to start the query when it is clicked. Go to the **Submit** widget and select **onClick (JS)** > **Execute a query** and then select the query we created earlier (if you haven't renamed it, it will be `Api1`).
 
 <figure markdown="span">
      ![Set the submit button to start the query](src/submit-button-query.png){ .img-medium }
@@ -132,10 +132,12 @@ Now we need to set the **Submit** buton to start the query when it is clicked. G
 When the application is complete, select the **Publish** button in the top-right corner to make it available from the SPREAD Platform launcher page. To share the application with other users select the **Share** button (next to the **Publish** button) and add users who can either have **Developer** rights to edit the application or **Viewer** rights to just view it.
 
 <figure markdown="span">
-     ![Sharing your application](module-1/src/share-application.png){ .img-medium }
+     ![Sharing your application](module-2/src/share-application.png){ .img-medium }
      <figcaption>Sharing your application</figcaption>
 </figure>
 
 [Open the completed application](https://studio.app.spread.ai/app/example-app/page1-677fc78197809505bda97461){ .md-button .md-button--primary }
 <br>
 <br>
+
+<blockquote class="next-lesson">Congratulations, you have completed the Introduction to SPREAD Platform course. Fore more, see <a href="/platform-tools/using-studio/creating-studio-applications.html">Creating Studio applications</a>.</blockquote>
