@@ -92,7 +92,7 @@ Like with [queries](../module-2/querying-spread.md) you can use the Schema Defin
 
      If you see a "Schema introspection failure" error when opening the EIN tile, go to the **Connection Settings** in the top-left and select **Include cookies** to resolve it.
 
-     ![Schema introspection failure fix](../module-2/src/schema-introspection-fail.png)
+     ![Schema introspection failure fix]({{ config.site_url }}module-2/src/schema-introspection-fail.png)
 
 If you wanted to create a new feature variant you may search the reference for something like `createFeatureVariant.name` and see what the search returns. Using search terms that describe the action (`update`, `delete`, or `create`), the object that that action is applied to (`featureVariant`), and the field that you want to create (`name`) helps to narrow down the list of possible mutations. Remember to select the **Mutations** tabs (as highlighted in the red box) to get results for mutations.
 
