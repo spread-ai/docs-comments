@@ -69,7 +69,7 @@ In the query above we include the `datasetId` as an inline variable, but it's al
      ---
 
      ```json hl_lines="2"
-     query {
+     query Query($variableID: ID!) {
           featureVariants(datasetId: $variableID) {
                name {
                     en

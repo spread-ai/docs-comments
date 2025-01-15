@@ -103,6 +103,15 @@ export default {
 
      Name the JavaScript code `PageState`.
 
+### Bind the JS code to the table
+
+In order for the JavaScript code to run when a row in the table is selected we need to bind it to the table. Go to the **UI** tab and select the Table widget. In the properties window on the right-hand side, open the **Row selection** section and set **Default selected row** to `-1` and **onRowSelected** to `{{ "{{ PageState.onFeatureSelected() }}" }}`. This binds the `onFeatureSelected` function to the row that has been selected by the user.
+
+<figure markdown="span">
+	![Binding JS code to Table widget](src/binding-js-code-table.png){ .img-medium }
+	<figcaption>Binding JS code to Table widget</figcaption>
+</figure>
+
 ### Apply bindings to the Graph widget
 
 The parsed output should then be bound to the Graph widget by using these values in the properties window on the right-hand side:
