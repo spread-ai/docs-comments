@@ -29,7 +29,7 @@ Drag and drop three text input widgets and a submit button onto the Studio canva
 
 ### Autopopulate the ID field
 
-Next, we will autopopulate the ID field with the ID value of the slected row in the table. This avoids us having to copy the ID from the able. Select the text input widget for ID and enter: `{{ "{{ FeaturesTable.selectedRow.id }}" }}` in the **Default value** field.
+Next, we will autopopulate the ID field with the ID value of the selected row in the table. This avoids us having to copy the ID from the able. Select the text input widget for ID and enter: `{{ "{{ FeaturesTable.selectedRow.id }}" }}` in the **Default value** field.
 
 <figure markdown="span">
      ![Sync the input field with the table row](src/sync-id-field.png){ .img-medium }

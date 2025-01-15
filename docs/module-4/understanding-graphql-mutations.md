@@ -21,24 +21,25 @@ As a reminder: Changesets are the versions of a dataset. Over time the data cont
 
 Published changes can be fetched with queries to the dataset, but unpublished changes need a query that reads changesets to fetch. In a more advanced course, we will cover the difference - but in this course we will only apply changes to changesets.
 
-For example, a GraphQL mutation for creating a software module with the name `LIDAR` looks like the following:
+For example, a GraphQL mutation for creating a feature variant with the name `LIDAR` looks like the following:
 
 <div class='grid' markdown>
 
 !!! example "GraphQL mutation structure"
 
-     This muatation uses `$datasetID` as the `$datasetID` and and data of the feature variant to create is provided by `$data` variable.
+     This muatation uses data of the feature variant to create is provided by `$data` variable.
      ---
 
      ```json
-     mutation CreateSoftwareModule($name: String, $desc: String) {
-          createSoftwareModule(datasetId: "EsfDatasets/de892a79-efab-4176-a282-e2c117cd1e23", data: {
+     mutation CreateFeature($name: String!, $desc: String!, $componentIds: [ID]) {
+          createFeatureVariant(datasetId: "EsfDatasets/de892a79-efab-4176-a282-e2c117cd1e23", data: {
                name: {
                     en: $name
                }
                description: {
                     en: $desc
                }
+               realizedInComponentVariantIds: $componentIds
           }) {
                id
           }
@@ -69,9 +70,7 @@ For example, a GraphQL mutation for creating a software module with the name `LI
      ```
 </div>
 
-!!! info "What is a Software Module?"
-
-     A software module contains the software for completing a certain task, such as receiving inouts from sensors and determing that a car crah has occured. Another software module would initiate actions to deploy the airbag when that happens.
+{{ snippet.whatIsAFeatureVariant }}
 
 [Open the demo GraphQL mutation](https://app.spread.ai/ein?explorerURLState=N4IgJg9gxgrgtgUwHYBcQC4QAI4xQQxQEsIksBhAJwUIQGUIAzFAd32oFkIwYAbBABQASJPkTosdFJSJIA5gBosQsAgDOUCVJnyAlFmAAdMllNmzUarQbM2nbn0FhC%2BNQhQBJMBMMgAomqMACIubihqAPSqABwAnABM%2BADssQC0CIz4AEapACwAjEkAbKn48dHx6fFQ%2BYVQYPkI8QDMvkrOBBJGJua95qLiBsZ9IyPIEiJiCMOjfQC%2BM7PmqhoyAA7EpF2LS2NIEytQO7sLPSNz%2Bt275kRgx72nDyAKIABu7ETZ-GoY2ENnfV8HXwvgkAG17rMrtcRr4BtMMP8YddfMhQVhfAAZDxBACCACVfJCYY9kXMFMSRtDkeYgeojojfHQEGAsHgsGsEJQ1GsiFBPsQ1GykKosBA4EgiEKpSgEFhRCgYEKuZQIJQsGoiCgsK8ILwYBtaHAsPgoLA1PhUER4FhILw1Qg4ABHGBy3j4GDOK3wJQoCAEY3UY34TkyMRKGguuVENYWrAu-By7JYIi8e0ppCvZB%2B6g6rlawhSrDueMwVxEE2UKAACy1CCgfqwWRoBDlrwLcrAfIIGpgqGLAA81rw%2BdkIAA6LAAOUdEGLkuNMYtxt1%2BsNsuNLs%2BOr1BoIQs12tcoYVMHVHu13C1JvZjBgci1SjcrK3%2BCwUFIbhdfcV6rg%2BDkSVbT1B1lQgIUtywShC1INtd3XR0NQQSCkHpa1UEnIkASWckMWwqFKV2XxbnRXwADEWzPBAADUPktcIIgABjiBIoAAVgQVI2Piao8lyfBGNSWIijYxhUiSeJGGiZoih4qBcmErCaVJUYAF1jjmEA5iAA){ .md-button .md-button--primary }
 <br>
@@ -89,11 +88,11 @@ Like with [queries](../module-2/querying-spread.md) you can use the Schema Defin
 
      ![Schema introspection failure fix](../module-2/src/schema-introspection-fail.png)
 
-If you wanted to create a new software module you may search the reference for something like `createSoftwareModule.name` and see what the search returns. Using search terms that describe the action (`update`, `delete`, or `create`), the object that that action is applied to (`softwareModule`), and the field that you want to create (`name`) helps to narrow down the list of possible mutations. Remember to select the **Mutations** tabs (as highlighted in the red box) to get results for mutations.
+If you wanted to create a new feature variant you may search the reference for something like `createFeatureVariant.name` and see what the search returns. Using search terms that describe the action (`update`, `delete`, or `create`), the object that that action is applied to (`featureVariant`), and the field that you want to create (`name`) helps to narrow down the list of possible mutations. Remember to select the **Mutations** tabs (as highlighted in the red box) to get results for mutations.
 
 <figure markdown="span">
-     ![Searching for mutation to create a new software module](src/search-create-featurevariants.png){ .img-medium }
-     <figcaption>Searching for mutation to create a new software module</figcaption>
+     ![Searching for mutation to create a new feature variant](src/search-create-featurevariants.png){ .img-medium }
+     <figcaption>Searching for mutation to create a new feature variant</figcaption>
 </figure>
 
 ## Exploring the mutation
@@ -105,11 +104,7 @@ Like with queries, you can click through to the GraphQL Explorer to test the end
      <figcaption>Mutation values in the Variables window</figcaption>
 </figure>
 
-Remember that any fields that have an exclamation point in the SDL reference are required fields, so you need to supply a value for them when performing a mutation. In this case the ID field is required to create a new software module.
-
-!!! abstract "Task 1: Check that the software module has been created"
-
-     Check that the software module has been created by making a query to find all software modules.
+Remember that any fields that have an exclamation point in the SDL reference are required fields, so you need to supply a value for them when performing a mutation. In this case the ID field is required to create a new feature variant.
 
 <?quiz?>
 question: What is the command to make changes to a GraphQL database?

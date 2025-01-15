@@ -101,7 +101,6 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
     ---
 
      - :octicons-arrow-right-24: What the Engineering Intelligence Graph (EI Graph) is
-     - :octicons-arrow-right-24: How to import data into the EI Graph
      - :octicons-arrow-right-24: Creating a basic Studio application UI
      - :octicons-arrow-right-24: Querying data in the EI Graph from Studio
      - :octicons-arrow-right-24: Publishing a Studio application
