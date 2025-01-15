@@ -77,6 +77,7 @@ The response confirms that we have create a feature variant with the ID `Feature
           }
      }
      ```
+</div>
 
 [Open the demo GraphQL mutation](https://app.spread.ai/ein?explorerURLState=N4IgJg9gxgrgtgUwHYBcQC4RxighigSwiQAIBhAJwXwQDFqUYqAKAEiV0XRIGUUKCSAOYBCADQlWYBAGco3PgOHjJUCHAAOxZCgCSYGdwDaugCIBdAJQlgAHSS2UUKjXr4mCAGq4BuVMzB8XBkEPTBuWxAAURkAM1MgkJQZAHppAA4ATgAmXAB2TIBaBFjcACNCgBYARjyANkLcbPTs4uyoatqoMGqEbIBmSIlAvG47BxRHDi4be0d5lGRudk4EOcmUAF91x2k5AQ1CYjGdjaXJPahT7YnHFwAbAgAvBDBdJDJ1LSQdb19UfSGVRfbQAgzrTbWcYLAhgCH2TYgMQgABuPgI5XusgwIGhkxA0zWGBIkQAKrJ8WIduBZFdiZEAIIkS4HI6kAAWCCoADohtS1JpQWEZJFjJFPoKfqg-hjUKlcLEoABWap1BWFADyUDyuCq9XSjUyeVa6VisSV2VizUyUHSlUi5gRIE2QA){ .md-button .md-button--primary }
 <br>
