@@ -21,6 +21,8 @@ As a reminder: Changesets are the versions of a dataset. Over time the data cont
 
 Published changes can be fetched with queries to the dataset, but unpublished changes need a query that reads changesets to fetch. In a more advanced course, we will cover the difference - but in this course we will only apply changes to changesets.
 
+{{ snippets.demoInstanceDetails }}
+
 For example, a GraphQL mutation for creating a feature variant with the name `LIDAR` looks like the following:
 
 <div class='grid' markdown>
@@ -86,8 +88,6 @@ The response confirms that we have create a feature variant with the ID `Feature
 ## Finding the mutation
 
 Like with [queries](../module-2/querying-spread.md) you can use the Schema Definition Language (SDL) reference to find the right mutation for your needs. For more on using the reference, see [Finding the query](../module-2/querying-spread.md#finding-the-query). To view the SDL reference select the **EIN** tile from the SPREAD Launcher.
-
-{{ snippets.demoInstanceDetails }}
 
 ??? failure "Schema introspection failure"
 

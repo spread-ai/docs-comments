@@ -25,9 +25,9 @@ To expedite the process we have created a template application for us to complet
 !!! abstract "Task 1: Import the application in Studio"
 
      Import the downloaded JSOn file above into Studio. Hint: Start by selecting the **Studio** tile in the SPREAD launcher and then...
-     ![Importin an app in Studio](src/import-studio-app.png)
+     ![Importing an app in Studio](src/import-studio-app.png)
 
-The application includes a query to automatically publish the dataset after we have added a new feature variant and a query to list optiosn in the modal. For more on Data Manager and working with dataset, see the course on  [Data Management in Studio]().
+The application includes a query to automatically publish the dataset after we have added a new feature variant and a query to list component options in the modal. Remember that a feature variant is made of components. For example, airbags might consist of a component that senses when a crash has happened and a component that deploys the airbag. When we create a feature variant we will also select components to include within it. For more on Data Manager and working with dataset, see the course on  [Data Management in Studio]().
 
 ## Creating the mutation
 
