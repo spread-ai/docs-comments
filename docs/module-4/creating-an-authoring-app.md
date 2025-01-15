@@ -102,4 +102,5 @@ When the application is complete, select the **Publish** button in the top-right
 <br>
 <br>
 
+
 <blockquote class="next-lesson">Congratulations, you have completed the Introduction to SPREAD Platform course. Fore more, see <a href="/platform-tools/using-studio/creating-studio-applications.html">Creating Studio applications</a>.</blockquote>
