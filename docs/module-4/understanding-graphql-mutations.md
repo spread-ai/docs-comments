@@ -53,26 +53,16 @@ For example, a GraphQL mutation for creating a feature variant with the name `LI
 
      ```json
      {
-          "data": [
-               {
-                    "name": {
-                         "en": "LIDAR"
-                    }
-               },
-               {
-                    "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. "
-               }, 
-               {
-                    "id": "FeatureVariants/08992c5e-522c-44a0-965f-72f83622c496"
-               }
-          ]
+	     "name": "Test Variant",
+	     "desc": "A description here.",
+	     "componentIds": ["ComponentVariants/afc516af-Oc7a-4768-a972-8ff52f289c84"]
      }
      ```
 </div>
 
 {{ snippets.whatIsAFeatureVariant }}
 
-[Open the demo GraphQL mutation](https://app.spread.ai/ein?explorerURLState=N4IgJg9gxgrgtgUwHYBcQC4QAI4xQQxQEsIksBhAJwUIQGUIAzFAd32oFkIwYAbBABQASJPkTosdFJSJIA5gBosQsAgDOUCVJnyAlFmAAdMllNmzUarQbM2nbn0FhC%2BNQhQBJMBMMgAomqMACIubihqAPSqABwAnABM%2BADssQC0CIz4AEapACwAjEkAbKn48dHx6fFQ%2BYVQYPkI8QDMvkrOBBJGJua95qLiBsZ9IyPIEiJiCMOjfQC%2BM7PmqhoyAA7EpF2LS2NIEytQO7sLPSNz%2Bt275kRgx72nDyAKIABu7ETZ-GoY2ENnfV8HXwvgkAG17rMrtcRr4BtMMP8YddfMhQVhfAAZDxBACCACVfJCYY9kXMFMSRtDkeYgeojojfHQEGAsHgsGsEJQ1GsiFBPsQ1GykKosBA4EgiEKpSgEFhRCgYEKuZQIJQsGoiCgsK8ILwYBtaHAsPgoLA1PhUER4FhILw1Qg4ABHGBy3j4GDOK3wJQoCAEY3UY34TkyMRKGguuVENYWrAu-By7JYIi8e0ppCvZB%2B6g6rlawhSrDueMwVxEE2UKAACy1CCgfqwWRoBDlrwLcrAfIIGpgqGLAA81rw%2BdkIAA6LAAOUdEGLkuNMYtxt1%2BsNsuNLs%2BOr1BoIQs12tcoYVMHVHu13C1JvZjBgci1SjcrK3%2BCwUFIbhdfcV6rg%2BDkSVbT1B1lQgIUtywShC1INtd3XR0NQQSCkHpa1UEnIkASWckMWwqFKV2XxbnRXwADEWzPBAADUPktcIIgABjiBIoAAVgQVI2Piao8lyfBGNSWIijYxhUiSeJGGiZoih4qBcmErCaVJUYAF1jjmEA5iAA){ .md-button .md-button--primary }
+[Open the demo GraphQL mutation](https://app.spread.ai/ein?explorerURLState=N4IgJg9gxgrgtgUwHYBcQC4RxighigSwiQAIBhAJwXwQDFqUYqAKAEiV0XRIGUUKCSAOYBCADQlWYBAGco3PgOHjJUCHAAOxZCgCSYGdwDaugCIBdAJQlgAHSS2UUKjXr4mCAGq4BuVMzB8XBkEPTBuWxAAURkAM1MgkJQZAHppAA4ATgAmXAB2TIBaBFjcACNCgBYARjyANkLcbPTs4uyoatqoMGqEbIBmSIlAvG47BxRHDi4be0d5lGRudk4EOcmUAF91x2k5AQ1CYjGdjaXJPahT7YnHFwAbAgAvBDBdJDJ1LSQdb19UfSGVRfbQAgzrTbWcYLAhgCH2TYgMQgABuPgI5XusgwIGhkxA0zWGBIkQAKrJ8WIduBZFdiZEAIIkS4HI6kAAWCCoADohtS1JpQWEZJFjJFPoKfqg-hjUKlcLEoABWap1BWFADyUDyuCq9XSjUyeVa6VisSV2VizUyUHSlUi5gRIE2QA){ .md-button .md-button--primary }
 <br>
 <br>
 
