@@ -15,6 +15,10 @@ To display data, we will be working in SPREAD Studio - which is a tool to create
 	<figcaption>The EIN tile in the SPREAD Platform Launcher</figcaption>
 </figure>
 
+## Organizing your workspace
+
+{{ snippets.organizingWorkspaces }}
+
 ## Navigating Studio
 
 First, let's get familiar with the layout of the Studio application.
