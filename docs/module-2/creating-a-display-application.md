@@ -16,7 +16,7 @@ We will display these details in a table.
 
 {{ snippets.demoInstanceDetails }}
 
-To open Studio, select the **Studio** tile in the SPREAD Platform Launcher and [create a new application]({{ }}getting-started/module-1/creating-a-studio-application.html#organizing-your-workspace).
+To open Studio, select the **Studio** tile in the SPREAD Platform Launcher and [create a new application](module-1/creating-a-studio-application.html#organizing-your-workspace).
 
 ## Creating the UI
 
