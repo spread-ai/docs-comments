@@ -44,27 +44,27 @@ Copy the code below, select the **JS** tab in the **Editor** view and paste it i
 ```js
 export default {
      graph: {},
-     onFeatureSelected() { // (1)
-          const nodes = []; // (2)
+     onFeatureSelected() { // (1)!
+          const nodes = []; // (2)!
           const edges = [];
-          nodes.push({ // (3) 
+          nodes.push({ // (3)! 
                id: Table1.selectedRow.id,
                label: Table1.selectedRow.name,
                color: "#ef4444"
           });
-          Table1.selectedRow.realizedInComponentVariant.forEach(c => { // (4) 
+          Table1.selectedRow.realizedInComponentVariant.forEach(c => { // (4)! 
                nodes.push({
                     id: c.id,
                     label: c.name.en,
                     color: "#064e3b"
                });
-               edges.push({ // (5) 
+               edges.push({ // (5)! 
                     id: Table1.selectedRow.id + '/' + c.id,
                     from: Table1.selectedRow.id,
                     to: c.id,
                     label: "realized by"
                })
-               c.usesSoftwareModules.forEach(m => { // (6) 
+               c.usesSoftwareModules.forEach(m => { // (6)! 
                     if (!nodes.includes(n => n.id == m.id)) {
                          nodes.push({
                               id: m.id,
@@ -72,7 +72,7 @@ export default {
                               color: "#b188a3"
                          })
                     }
-                    edges.push({ // (7) 
+                    edges.push({ // (7)!
                          id: c.id + '/' + m.id,
                          from: c.id,
                          to: m.id,
@@ -85,7 +85,7 @@ export default {
                nodes,
                edges
           };
-          return this.graph; // (8) 
+          return this.graph; // (8)! 
      }
 }
 ```
@@ -128,13 +128,12 @@ This binds the `edges` output from the JavaScript to the edges value of the Grap
 
 In the style configuration tab, use the following settings to style the widget:
 
-- **Node figure:** Rounded rectangle
-- **Mode:** Hierarchical
+- **Mode:** Layered
 - **Direction:** Down
 
 !!! abstract "Task 2: Change the Graph styling"
 
-     Experiment with different values for **Node figure**, **Mode**, and **Direction** to create a graph that goes from left to right.
+     Experiment with different values for **Mode** and **Direction** to create a graph that goes from left to right.
 
 ## Publish the application
 

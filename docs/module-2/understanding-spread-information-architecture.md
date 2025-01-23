@@ -37,4 +37,14 @@ content:
 <p></p>
 <?/quiz?>
 
+<?quiz?>
+question: Select a domain you might find in the SPREAD data architecture
+answer: R&D domain
+answer: Engine domain
+answer-correct: CAD domain
+answer: EFS domain
+content:
+<p></p>
+<?/quiz?>
+
 <blockquote class="next-lesson">In the <a href="querying-spread.html">next lesson</a> we will go into the EI Graph and start learning how to find the right queries to get the data we want.</blockquote>

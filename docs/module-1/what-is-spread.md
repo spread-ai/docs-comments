@@ -36,7 +36,7 @@ The SPREAD product is a platform that provides a suite of tools for data analysi
 
 !!! info "More about SPREAD"
 
-     SPREAD was founded to make product data accessible and easy to use. The company was established in 2019 in Berlin and now has over 100 employees. For more on the company, see [About us](https://www.spread.ai/about).
+     SPREAD was founded to make product data accessible and easy to use. The company was established in 2019 in Berlin and now has over 100 employees. For more on the company, see [About us](https://www.spread.ai/about). For more on the solutions offered by SPREAD, see the [Overview]({{ config.site_url }}) page of the documentation.
 
 The key features of SPREAD include:
 
@@ -101,7 +101,7 @@ In this course, we will learn how to ingest data, display data using SPREAD Stud
 
 * :white_small_square:
 
-     <span class="grid-heading">Defence</span>
+     <span class="grid-heading">Defense</span>
      <p class="grid-blurb">Enabling the future of connected, high-precision defense systems</p>
 
      ![A 3D model of a vehicle](src/defence.png){ .skip-lightbox }

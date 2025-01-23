@@ -54,17 +54,17 @@ Just as we did in the [previous lesson](querying-spread.html), we will enter a q
 
      ```json 
      {
-          featureVariants(datasetId: "EsfDatasets/de892a79-efab-4176-a282-e2c117cd1e23") { // (1)
-               id // (2)
+          featureVariants(datasetId: "EsfDatasets/de892a79-efab-4176-a282-e2c117cd1e23") { // (1)!
+               id // (2)!
                name {
-                    en // (3)
+                    en // (3)!
                }
-               realizedInComponentVariant { // (4)
+               realizedInComponentVariant { // (4)!
                     id 
                     name {
                          en 
                     }
-                    usesSoftwareModules { // (5)
+                    usesSoftwareModules { // (5)!
                          id 
                          name {
                               en

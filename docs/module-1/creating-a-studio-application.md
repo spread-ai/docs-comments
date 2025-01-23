@@ -36,8 +36,6 @@ First, let's get familiar with the layout of the Studio application.
 
 {{ snippets.buildUI }}
 
-For more on styling your application, see [How to style your application]().
-
 !!! abstract "Task 1: Create a UI"
 
      Create a simple user interface with just an [input box](#) and a [submit button](#).
@@ -55,8 +53,9 @@ For more on styling your application, see [How to style your application]().
 
 !!! abstract "Task 2: Configure your application"
 
-     1. Set the name of your application to "Acme Inc widgerator"
-     2. Set the app logo to this image
+     1. Set the name of your application to "Acme Inc widgerator".
+     2. Set the app logo to this image:
+     ![Generic logo](src/icon-50x50.png)
      3. Change the primary color to `#ff450e`.
 
 ## Publish the application

@@ -41,4 +41,24 @@ content:
 <p></p>
 <?/quiz?>
 
+<?quiz?>
+question: What are the parts of the database that SPREAD uses?
+answer: Branches and Leaves
+answer: Edges and Components
+answer: Connections and Nodes
+answer-correct: Nodes and Edges
+content:
+<p></p>
+<?/quiz?>
+
+<?quiz?>
+question: What technology is used in SPREAD?
+answer: REST APIs
+answer: SOAP APIs
+answer-correct: GraphQL
+answer: SPARQL
+content:
+<p></p>
+<?/quiz?>
+
 <blockquote class="next-lesson">In the <a href="creating-a-studio-application.html">next lesson</a> we will create a simple application that introduces the Studio.</blockquote>
