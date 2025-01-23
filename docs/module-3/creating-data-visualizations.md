@@ -139,4 +139,4 @@ In the style configuration tab, use the following settings to style the widget:
 
 {{ snippets.publishApp }}
 
-<blockquote class="next-lesson">In the <a href="creating-data-visualizations.html">next module</a> we'll learn about writing data data to the Engineering Intelligence Graph.</blockquote>
+<blockquote class="next-lesson">In the <a href="module-4/understanding-graphql-mutations.html">next module</a> we'll learn about writing data data to the Engineering Intelligence Graph.</blockquote>

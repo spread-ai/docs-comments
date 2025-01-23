@@ -6,7 +6,7 @@ hide:
      - toc
 ---
 
-To get data from the Engineering Intelligence Graph (EI Graph) we need to query the GraphQL database. GraphQL is a a query language that allows us to fetch only the data we need, unlike with REST APIs. In this lesson we will learn how to make a query from within SPREAD Studio and use the results in a [table](#) widget. The advantages of GraphQL over using REST APIs include:
+To get data from the Engineering Intelligence Graph (EI Graph) we need to query the GraphQL database. GraphQL is a a query language that allows us to fetch only the data we need, unlike with REST APIs. In this lesson we will learn how to make a query from within SPREAD Studio and use the results in a Table widget. The advantages of GraphQL over using REST APIs include:
 
 - You can define custom queries that request exactly the data you need. This eliminates the need for multiple endpoints and reduces unnecessary data transfer.
 - GraphQL organizes your data into clear fields, making it easier to manage and display on the frontend.
