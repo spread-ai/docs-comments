@@ -35,10 +35,10 @@ First we need to know where to find the query that gives you the information tha
 
      ![Schema introspection failure fix](src/schema-introspection-fail.png)
 
-Then select the **🔍 Search** icon on the top left to open search function that seraches the the SDL reference.
+Then select the **🔍 Search** icon on the top left to open search function that searches the the SDL reference.
 
 <figure markdown="span">
-     ![The button to access the SDL search](src/search-sdl.png){ .img-medium }
+     ![The button to access the SDL search](src/sdl-search.png){ .img-medium }
      <figcaption>The button to access the SDL search</figcaption>
 </figure>
 
@@ -72,7 +72,7 @@ The GraphQL syntax - `[featureVariant]!` - tells us that the `featureVariants` o
 Let's say we want to return the names of all the feature variants. To run a test call we can use the playground and we start by adding the query by selecting the **➕** icon next to the query that we found.
 
 <figure markdown="span">
-     ![Adding the query](src/adding-the-query.png){ .img-medium }
+     ![Adding the query](src/add-query.png){ .img-medium }
      <figcaption>Adding the query</figcaption>
 </figure>
 
