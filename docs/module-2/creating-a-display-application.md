@@ -50,36 +50,7 @@ Just as we did in the [previous lesson](querying-spread.html), we will enter a q
      
      Before revealing the answer, take a moment to try find the query on your own. Once you are done, check your answer against the snippet below.
 
-??? info "See the solution"
-
-     ```json 
-     {
-          featureVariants(datasetId: "EsfDatasets/de892a79-efab-4176-a282-e2c117cd1e23") { // (1)!
-               id // (2)!
-               name {
-                    en // (3)!
-               }
-               realizedInComponentVariant { // (4)!
-                    id 
-                    name {
-                         en 
-                    }
-                    usesSoftwareModules { // (5)!
-                         id 
-                         name {
-                              en
-                         }
-                    }
-               }
-          }
-     }
-     ```
-
-     1. Remember to add the `datasetId` of our demo dataset: "EsfDatasets/de892a79-efab-4176-a282-e2c117cd1e23" to get the right data.
-     2. This returns the ID of the feature variant. This ID will become necessary when we create data visualizations.
-     3. The name of the feature variant in English. For German you would use `de`.
-     4. This object returns the components of the feature variant.
-     5. This object returns the software used in the components of the feature variant.
+     [See the solution](https://app.spread.ai/ein?explorerURLState=N4IgJg9gxgrgtgUwHYBcQC4TADpIAQEEBmCAhijAE4IBqplAlqagM4AUY5pLCKAkmHR5sIAKIsiAES48ULAPRgEADgCcAJlIB2VQFoERUgCNdAFgCMWgGy7S65ev3qo5y1DDmE6gMwiAlHjAwviEoQQMYMFhYUikiIG40UkEyFHJeAC%2BienUpAA2DABeCGB8SADCEHAADhBIyCh0jMwogWnpoRHtHQSx8TghPUmp2UOZo0MwPCwAyhBEKADu9AgAshBgMHkILG0TY4Rd%2Bwd4fQgJgyfDSMcHWZc99x1PofcZIAA0IABu9ExG2xYGBAIAyQA){ .md-button .md-button--primary }
 
 <figure markdown="span">
      ![Creating a query in the Studio interface](src/create-query-in-studio.png)
