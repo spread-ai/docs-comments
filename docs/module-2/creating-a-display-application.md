@@ -128,7 +128,7 @@ To get just the name we need to edit the name column by selecting the **⛭** ic
      <figcaption>The name column settings</figcaption>
 </figure>
 
-Then setting the **Computed value** field to: `{{ "{{currentRow["name"].en}}" }}`. This extracts only the value of the `en` key to give us a clean name.
+Then setting the **Computed value** field to: `{{ '{{currentRow["name"].en}}' }}`. This extracts only the value of the `en` key to give us a clean name.
 
 ## Syncing data across widgets
 
