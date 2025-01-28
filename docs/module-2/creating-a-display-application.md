@@ -28,7 +28,7 @@ We will display these details in a table.
 
 To open Studio, select the **Studio** tile in the SPREAD Platform Launcher and [create a new application](module-1/creating-a-studio-application.html#organizing-your-workspace).
 
-## Creating the UI
+## 1. Creating the UI
 
 Drag and drop a table widget onto the Studio canvas from the **UI** tab on the left-hand side. The highlighted options on the right-hand side is where we will add data from the query that we will bind to the table.
 
@@ -37,7 +37,7 @@ Drag and drop a table widget onto the Studio canvas from the **UI** tab on the l
      <figcaption>Creating the display app UI</figcaption>
 </figure>
 
-## Creating the query
+## 2. Creating the query
 
 To create the query we will use from within Studio go to the **Queries** tab and select **New Query/API**. Select **EIN API** in the **Quick actions** section. Here you can see all the same objects that are in the Schema Definition Language (SDL) reference from the [previous lesson](querying-spread.md). The Apollo Explorer is where we go to find queries (or mutations), but in order to apply them in a Studio application we need to do it in the **Queries** tab.
 
@@ -79,7 +79,7 @@ The results will appear in the bottom window under the heading **Response** > **
 
      The query needs a unique name so that it can be called from the UI. Name the query `featureVariants` so that we can use it in the next steps.
 
-## Binding the query
+## 3. Binding the query
 
 Switch back to the **UI** tab on the top-left and select the table widget that you dropped on to the canvas earlier. Select  **Table data** and enter the following: `{{ "{{ featureVariants.data.data.featureVariants }}" }}`.
 
@@ -100,7 +100,7 @@ The fields returned by the query are mapped as columns and you can edit them in 
      <figcaption>Editing columns in a table</figcaption>
 </figure>
 
-### Editing the columns
+### 3.1 Editing the table columns
 
 <figure markdown="span">
      ![The unedited name column](src/unfixed-name-column.png){ .img-medium }
@@ -130,7 +130,7 @@ To get just the name we need to edit the name column by selecting the **⛭** ic
 
 Then setting the **Computed value** field to: `{{ '{{currentRow["name"].en}}' }}`. This extracts only the value of the `en` key to give us a clean name.
 
-## Syncing data across widgets
+## 4. Syncing data across widgets
 
 Data can also be synced between widgets. We have hidden the **description** column but we can display it in another connected widget. Drag-and-drop the [container](../) widget on to the Studio canvas. Then drag and drop a [text]() widget on top of the container.
 
@@ -155,7 +155,7 @@ Similarly, you can set the value of fields in other widgets to sync with each ot
 
      ![Incorrect table name](src/incorrect-table-name.png){ .img-medium }
 
-## Publishing and sharing the application
+## 5. Publishing and sharing the application
 
 When the application is complete, select the **Publish** button in the top-right corner to make it available from the SPREAD Platform launcher page. To share the application with other users select the **Share** button (next to the **Publish** button) and add users who can either have **Developer** rights to edit the application or **Viewer** rights to just view it.
 
@@ -169,4 +169,4 @@ When the application is complete, select the **Publish** button in the top-right
 <figcaption class='download'>Unzip the file, open the <a href="module-1/creating-a-studio-application.html#organizing-your-workspace">Studio Workspace</a>, select <strong>Create New</strong> > <strong>Import</strong>, and import the unzipped file.</figcaption>
 <br>
 
-<blockquote class="next-lesson">In the <a href="module-3/studio-data-visualizations.html">next module</a> we will be looking at how to visualize data in Studio.</blockquote>
+<blockquote class="next-lesson">In the <a href="/docs/getting-started/module-3/studio-data-visualizations.html">next module</a> we will be looking at how to visualize data in Studio.</blockquote>

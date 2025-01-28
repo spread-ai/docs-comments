@@ -15,11 +15,11 @@ To display data, we will be working in SPREAD Studio - which is a tool to create
 	<figcaption>The EIN tile in the SPREAD Platform Launcher</figcaption>
 </figure>
 
-## Organizing your workspace
+## 1. Organizing your workspace
 
 {{ snippets.organizingWorkspaces }}
 
-## Navigating Studio
+## 2. Navigating Studio
 
 First, let's get familiar with the layout of the Studio application.
 
@@ -32,7 +32,7 @@ First, let's get familiar with the layout of the Studio application.
 
 {{ snippets.creatingApplications }}
 
-## Create a user interface
+## 3. Create a user interface
 
 {{ snippets.buildUI }}
 
@@ -40,7 +40,7 @@ First, let's get familiar with the layout of the Studio application.
 
      Create a simple user interface with just an [input box](#) and a [submit button](#).
 
-## Configure the settings
+## 4. Configure the settings
 
 {{ snippets.configureAppSettings }}
 
@@ -58,7 +58,7 @@ First, let's get familiar with the layout of the Studio application.
      ![Generic logo](src/icon-50x50.png)
      3. Change the primary color to `#ff450e`.
 
-## Publish the application
+## 5. Publish the application
 
 {{ snippets.publishApp }}
 

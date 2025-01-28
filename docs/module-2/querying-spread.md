@@ -107,8 +107,21 @@ This process of finding queries (and later mutations) is how we get data into St
 
      Run the GraphQL query example above to return the `createdAt` date for all feature variants.
 
+     <br>
+     [See the solution](https://app.spread.ai/ein?explorerURLState=N4IgJg9gxgrgtgUwHYBcQC4QEcYIE4CeABAGIICGKMeCAauXgJbmoDOAFACRiXmsIoAkmHRFBAEQCURYAB0kRIgDMKVGvSYsUHHij4Dho7r35Cw0uQsVEk5RDPnXryR9YC%2BrxVBqUEYAIIorh5IbiAANCAAbgzMAEYANgisGCCWirLgJgZgmaKZAKKsSuLZ2gD0YAgAHACcAEzkAOy1ALQISuRxrQAsAIxNAGyt5PXV9e31UH0DUGB9CPUAzJnyYW5AA){ .md-button .md-button--primary }
+
 !!! abstract "Task 2: Run a query that returns the names of all software modules"
 
      Run a GraphQL query thats return the names of all `softwareModules`. Hint: you're looking for software modules and not a software module.
+
+     <br>
+     [See the solution](https://app.spread.ai/ein?explorerURLState=N4IgJg9gxgrgtgUwHYBcQC4QEcYIE4CeABAMoQBmKA7gIZ4ICyEYMANggM4AUAJGDShocEKAJJh0RUQBEAlEWAAdJESIcK1Oo2ZtOXfoOFiJRPgKEjx8pStVEkNRAuV27yF3YC%2BH70k8gAGhAANzoASxoAI3YODBAbVUVwcyNxJMkkgFEOcmkUkQ4AejAEAA4ATgAmGgB2coBaBHIo%2BoAWAEYagDZ6mkrSysbKqHbOqDB2hEqAZiTlf08gA){ .md-button .md-button--primary }
+
+!!! abstract "Task 2: Run a query that returns the names of all the component variants"
+
+     Run a GraphQL query thats return the names of all `componentVariants`.
+
+     <br>
+     [See the solution](https://app.spread.ai/ein?explorerURLState=N4IgJg9gxgrgtgUwHYBcQC4QEcYIE4CeABAMIRwAOESyKAagIZ4CWDqAzgBQAkYDKDdghQBJMOiIiAIgEoiwADpIiRKOSo1UjFmxRc%2BAoaPFFe-QcLFzFylUSQNE8pXbvIXdgL4fvSTyAAaEAA3JlYAIwAbBHYMEBsVBXBzIzEkiSSAUXYAMykU4XYAejAEAA4ATgAmBgB2CoBaBByGcIaAFgBGWoA2BoYqsqqmqqhO7qgwToQqgGYkpX9PIA){ .md-button .md-button--primary }
 
 <blockquote class="next-lesson">In the <a href="creating-a-display-application.html">next lesson</a> we'll be creating a Studio application that fetches data from EI Graph and then displays it inside the application.</blockquote>
