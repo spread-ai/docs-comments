@@ -97,10 +97,6 @@ The name field has further fields within it: we can have the names of the featur
      <figcaption>Testing the query</figcaption>
 </figure>
 
-[See the solution](https://app.spread.ai/ein?explorerURLState=N4IgJg9gxgrgtgUwHYBcQC4QEcYIE4CeABAGIICGKMeCAauXgJbmoDOAFACRiXmsIoAkmHRFBAEQCURYAB0kRIgDMKVGvSYsUHHij4Dho7r35Cw0uQsVEk5RDPnXryR9YC%2BrxVBqUEYAIIorh5IbiAANCAAbgzMAEYANgisGCCWirLgJgZgmaKZAKKsSuLZ2gD0YAgAHACcAEzkAOy1ALQISuRxrQAsAIxNAGyt5PXV9e31UH0DUGB9CPUAzJnyYW5AA){ .md-button .md-button--primary }
-<br>
-<br>
-
 This process of finding queries (and later mutations) is how we get data into Studio applications. Studio has a simplified version of the APollo Explorer to create queries within applications, but we recommend starting with the Explorer when creating queries
 
 !!! abstract "Task 1: Run the query to return the createdAt field"
