@@ -12,6 +12,14 @@ Now that we know how to fetch data from the Engineering Intelligence Graph we ca
 - What components make up the feature variant. For example: airbags might consist of a component that senses when a crash has happened and a component that deploys the airbag.
 - Which software modules the components use to complete tasks. For example: the crash detection component might use software that determines when an impact has happened.
 
+```mermaid
+flowchart TD;
+    	A["Feature Variant: 💨 Airbag"]-- contains --->C(["Component: 💥 Crash Detector"]);
+     A["Feature Variant: 💨 Airbag"]-- contains --->B(["Component: 🎈 Airbag Deploy"]);
+	C(["Component: 💥 Crash Detector"])-- implemented by --->D(("Software: 🤖 crash_sensing_software"));
+     B(["Component: 🎈 Airbag Deploy"])-- implemented by --->E(("Software: 🤖 airbag_deployer_software"));
+```
+
 We will display these details in a table.
 
 {{ snippets.demoInstanceDetails }}
