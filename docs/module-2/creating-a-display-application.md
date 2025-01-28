@@ -13,7 +13,7 @@ Now that we know how to fetch data from the Engineering Intelligence Graph we ca
 - Which software modules the components use to complete tasks. For example: the crash detection component might use software that determines when an impact has happened.
 
 ```mermaid
-flowchart TD;
+flowchart LR;
     	A["Feature Variant: 💨 Airbag"]-- contains --->C(["Component: 💥 Crash Detector"]);
      A["Feature Variant: 💨 Airbag"]-- contains --->B(["Component: 🎈 Airbag Deploy"]);
 	C(["Component: 💥 Crash Detector"])-- implemented by --->D(("Software: 🤖 crash_sensing_software"));
