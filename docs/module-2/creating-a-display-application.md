@@ -10,7 +10,9 @@ Now that we know how to fetch data from the Engineering Intelligence Graph we ca
 
 - The name of the feature variant. For example: `Airbags` in a vehicle.
 - What components make up the feature variant. For example: airbags might consist of a component that senses when a crash has happened and a component that deploys the airbag.
-- Which software modules the components use to complete tasks. For example: the crash detection component might use software that determines when an impact has happened.
+- The software modules the components use to complete tasks. For example: the crash detection component might use software that determines when an impact has happened.
+
+As software-defined products become more prevalent, the implementation end of a feature oftentimes involves a software module.
 
 ```mermaid
 flowchart LR;
@@ -84,19 +86,49 @@ Switch back to the **UI** tab on the top-left and select the table widget that y
 Let's look at what this means:
 
 - `featureVariants.data` is the full object returned by the query named `featureVariants`. This is the same output we saw in the previous step, which begins: `{"data": {"featureVariants": [ ...all the listed featureVariants and their components... ]}}`
-- To extract the list of featureVariants we need to add `data.featureVariants` to complete the binding.
+- To extract the list of feature variants we need to add `data.featureVariants` to complete the binding.
 
 <figure markdown="span">
      ![Binding the query to the table](src/binding-query-to-table.png){ .img-medium }
      <figcaption>Binding the query to the table</figcaption>
 </figure>
 
-The fields returned by the query are mapped as columns and you can edit them in the section below **Table data**. For example, let's hide the **id** column from the table by selecting the **👁️** icon in the **Table** section. You can also edit each column by selecting the **⛭** icon.
+The fields returned by the query are mapped as columns and you can edit them in the section below **Table data**. For example, let's hide the **id** column from the table by selecting the **👁️** icon in the **Table** section.
 
 <figure markdown="span">
      ![Editing columns in a table](src/column-settings.png){ .img-medium }
      <figcaption>Editing columns in a table</figcaption>
 </figure>
+
+### Editing the columns
+
+<figure markdown="span">
+     ![The unedited name column](src/unfixed-name-column.png){ .img-medium }
+     <figcaption>The unedited name column</figcaption>
+</figure>
+
+You may have noticed that the name column entries have values like `{"en": "LIDAR"}` and not simply `LIDAR` as we would expect. The name column has taken the `name` object and used it for the field values, without extracting the `en` (or `de`) key of the object. If you recall earlier, the query returns:
+
+```json "Segment of the query response" hl_lines="4 5 6"
+...
+{
+        "id": "FeatureVariants/14ac1f3c-4517-450b-b2d6-86ad314e2420",
+        "name": {
+          "en": "LIDAR"
+        },
+        "realizedInComponentVariant": []
+}
+...
+```
+
+To get just the name we need to edit the name column by selecting the **⛭** icon next to it.
+
+<figure markdown="span">
+     ![The name column settings](src/name-column-settings.png){ .img-medium }
+     <figcaption>The name column settings</figcaption>
+</figure>
+
+Then setting the **Computed value** field to: `{{ "{{currentRow["name"].en}}" }}`. This extracts only the value of the `en` key to give us a clean name.
 
 ## Syncing data across widgets
 
@@ -131,5 +163,10 @@ When the application is complete, select the **Publish** button in the top-right
      ![Sharing your application](src/share-application.png){ .img-medium }
      <figcaption>Sharing your application</figcaption>
 </figure>
+
+<br>
+[Download the solution (7kb) :material-download: ](src/module-2.zip){ .md-button .md-button--primary }
+<figcaption class='download'>Unzip the file, open the [Studio Workspace](module-1/creating-a-studio-application.html#organizing-your-workspace), select <strong>Create New</strong> > <strong>Import</strong>, and import the unzipped file.</figcaption>
+<br>
 
 <blockquote class="next-lesson">In the <a href="module-3/studio-data-visualizations.html">next module</a> we will be looking at how to visualize data in Studio.</blockquote>

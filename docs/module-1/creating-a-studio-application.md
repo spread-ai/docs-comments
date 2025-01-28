@@ -66,8 +66,9 @@ First, let's get familiar with the layout of the Studio application.
 
      Publish the application that you have created and then go to the SPREAD Launcher to open it.
 
-[See the solution](https://studio.app.spread.ai/app/acme-wigerator/page1-67922cbf87039f2e7a6c236e/edit){ .md-button .md-button--primary }
 <br>
+[Download the solution (7kb) :material-download: ](src/module-1.zip){ .md-button .md-button--primary }
+<figcaption class='download'>Unzip the file, open the [Studio Workspace](#organizing-your-workspace), select <strong>Create New</strong> > <strong>Import</strong>, and import the unzipped file.</figcaption>
 <br>
 
 <blockquote class="next-lesson">In the <a href="/docs/getting-started/module-2/understanding-spread-information-architecture.html">next module</a> we will delve into SPREAD's information architecture.</blockquote>
