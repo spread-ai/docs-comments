@@ -2,7 +2,7 @@ edit_uri: edit/main
 
 nav:
      - Getting Started overview: getting-started-overview.md
-     - Module 1 - SPREAD ecosystem:
+     - Module 1 - SPREAD Platform:
             - 1.1 What is SPREAD?: module-1/what-is-spread.md
             - 1.2 What is the Engineering Intelligence Graph?: module-1/what-is-eig.md
             - 1.3 Creating a Studio application: module-1/creating-a-studio-application.md

@@ -119,7 +119,7 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
 
     ---
 
-     - [:octicons-arrow-right-24: Module 1: Understanding the SPREAD ecosystem](module-1/what-is-spread.md)
+     - [:octicons-arrow-right-24: Module 1: Understanding the SPREAD Platform](module-1/what-is-spread.md)
           - [What is SPREAD?](module-1/what-is-spread.md)
           - [What is the Engineering Intelligence Graph?](module-1/what-is-eig.md)
           - [Creating a Studio application](module-1/creating-a-studio-application.md)

@@ -29,7 +29,7 @@ Drag and drop a table widget onto the Studio canvas from the **UI** tab on the l
 
 ## Creating the query
 
-To create the query we will use from within Studio go to the **Queries** tab and select **New Query/API**. Select **EIN API** in the **Quick actions** section. Here you can see all the same objects that are in the Schema Definition Language (SDL) reference from the [previous lesson](querying-spread.md).
+To create the query we will use from within Studio go to the **Queries** tab and select **New Query/API**. Select **EIN API** in the **Quick actions** section. Here you can see all the same objects that are in the Schema Definition Language (SDL) reference from the [previous lesson](querying-spread.md). The Apollo Explorer is where we go to find queries (or mutations), but in order to apply them in a Studio application we need to do it in the **Queries** tab.
 
 <figure markdown="span">
      ![Creating a query in the Studio interface](src/studio-ein-api.png)
@@ -40,17 +40,17 @@ Just as we did in the [previous lesson](querying-spread.html), we will enter a q
 
 !!! abstract "Task 1: Find the right query"
 
-     Given what we know [about finding queries](querying-spread.html#finding-the-query), go to this [URL]({{ snippets.demoInstanceEinURL }}) and investigate what query will return all the data that we are looking. As a reminder:
+     Given what we know [about finding queries](querying-spread.html#finding-the-query), go to [Apollo Explorer]({{ snippets.demoInstanceEinURL }}ein) to  investigate what query will return all the data that we are looking. As a reminder:
 
-          * We have set up a dataset with the ID: `"EsfDatasets/de892a79-efab-4176-a282-e2c117cd1e23"`. Use this as the `datasetId` in the query.
-          * We are looking for data in `featureVariants`:
-               * We are looking for the names of all the `featureVariants`. Remember that we need to supply the language that the names are returned in.
-               * We are looking for the names and IDs of the components that make up the feature variant. **Clue:** The name of the object that contains this data is `realizedInComponentVariant`.
-               * We are looking for the software modules that these components use.
+          - We have set up a dataset with the ID: `"EsfDatasets/de892a79-efab-4176-a282-e2c117cd1e23"`. Use this as the `datasetId` in the query.
+          - We are looking for data in `featureVariants`:
+               - We are looking for the names of all the `featureVariants`. Remember that we need to supply the language that the names are returned in.
+               - We are looking for the names and IDs of the components that make up the feature variant. A quick hint: the name of the object that contains this data is `realizedInComponentVariant`.
+               - We are looking for the software modules that these components use.
      
      Before revealing the answer, take a moment to try find the query on your own. Once you are done, check your answer against the snippet below.
 
-??? info "Query to get feature variant's name, components, and software"
+??? info "See the solution"
 
      ```json 
      {
@@ -86,9 +86,7 @@ Just as we did in the [previous lesson](querying-spread.html), we will enter a q
      <figcaption>Creating a query in the Studio interface</figcaption>
 </figure>
 
-The results will appear in the bottom window under the heading **Response** > **JSON**.
-
-Switch to the **Settings** tab and enable **Run API on page load**, **Encode query params**, and **Smart JSON substitution**.
+The results will appear in the bottom window under the heading **Response** > **JSON**. Switch to the **Settings** tab and enable **Run API on page load**, **Encode query params**, and **Smart JSON substitution**.
 
 <figure markdown="span">
      ![Run API on page load](src/api-settings.png){ .img-medium }
@@ -106,7 +104,7 @@ Switch back to the **UI** tab on the top-left and select the table widget that y
 Let's look at what this means:
 
 - `featureVariants.data` is the full object returned by the query named `featureVariants`. This is the same output we saw in the previous step, which begins: `{"data": {"featureVariants": [ ...all the listed featureVariants and their components... ]}}`
-- In order to extract the list of featureVariants we need to add `data.featureVariants` to complete the binding.
+- To extract the list of featureVariants we need to add `data.featureVariants` to complete the binding.
 
 <figure markdown="span">
      ![Binding the query to the table](src/binding-query-to-table.png){ .img-medium }

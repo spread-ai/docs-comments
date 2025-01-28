@@ -6,7 +6,7 @@ hide:
      - toc
 ---
 
-To get data from the Engineering Intelligence Graph (EI Graph) we need to query the GraphQL database. GraphQL is a a query language that allows us to fetch only the data we need, unlike with REST APIs. In this lesson we will learn how to make a query from within SPREAD Studio and use the results in a Table widget. The advantages of GraphQL over using REST APIs include:
+To get data from the Engineering Intelligence Graph (EI Graph) we need to query the GraphQL database. GraphQL is a a query language that allows us to fetch only the data we need, unlike with Representational State Transfer (REST) APIs. In this lesson we will learn how to make a query from within SPREAD Studio and use the results in a Table widget. The advantages of GraphQL over using REST APIs include:
 
 - You can define custom queries that request exactly the data you need. This eliminates the need for multiple endpoints and reduces unnecessary data transfer.
 - GraphQL organizes your data into clear fields, making it easier to manage and display on the frontend.
@@ -55,7 +55,7 @@ content:
 <p></p>
 <?/quiz?>
 
-#### Reading the SDL
+#### Reading the Schema Definition Language reference
 
 When we select the first result for `query.featureVariants` the following documentation comes up.
 
@@ -90,21 +90,25 @@ Now we can start looking for the fields we want to included in our query. Let's 
      <figcaption>Adding the name field</figcaption>
 </figure>
 
-The name field has further fields within it: we can havbe the names of the feature variants returend in English (`en`) or German (`de`). Select the **➕** icon next to `en`. Then select the **▶️ FeatureVariants** to run the query and the results should appear in the **Response** window.
+The name field has further fields within it: we can have the names of the feature variants returned in English (`en`) or German (`de`). Select the **➕** icon next to `en`. Then select the **▶️ FeatureVariants** to run the query and the results should appear in the **Response** window.
 
 <figure markdown="span">
      ![Testing the query](src/test-query.png){ .img-medium }
      <figcaption>Testing the query</figcaption>
 </figure>
 
-!!! abstract "Task 1: Run the query with the description field"
-
-     Run the GraphQL query example above to reurn the `createdAt` date for all feature variants.
-
 [See the solution](https://app.spread.ai/ein?explorerURLState=N4IgJg9gxgrgtgUwHYBcQC4QEcYIE4CeABAGIICGKMeCAauXgJbmoDOAFACRiXmsIoAkmHRFBAEQCURYAB0kRIgDMKVGvSYsUHHij4Dho7r35Cw0uQsVEk5RDPnXryR9YC%2BrxVBqUEYAIIorh5IbiAANCAAbgzMAEYANgisGCCWirLgJgZgmaKZAKKsSuLZ2gD0YAgAHACcAEzkAOy1ALQISuRxrQAsAIxNAGyt5PXV9e31UH0DUGB9CPUAzJnyYW5AA){ .md-button .md-button--primary }
 <br>
 <br>
 
-This process of finding queries (and later mutations) is how we get data into Studio aplications. Studio has a simplified version of the APollo Explorer to create queries wuithin applications, but we recommend starting with the Explorer when creating queries
+This process of finding queries (and later mutations) is how we get data into Studio applications. Studio has a simplified version of the APollo Explorer to create queries within applications, but we recommend starting with the Explorer when creating queries
+
+!!! abstract "Task 1: Run the query to return the createdAt field"
+
+     Run the GraphQL query example above to return the `createdAt` date for all feature variants.
+
+!!! abstract "Task 2: Run a query that returns the names of all software modules"
+
+     Run a GraphQL query thats return the names of all `softwareModules`. Hint: you're looking for software modules and not a software module.
 
 <blockquote class="next-lesson">In the <a href="creating-a-display-application.html">next lesson</a> we'll be creating a Studio application that fetches data from EI Graph and then displays it inside the application.</blockquote>
