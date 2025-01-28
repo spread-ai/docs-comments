@@ -49,7 +49,8 @@ Just as we did in the [previous lesson](querying-spread.html), we will enter a q
           - We are looking for the software modules that these components use.
      
      Before revealing the answer, take a moment to try find the query on your own. Once you are done, check your answer against the snippet below.
-
+     &nbsp;
+     &nbsp;
      [See the solution](https://app.spread.ai/ein?explorerURLState=N4IgJg9gxgrgtgUwHYBcQC4TADpIAQEEBmCAhijAE4IBqplAlqagM4AUY5pLCKAkmHR5sIAKIsiAES48ULAPRgEADgCcAJlIB2VQFoERUgCNdAFgCMWgGy7S65ev3qo5y1DDmE6gMwiAlHjAwviEoQQMYMFhYUikiIG40UkEyFHJeAC%2BienUpAA2DABeCGB8SADCEHAADhBIyCh0jMwogWnpoRHtHQSx8TghPUmp2UOZo0MwPCwAyhBEKADu9AgAshBgMHkILG0TY4Rd%2Bwd4fQgJgyfDSMcHWZc99x1PofcZIAA0IABu9ExG2xYGBAIAyQA){ .md-button .md-button--primary }
 
 <figure markdown="span">
