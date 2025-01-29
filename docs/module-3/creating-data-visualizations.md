@@ -142,7 +142,7 @@ In the style configuration tab, use the following settings to style the widget:
 
 <br>
 [Download the solution (7kb) :material-download: ](src/module-3.zip){ .md-button .md-button--primary }
-<figcaption class='download'>Unzip the file, open the <a href="{{ config.site_url }}getting-started/module-1/creating-a-studio-application.html#organizing-your-workspace">Studio Workspace</a>, select <strong>Create New</strong> > <strong>Import</strong>, and import the unzipped file.</figcaption>
+<figcaption class='download'>Unzip the file, open the <a href="{{ config.site_url }}getting-started/module-1/creating-a-studio-application.html#1-organizing-your-workspace">Studio Workspace</a>, select <strong>Create New</strong> > <strong>Import</strong>, and import the unzipped file.</figcaption>
 <br>
 
 <blockquote class="next-lesson">In the <a href="{{ config.site_url }}getting-started/module-4/understanding-graphql-mutations.html">next module</a> we'll learn about writing data data to the Engineering Intelligence Graph.</blockquote>
