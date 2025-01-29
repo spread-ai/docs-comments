@@ -71,4 +71,4 @@ First, let's get familiar with the layout of the Studio application.
 <figcaption class='download'>Unzip the file, open the <a href="#organizing-your-workspace">Studio Workspace</a>, select <strong>Create New</strong> > <strong>Import</strong>, and import the unzipped file.</figcaption>
 <br>
 
-<blockquote class="next-lesson">In the <a href="/docs/getting-started/module-2/understanding-spread-information-architecture.html">next module</a> we will delve into SPREAD's information architecture.</blockquote>
+<blockquote class="next-lesson">In the <a href="{{ config.site_url }}getting-started/module-2/understanding-spread-information-architecture.html">next module</a> we will delve into SPREAD's information architecture.</blockquote>

@@ -166,7 +166,7 @@ When the application is complete, select the **Publish** button in the top-right
 
 <br>
 [Download the solution (7kb) :material-download: ](src/module-2.zip){ .md-button .md-button--primary }
-<figcaption class='download'>Unzip the file, open the <a href="module-1/creating-a-studio-application.html#organizing-your-workspace">Studio Workspace</a>, select <strong>Create New</strong> > <strong>Import</strong>, and import the unzipped file.</figcaption>
+<figcaption class='download'>Unzip the file, open the <a href="{{ config.site_url }}getting-started/module-1/creating-a-studio-application.html#organizing-your-workspace">Studio Workspace</a>, select <strong>Create New</strong> > <strong>Import</strong>, and import the unzipped file.</figcaption>
 <br>
 
-<blockquote class="next-lesson">In the <a href="/docs/getting-started/module-3/studio-data-visualizations.html">next module</a> we will be looking at how to visualize data in Studio.</blockquote>
+<blockquote class="next-lesson">In the <a href="{{ config.site_url }}getting-started/module-3/studio-data-visualizations.html">next module</a> we will be looking at how to visualize data in Studio.</blockquote>
