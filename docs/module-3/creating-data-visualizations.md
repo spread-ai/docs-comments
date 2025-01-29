@@ -26,7 +26,7 @@ To create a visualization of the relationships between feature variants, compone
 
 {{ snippets.whatIsAFeatureVariant }}
 
-## Adding to the UI
+## 1. Adding to the UI
 
 Drag and drop the [Graph]({{ config.site_url }}platform-tools/using-studio/reference/widgets/tab.html) widget onto the Studio canvas. Remember that widgets can be found in the **UI** tab of the **Editor** view on the left-hand side.
 
@@ -35,7 +35,7 @@ Drag and drop the [Graph]({{ config.site_url }}platform-tools/using-studio/refer
 	<figcaption>Widgets for the data visualization application</figcaption>
 </figure>
 
-## Parse the query output
+## 2. Parse the query output
 
 The response returned by the GraphQL query needs to be parsed before it can be used by the Graph widget. Studio allows us add JavaScript to perform data manipulation of this type to prepare the data for visualization. This JavaScript code parses the data and returns the nodes and edges that the Graph widget uses to visualize the data.
 
@@ -103,7 +103,7 @@ export default {
 
      Name the JavaScript code `PageState`.
 
-### Bind the JS code to the table
+### 3. Bind the JS code to the table
 
 In order for the JavaScript code to run when a row in the table is selected we need to bind it to the table. Go to the **UI** tab and select the Table widget. In the properties window on the right-hand side, open the **Row selection** section and set **Default selected row** to `-1` and **onRowSelected** to `{{ "{{ PageState.onFeatureSelected() }}" }}`. This binds the `onFeatureSelected` function to the row that has been selected by the user.
 
@@ -112,7 +112,7 @@ In order for the JavaScript code to run when a row in the table is selected we n
 	<figcaption>Binding JS code to Table widget</figcaption>
 </figure>
 
-### Apply bindings to the Graph widget
+### 4. Apply bindings to the Graph widget
 
 The parsed output should then be bound to the Graph widget by using these values in the properties window on the right-hand side:
 
@@ -135,7 +135,7 @@ In the style configuration tab, use the following settings to style the widget:
 
      Experiment with different values for **Mode** and **Direction** to create a graph that goes from left to right.
 
-## Publish the application
+## 5. Publish the application
 
 {{ snippets.publishApp }}
 

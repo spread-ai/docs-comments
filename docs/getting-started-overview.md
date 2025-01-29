@@ -114,6 +114,7 @@ For guidance on how to write documenation, see https://dev.stage.spread.ai/docs/
      - [x] Access to a SPREAD Platform instance with Studio.
      - [x] A basic understanding of JavaScript.
      - [x] A basic understanding of [GraphQL](https://graphql.org/learn/).
+     - [x] A [GitHub account](https://github.com/signup).
 
 - :material-view-list:{ .lg .middle } __Lessons__
 
