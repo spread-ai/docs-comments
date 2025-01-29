@@ -145,4 +145,4 @@ In the style configuration tab, use the following settings to style the widget:
 <figcaption class='download'>Unzip the file, open the <a href="module-1/creating-a-studio-application.html#organizing-your-workspace">Studio Workspace</a>, select <strong>Create New</strong> > <strong>Import</strong>, and import the unzipped file.</figcaption>
 <br>
 
-<blockquote class="next-lesson">In the <a href="/docs/getting-started/module-4/understanding-graphql-mutations.html">next module</a> we'll learn about writing data data to the Engineering Intelligence Graph.</blockquote>
+<blockquote class="next-lesson">In the <a href="/getting-started/module-4/understanding-graphql-mutations.html">next module</a> we'll learn about writing data data to the Engineering Intelligence Graph.</blockquote>
