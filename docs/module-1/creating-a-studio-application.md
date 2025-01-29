@@ -38,7 +38,7 @@ First, let's get familiar with the layout of the Studio application.
 
 !!! abstract "Task 1: Create a UI"
 
-     Create a simple user interface with just an [input box](#) and a [submit button](#).
+     Create a simple user interface with just an input box and a submit button.
 
 ## 4. Configure the settings
 
@@ -68,7 +68,7 @@ First, let's get familiar with the layout of the Studio application.
 
 <br>
 [Download the solution (7kb) :material-download: ](src/module-1.zip){ .md-button .md-button--primary }
-<figcaption class='download'>Unzip the file, open the <a href="#organizing-your-workspace">Studio Workspace</a>, select <strong>Create New</strong> > <strong>Import</strong>, and import the unzipped file.</figcaption>
+<figcaption class='download'>Unzip the file, open the <a href="{{ config.site_url }}getting-started/module-1/creating-a-studio-application.html#organizing-your-workspace">Studio Workspace</a>, select <strong>Create New</strong> > <strong>Import</strong>, and import the unzipped file.</figcaption>
 <br>
 
 <blockquote class="next-lesson">In the <a href="{{ config.site_url }}getting-started/module-2/understanding-spread-information-architecture.html">next module</a> we will delve into SPREAD's information architecture.</blockquote>
