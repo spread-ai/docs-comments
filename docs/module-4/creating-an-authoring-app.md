@@ -19,8 +19,7 @@ To write data to the Engineering Intelligence Graph (EI Graph) we need a user in
 To expedite the process we have created a template application for us to complete by adding the correct mutation. Download the application below and [import it in Studio]({{ config.site_url }}getting-started/module-1/creating-a-studio-application.html#1-organizing-your-workspace).
 
 <br>
-[Download the solution (7kb) :material-download: ](src/module-4-template.zip){ .md-button .md-button--primary }
-<figcaption class='download'>Unzip the file, open the <a href="{{ config.site_url }}getting-started/module-1/creating-a-studio-application.html#1-organizing-your-workspace">Studio Workspace</a>, select <strong>Create New</strong> > <strong>Import</strong>, and import the unzipped file.</figcaption>
+[Download the template (7kb) :material-download: ](src/module-4-template.zip){ .md-button .md-button--primary }
 <br>
 
 !!! abstract "Task 1: Import the application in Studio"
