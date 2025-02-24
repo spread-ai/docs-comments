@@ -1,0 +1,1 @@
+This repository is purely for using giscus comments on the documentation websites. For help or info please contact **@Gugulethu Hlekwayo** on Slack.

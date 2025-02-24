@@ -1,4 +1,4 @@
 {
-     "origins": ["https://docs.spread.ai", "https://dev.stage.spread.ai"],
+     "origins": ["https://docs.spread.ai", "https://*.spread.ai"],
      "originsRegex": ["http://127.0.0.1:[0-9]+", "http://localhost:[0-9]+"]
 }
